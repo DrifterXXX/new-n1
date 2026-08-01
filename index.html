@@ -1,166 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JLPT N1 备考中心</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box}*{margin:0}html{font-family:'Noto Sans JP',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1f2933;background:#f6f7f4}body{min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}.app{display:grid;grid-template-columns:248px minmax(0,1fr);min-height:100vh}.side{position:sticky;top:0;height:100vh;background:#eef2ee;border-right:1px solid #d9dfd7;padding:22px 16px;display:flex;flex-direction:column;gap:18px}.brand{padding:6px 8px 14px;border-bottom:1px solid #d9dfd7}.brand strong{display:block;color:#163f4d;font-size:1.15rem;letter-spacing:.02em}.brand span{display:block;color:#66756f;font-size:.75rem;margin-top:4px}.nav{display:flex;flex-direction:column;gap:4px}.nav button{border:1px solid transparent;background:transparent;color:#51615b;border-radius:6px;padding:10px 11px;text-align:left;display:flex;align-items:center;gap:9px;font-size:.9rem}.nav button:hover{background:#e4eae5;color:#20332e}.nav button.active{background:#173f4d;color:#fff}.sidebox{margin-top:auto;border-top:1px solid #d9dfd7;padding-top:14px;color:#6b7773;font-size:.75rem;line-height:1.65}.main{min-width:0}.topbar{position:sticky;top:0;background:rgba(246,247,244,.92);backdrop-filter:blur(10px);border-bottom:1px solid #dde2da;z-index:5;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}.top-title{min-width:0}.top-title h1{font-size:1.15rem;color:#1b2d34}.top-title p{font-size:.76rem;color:#65726d;margin-top:2px}.top-actions{display:flex;gap:8px;align-items:center}.btn{border:1px solid #cbd3cd;background:#fff;color:#263630;border-radius:6px;padding:8px 11px;font-size:.82rem;display:inline-flex;align-items:center;gap:6px;min-height:36px}.btn:hover{border-color:#173f4d;color:#173f4d}.btn.primary{background:#173f4d;color:#fff;border-color:#173f4d}.btn.danger{border-color:#b84a3d;color:#9b342a;background:#fff}.content{padding:26px 28px 44px;max-width:1180px}.view{display:none}.view.active{display:block}.hidden{display:none}.grid{display:grid;gap:14px}.grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.panel{border:1px solid #dde2da;background:#fff;border-radius:8px;padding:16px}.panel h2{font-size:1rem;color:#20332e;margin-bottom:10px}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}.panel-head h2{margin:0}.muted{color:#6b7773;font-size:.82rem;line-height:1.6}.metric{display:flex;flex-direction:column;gap:4px}.metric .num{font-size:1.7rem;font-weight:800;color:#173f4d;line-height:1}.metric .label{font-size:.76rem;color:#6b7773}.progress{height:8px;background:#e8ece8;border-radius:99px;overflow:hidden}.bar{height:100%;background:#2e7d6f;width:0}.bar.bad{background:#b64a3b}.daily{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:14px}.task-list{display:flex;flex-direction:column;gap:8px}.task{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;border:1px solid #e1e5df;border-radius:7px;padding:10px;background:#fbfcfa}.task.done{background:#f1f7f4;border-color:#c8ded2}.task input{width:18px;height:18px;accent-color:#2e7d6f}.task strong{font-size:.9rem}.task span{font-size:.76rem;color:#6b7773}.pill{display:inline-flex;align-items:center;border:1px solid #d3dad3;border-radius:999px;padding:4px 8px;font-size:.72rem;color:#586761;background:#fff}.chips{display:flex;gap:6px;flex-wrap:wrap}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}.filters{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid #cbd3cd;background:#fff;color:#4c5c56;border-radius:999px;padding:7px 10px;font-size:.78rem}.chip:hover{border-color:#173f4d;color:#173f4d}.chip.active{background:#173f4d;border-color:#173f4d;color:#fff}.search{width:min(420px,100%);border:1px solid #cbd3cd;background:#fff;border-radius:6px;padding:9px 11px;color:#20332e}.study-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:14px}.item-list{display:flex;flex-direction:column;border:1px solid #dde2da;background:#fff;border-radius:8px;overflow:hidden}.example-row{padding:15px 16px;border-bottom:1px solid #e5e9e3}.example-row:last-child{border-bottom:0}.jp{font-size:1.02rem;line-height:1.75;color:#17262c}.cn{font-size:.82rem;color:#65726d;line-height:1.7;margin-top:5px}.meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:9px}.mini-btn{border:1px solid #cbd3cd;background:#fff;color:#43534d;border-radius:999px;padding:5px 9px;font-size:.72rem}.mini-btn:hover,.mini-btn.active{border-color:#173f4d;color:#173f4d}.mini-btn.solid{background:#173f4d;border-color:#173f4d;color:#fff}.question-card{border:1px solid #dde2da;background:#fff;border-radius:8px;padding:18px;margin-bottom:12px}.q-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px}.q-type{font-size:.72rem;color:#173f4d;font-weight:700;letter-spacing:.04em}.q-text{font-size:.98rem;font-weight:700;line-height:1.65;margin-bottom:10px}.script-box,.reading-box{background:#f4f6f2;border:1px solid #e1e6df;border-radius:7px;padding:13px;font-size:.9rem;line-height:1.9;white-space:pre-wrap;margin:10px 0}.script-box.hidden-text{display:none}.options{display:flex;flex-direction:column;gap:8px;margin-top:10px}.option{border:1px solid #d5dcd5;background:#fff;text-align:left;border-radius:7px;padding:10px 12px;font-size:.88rem;color:#263630;line-height:1.55}.option:hover:not(.answered){border-color:#173f4d}.option.correct{background:#eff8f2;border-color:#2e7d50;color:#1f6b3d}.option.wrong{background:#fff1ef;border-color:#b64a3b;color:#9b342a}.option.answered{cursor:default}.explain{display:none;border-left:3px solid #9fbfb6;margin-top:12px;padding:8px 10px;color:#52615d;font-size:.82rem;line-height:1.65;background:#f7f9f6}.explain.show{display:block}.pager{display:flex;justify-content:center;align-items:center;gap:6px;margin:16px 0;flex-wrap:wrap}.page{width:34px;height:34px;border:1px solid #cbd3cd;background:#fff;border-radius:6px;color:#4e5d57}.side-panel{display:flex;flex-direction:column;gap:14px}.stat-row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e5e9e3;padding:8px 0;font-size:.84rem}.stat-row:last-child{border-bottom:0}.strategy-list{display:grid;gap:10px}.strategy{border:1px solid #e0e5df;background:#fff;border-radius:8px;padding:14px}.strategy h3{font-size:.95rem;color:#173f4d;margin-bottom:7px}.strategy p,.strategy li{font-size:.84rem;color:#4d5d57;line-height:1.75}.strategy ul{padding-left:1.1rem}.empty{border:1px dashed #cbd3cd;border-radius:8px;padding:28px;text-align:center;color:#697773;background:#fff}.session{border:1px solid #d7ded6;background:#fff;border-radius:8px;padding:18px}.session-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.mode-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}.mode{border:1px solid #d3dad3;background:#fff;border-radius:7px;padding:12px;text-align:left}.mode.active{border-color:#173f4d;background:#eef6f3}.mode strong{display:block;font-size:.9rem;color:#20332e}.mode span{display:block;font-size:.74rem;color:#6b7773;margin-top:4px;line-height:1.45}.review-list{display:flex;flex-direction:column;gap:10px}.reading-title{font-size:1.05rem;font-weight:800;color:#20332e;margin-bottom:8px}.two-text{display:grid;grid-template-columns:1fr 1fr;gap:10px}.toast{position:fixed;right:18px;bottom:18px;background:#173f4d;color:#fff;border-radius:7px;padding:10px 12px;font-size:.82rem;box-shadow:0 8px 28px rgba(20,33,37,.18);display:none;z-index:20}.toast.show{display:block}@media(max-width:960px){.app{grid-template-columns:1fr}.side{position:relative;height:auto;display:block;padding:12px}.brand{display:none}.nav{flex-direction:row;overflow-x:auto}.nav button{white-space:nowrap}.sidebox{display:none}.topbar{position:relative;padding:14px 16px;align-items:flex-start;flex-direction:column}.content{padding:18px 14px 34px}.grid.cols-4,.grid.cols-3,.daily,.study-layout,.two-text,.mode-grid{grid-template-columns:1fr}.side-panel{order:-1}.toolbar{align-items:stretch}.search{width:100%}}
-.example-main{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}.example-main .mini-btn{margin-top:4px}.option{padding:9px 10px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center}.option-text{user-select:text;cursor:text;min-width:0}.option-audio{border:1px solid #cbd3cd;background:#fff;color:#43534d;border-radius:999px;padding:4px 8px;font-size:.7rem;white-space:nowrap}.option-audio:hover,.option-audio.solid{background:#173f4d;border-color:#173f4d;color:#fff}.volume-control{display:inline-flex;align-items:center;gap:7px;border:1px solid #cbd3cd;background:#fff;border-radius:6px;padding:6px 9px;color:#4d5d57;font-size:.78rem;min-height:36px}.volume-control input{width:96px;accent-color:#173f4d}@media(max-width:960px){.example-main{grid-template-columns:1fr}.example-main .mini-btn{justify-self:start}.volume-control{width:100%}.volume-control input{flex:1;width:auto}}
-</style>
-</head>
-<body>
-<div class="app">
-  <aside class="side">
-    <div class="brand"><strong>JLPT N1</strong><span>个人备考中心</span></div>
-    <nav class="nav" id="nav">
-      <button class="active" data-view="dashboard">学习台</button>
-      <button data-view="train">题型训练</button>
-      <button data-view="examples">文法词汇</button>
-      <button data-view="listening">听解题库</button>
-      <button data-view="reading">读解题库</button>
-      <button data-view="review">错题本</button>
-      <button data-view="strategy">考试策略</button>
-    </nav>
-    <div class="sidebox">
-      本地保存学习记录。建议每天先完成学习台任务，再进入错题本回收。
-    </div>
-  </aside>
-  <main class="main">
-    <header class="topbar">
-      <div class="top-title"><h1 id="viewTitle">学习台</h1><p id="viewSub">今天只看该做什么、哪里薄弱、下一题从哪开始。</p></div>
-      <div class="top-actions">
-        <label class="volume-control">音量 <input id="volumeSlider" type="range" min="0" max="100" step="1"></label>
-        <button class="btn" id="resumeBtn">继续训练</button>
-        <button class="btn primary" id="startQuickBtn">今日 20 题</button>
-      </div>
-    </header>
-    <div class="content">
-      <section class="view active" id="dashboard"></section>
-      <section class="view" id="train"></section>
-      <section class="view" id="examples"></section>
-      <section class="view" id="listening"></section>
-      <section class="view" id="reading"></section>
-      <section class="view" id="review"></section>
-      <section class="view" id="strategy"></section>
-    </div>
-  </main>
-</div>
-<div class="toast" id="toast"></div>
-<script src="data.js"></script>
-<script>
-const STORE_KEY='n1-center-v1';
-const PER_PAGE={examples:18,listening:8,reading:1,review:8};
-const titles={dashboard:['学习台','今天只看该做什么、哪里薄弱、下一题从哪开始。'],train:['题型训练','按 N1 实战题型做限量训练，答完立即复盘。'],examples:['文法词汇','例文、词汇、发音和收藏，服务输出与辨析。'],listening:['听解题库','按题型过滤听解材料，先听再看原文。'],reading:['读解题库','按考试阅读类型逐篇训练。'],review:['错题本','错题、收藏和最近薄弱点集中回收。'],strategy:['考试策略','用来约束复习节奏和考场动作的简明策略。']};
-const defaultStore={answers:{},favorites:{},daily:{},settings:{dailyTarget:20,volume:.9}};
-let store=loadStore();
-let state={view:'dashboard',examplePage:1,exampleQuery:'',listeningPage:1,listeningType:'all',readingPage:1,readingType:'all',reviewPage:1,reviewType:'wrong',session:null};
-let audioEl=null;
-
-function loadStore(){try{return {...defaultStore,...JSON.parse(localStorage.getItem(STORE_KEY)||'{}')}}catch(e){return structuredClone(defaultStore)}}
-function saveStore(){localStorage.setItem(STORE_KEY,JSON.stringify(store))}
-function todayKey(){return new Date().toISOString().slice(0,10)}
-function esc(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),1800)}
-function uid(kind,id,sub){return sub==null?`${kind}:${id}`:`${kind}:${id}:${sub}`}
-function favKey(kind,id){return `${kind}:${id}`}
-function isFav(kind,id){return !!store.favorites[favKey(kind,id)]}
-function setFav(kind,id,on){const k=favKey(kind,id);if(on)store.favorites[k]={kind,id,at:Date.now()};else delete store.favorites[k];saveStore();renderCurrent()}
-function answerKey(kind,id,sub){return uid(kind,id,sub)}
-function recordAnswer(kind,id,sub,correct,chosen,meta={}){store.answers[answerKey(kind,id,sub)]={kind,id,sub,correct,chosen,meta,at:Date.now()};const d=todayKey();store.daily[d]=store.daily[d]||{done:{},tasks:{}};store.daily[d].done[answerKey(kind,id,sub)]=correct;saveStore();updateTop()}
-function answerStats(){const vals=Object.values(store.answers);const total=vals.length;const wrong=vals.filter(a=>!a.correct).length;const correct=total-wrong;return{total,wrong,correct,rate:total?Math.round(correct/total*100):0}}
-function dailyDoneCount(){const d=store.daily[todayKey()];return d?Object.keys(d.done||{}).length:0}
-function currentVolume(){return Math.max(0,Math.min(1,Number(store.settings.volume??.9)))}
-function getAudio(){if(!audioEl)audioEl=new Audio();audioEl.volume=currentVolume();return audioEl}
-function playExample(id,btn){const a=getAudio();const src=`audio/${String(id).padStart(4,'0')}.mp3`;document.querySelectorAll('.mini-btn.solid.playing').forEach(b=>b.classList.remove('playing','solid'));if(a.src.includes(src)&&!a.paused){a.pause();return}a.src=src;a.play().catch(()=>toast('音频播放失败'));if(btn)btn.classList.add('solid','playing');a.onended=()=>btn&&btn.classList.remove('solid','playing')}
-function playListening(id,btn){const a=getAudio();const src=`listening_audio/${String(id).padStart(4,'0')}.mp3`;document.querySelectorAll('.mini-btn.solid.playing').forEach(b=>b.classList.remove('playing','solid'));if(a.src.includes(src)&&!a.paused){a.pause();return}a.src=src;a.play().catch(()=>{toast('本题真人感音频未生成，暂用浏览器朗读');const text=document.getElementById(`l-script-${id}`)?.textContent||'';speak(text,btn)});if(btn)btn.classList.add('solid','playing');a.onended=()=>btn&&btn.classList.remove('solid','playing');a.onerror=()=>btn&&btn.classList.remove('solid','playing')}
-function playOptionAudio(kind,id,sub,idx,text,btn,event){event.stopPropagation();const a=getAudio();const src=kind==='listening'?`option_audio/listening/${String(id).padStart(4,'0')}_${idx+1}.mp3`:`option_audio/reading/${String(id+1).padStart(4,'0')}_${sub+1}_${idx+1}.mp3`;document.querySelectorAll('.option-audio.solid').forEach(b=>b.classList.remove('solid'));if(a.src.includes(src)&&!a.paused){a.pause();return}a.src=src;a.play().catch(()=>{toast('选项音频未生成，暂用浏览器朗读');speakOption(text,btn,event)});btn&&btn.classList.add('solid');a.onended=()=>btn&&btn.classList.remove('solid');a.onerror=()=>btn&&btn.classList.remove('solid')}
-function speak(text,btn){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';u.rate=.9;u.volume=currentVolume();btn&&btn.classList.add('solid');u.onend=()=>btn&&btn.classList.remove('solid');u.onerror=()=>btn&&btn.classList.remove('solid');speechSynthesis.speak(u)}
-function speakOption(text,btn,event){event.stopPropagation();speechSynthesis.cancel();const clean=String(text).replace(/^\s*\d+[.．]\s*/,'');const u=new SpeechSynthesisUtterance(clean);u.lang='ja-JP';u.rate=.9;u.volume=currentVolume();btn&&btn.classList.add('solid');u.onend=()=>btn&&btn.classList.remove('solid');u.onerror=()=>btn&&btn.classList.remove('solid');speechSynthesis.speak(u)}
-function optionTextClick(event){if(window.getSelection().toString())event.stopPropagation()}
-function setVolume(v){store.settings.volume=Number(v)/100;saveStore();if(audioEl)audioEl.volume=currentVolume()}
-
-document.getElementById('nav').addEventListener('click',e=>{const b=e.target.closest('button[data-view]');if(b)switchView(b.dataset.view)});
-document.getElementById('startQuickBtn').onclick=()=>startSession('mixed');
-document.getElementById('resumeBtn').onclick=()=>state.session?switchView('train'):startSession('mixed');
-document.getElementById('volumeSlider').value=Math.round(currentVolume()*100);
-document.getElementById('volumeSlider').addEventListener('input',e=>setVolume(e.target.value));
-window.addEventListener('beforeunload',()=>speechSynthesis.cancel());
-
-function switchView(view){state.view=view;document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===view));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===view));updateTop();renderCurrent()}
-function updateTop(){const [h,p]=titles[state.view];document.getElementById('viewTitle').textContent=h;document.getElementById('viewSub').textContent=p;document.getElementById('resumeBtn').textContent=state.session?'继续本组':'继续训练'}
-function renderCurrent(){({dashboard:renderDashboard,train:renderTrain,examples:renderExamples,listening:renderListening,reading:renderReading,review:renderReview,strategy:renderStrategy}[state.view])()}
-
-function renderDashboard(){const s=answerStats();const d=dailyDoneCount();const target=store.settings.dailyTarget;const taskState=(store.daily[todayKey()]||{}).tasks||{};document.getElementById('dashboard').innerHTML=`
-  <div class="grid cols-4">
-    ${metric('今日完成',d,target+' 题',Math.min(100,d/target*100))}
-    ${metric('累计答题',s.total,'题',Math.min(100,s.total/300*100))}
-    ${metric('正确率',s.rate,'%',s.rate)}
-    ${metric('待回收错题',s.wrong,'题',Math.min(100,s.wrong/80*100),'bad')}
-  </div>
-  <div class="daily">
-    <div class="panel"><div class="panel-head"><h2>今日任务</h2><button class="btn" onclick="resetTodayTasks()">重置</button></div><div class="task-list">
-      ${task('warm','文法例文 20 条','先听读，再遮住中文复述。',taskState.warm)}
-      ${task('listen','听解 10 题','课题/ポイント各 5 题，原文最后看。',taskState.listen)}
-      ${task('read','读解 2 篇','一篇短中篇，一篇长文或统合。',taskState.read)}
-      ${task('review','错题回收 15 分钟','只处理昨天和今天错题。',taskState.review)}
-    </div></div>
-    <div class="panel"><h2>下一步</h2><div class="strategy-list">
-      <button class="btn primary" onclick="startSession('mixed')">开始今日 20 题</button>
-      <button class="btn" onclick="startSession('weak')">只练薄弱题型</button>
-      <button class="btn" onclick="switchView('review')">进入错题本</button>
-      <button class="btn" onclick="switchView('strategy')">看考场策略</button>
-    </div></div>
-  </div>
-  <div class="grid cols-3" style="margin-top:14px">
-    ${typePanel('听解正确率',listeningTypes().map(t=>typeLine(t,accuracyFor('listening',t))))}
-    ${typePanel('读解正确率',readingTypes().map(t=>typeLine(t,accuracyFor('reading',t))))}
-    ${typePanel('内容规模',[`例文 ${EXAMPLES.length} 条`,`听解 ${LISTENING.length} 题`,`读解 ${READINGS.length} 篇`,`本地错题 ${s.wrong} 条`])}
-  </div>`}
-function metric(label,num,unit,pct,cls=''){return`<div class="panel metric"><div class="num">${num}</div><div class="label">${label} / ${unit}</div><div class="progress"><div class="bar ${cls}" style="width:${Math.min(100,pct||0)}%"></div></div></div>`}
-function task(id,title,desc,done){return`<label class="task ${done?'done':''}"><input type="checkbox" ${done?'checked':''} onchange="toggleTask('${id}',this.checked)"><div><strong>${title}</strong><br><span>${desc}</span></div><span class="pill">今日</span></label>`}
-function toggleTask(id,on){const d=todayKey();store.daily[d]=store.daily[d]||{done:{},tasks:{}};store.daily[d].tasks[id]=on;saveStore();renderDashboard()}
-function resetTodayTasks(){const d=todayKey();if(store.daily[d])store.daily[d].tasks={};saveStore();renderDashboard()}
-function typePanel(title,rows){return`<div class="panel"><h2>${title}</h2>${rows.join('')}</div>`}
-function typeLine(name,data){if(typeof data==='object')return`<div class="stat-row"><span>${esc(name)}</span><strong>${data.total?data.rate+'%':'未练'}</strong></div>`;return`<div class="stat-row"><span>${esc(data)}</span></div>`}
-function listeningTypes(){return['課題理解','ポイント理解','概要理解','即時応答']}
-function readingTypes(){return['内容理解（短文）','内容理解（中文）','内容理解（長文）','統合理解','主張理解（長文）','情報検索']}
-function accuracyFor(kind,type){const vals=Object.values(store.answers).filter(a=>a.kind===kind&&a.meta.type===type);const correct=vals.filter(a=>a.correct).length;return{total:vals.length,rate:vals.length?Math.round(correct/vals.length*100):0}}
-
-function startSession(mode){const pool=buildPool(mode);state.session={mode,index:0,items:pool.slice(0,20),answered:{}};switchView('train')}
-function buildPool(mode){let items=[];LISTENING.forEach(q=>items.push({kind:'listening',id:q.id,type:q.type}));READINGS.forEach((r,ri)=>(r.questions||[]).forEach((q,qi)=>items.push({kind:'reading',id:ri,sub:qi,type:r.type})));if(mode==='weak'){items=items.sort((a,b)=>accuracyFor(a.kind,a.type).rate-accuracyFor(b.kind,b.type).rate)}else if(mode==='wrong'){const wrong=Object.values(store.answers).filter(a=>!a.correct);items=wrong.map(a=>({kind:a.kind,id:a.id,sub:a.sub,type:a.meta.type}))}else{items=items.sort(()=>Math.random()-.5)}return items}
-function renderTrain(){const root=document.getElementById('train');if(!state.session){root.innerHTML=`<div class="session"><div class="session-top"><div><h2>选择训练模式</h2><p class="muted">建议默认混合 20 题，训练考试切换能力。</p></div></div>${modeButtons()}</div>`;return}const ses=state.session;const item=ses.items[ses.index];if(!item){root.innerHTML=`<div class="session"><h2>本组完成</h2>${sessionSummary()}<div class="top-actions" style="margin-top:14px"><button class="btn primary" onclick="startSession('mixed')">再来 20 题</button><button class="btn" onclick="switchView('review')">回收错题</button></div></div>`;return}root.innerHTML=`<div class="session"><div class="session-top"><div><h2>${ses.mode==='weak'?'薄弱训练':ses.mode==='wrong'?'错题回练':'混合训练'}</h2><p class="muted">第 ${ses.index+1} / ${ses.items.length} 题</p></div><div class="top-actions"><button class="btn" onclick="prevSession()">上一题</button><button class="btn primary" onclick="nextSession()">下一题</button></div></div><div class="progress"><div class="bar" style="width:${ses.index/ses.items.length*100}%"></div></div></div><div style="margin-top:14px">${renderAnyQuestion(item,true)}</div>`}
-function modeButtons(){return`<div class="mode-grid"><button class="mode" onclick="startSession('mixed')"><strong>混合 20 题</strong><span>模拟考场题型切换</span></button><button class="mode" onclick="startSession('weak')"><strong>薄弱优先</strong><span>按最低正确率排序</span></button><button class="mode" onclick="startSession('wrong')"><strong>错题回练</strong><span>只抽已错题目</span></button><button class="mode" onclick="switchView('listening')"><strong>专项题库</strong><span>手动选择题型</span></button></div>`}
-function nextSession(){if(state.session){state.session.index++;renderTrain();window.scrollTo(0,0)}}function prevSession(){if(state.session&&state.session.index>0){state.session.index--;renderTrain();window.scrollTo(0,0)}}
-function sessionSummary(){const keys=Object.keys(state.session.answered);const ok=Object.values(state.session.answered).filter(Boolean).length;return`<div class="grid cols-3"><div class="panel metric"><div class="num">${ok}</div><div class="label">正确</div></div><div class="panel metric"><div class="num">${keys.length-ok}</div><div class="label">错误</div></div><div class="panel metric"><div class="num">${keys.length?Math.round(ok/keys.length*100):0}%</div><div class="label">本组正确率</div></div></div>`}
-
-function renderExamples(){const q=state.exampleQuery.trim().toLowerCase();let arr=EXAMPLES.filter(e=>!q||e.jp.includes(q)||e.cn.includes(q)||e.grammar.toLowerCase().includes(q)||e.vocab.toLowerCase().includes(q));const totalPages=Math.max(1,Math.ceil(arr.length/PER_PAGE.examples));state.examplePage=Math.min(state.examplePage,totalPages);const page=arr.slice((state.examplePage-1)*PER_PAGE.examples,state.examplePage*PER_PAGE.examples);document.getElementById('examples').innerHTML=`<div class="toolbar"><input class="search" value="${esc(state.exampleQuery)}" placeholder="搜索文法、词汇、日文或中文" oninput="state.exampleQuery=this.value;state.examplePage=1;renderExamples()"><div class="chips"><span class="pill">${arr.length} 条</span><button class="btn" onclick="state.exampleQuery='';renderExamples()">清空</button></div></div><div class="study-layout"><div class="item-list">${page.map(renderExample).join('')||'<div class="empty">没有匹配例文</div>'}</div><aside class="side-panel"><div class="panel"><h2>用法</h2><p class="muted">每条例文至少做三步：听一遍、跟读一遍、遮住中文复述。收藏的是考前最后一天要看的材料。</p></div><div class="panel"><h2>分页</h2>${pager('examplePage',state.examplePage,totalPages,'renderExamples')}</div></aside></div>`}
-function renderExample(e){return`<div class="example-row"><div class="example-main"><div><div class="jp">${esc(e.jp)}</div><div class="cn">${esc(e.cn)}</div></div><button class="mini-btn" onclick="playExample(${e.id},this)">再生</button></div><div class="meta"><span class="pill">${esc(e.grammar)}</span><span class="pill">${esc(e.vocab)}</span><button class="mini-btn ${isFav('example',e.id)?'solid':''}" onclick="setFav('example',${e.id},${!isFav('example',e.id)})">收藏</button></div></div>`}
-
-function renderListening(){let arr=state.listeningType==='all'?LISTENING:LISTENING.filter(q=>q.type===state.listeningType);const totalPages=Math.max(1,Math.ceil(arr.length/PER_PAGE.listening));state.listeningPage=Math.min(state.listeningPage,totalPages);const page=arr.slice((state.listeningPage-1)*PER_PAGE.listening,state.listeningPage*PER_PAGE.listening);document.getElementById('listening').innerHTML=`${tabs(['all',...listeningTypes()],'listeningType','listeningPage','renderListening')}<div class="study-layout"><div>${page.map(q=>renderListeningQuestion(q,false)).join('')}</div><aside class="side-panel"><div class="panel"><h2>听解规则</h2><p class="muted">先播放音频或浏览器朗读，答完再展开原文。不要边看原文边选。</p></div>${pagerPanel('listeningPage',state.listeningPage,totalPages,'renderListening')}</aside></div>`}
-function renderListeningQuestion(q,inSession){return`<div class="question-card"><div class="q-head"><div><div class="q-type">${esc(q.type)} / #${q.id}</div></div><div class="chips"><button class="mini-btn" onclick="playListening(${q.id},this)">听</button><button class="mini-btn ${isFav('listening',q.id)?'solid':''}" onclick="setFav('listening',${q.id},${!isFav('listening',q.id)})">收藏</button></div></div><span id="l-script-${q.id}" class="hidden">${esc(q.script)}</span><div class="q-text">${esc(q.question||'次の応答として最も適切なものを選びなさい。')}</div>${optionsHtml('listening',q.id,null,q.options,q.answer,{type:q.type},inSession)}<button class="mini-btn" style="margin-top:12px" onclick="document.getElementById('script-show-${q.id}').classList.toggle('hidden-text')">原文</button><div class="script-box hidden-text" id="script-show-${q.id}">${esc(q.script)}</div><div class="explain" id="exp-listening-${q.id}">${esc(q.explanation||'')}</div></div>`}
-
-function renderReading(){let arr=state.readingType==='all'?READINGS:READINGS.filter(r=>r.type===state.readingType);const totalPages=Math.max(1,Math.ceil(arr.length/PER_PAGE.reading));state.readingPage=Math.min(state.readingPage,totalPages);const r=arr[state.readingPage-1];document.getElementById('reading').innerHTML=`${tabs(['all',...readingTypes()],'readingType','readingPage','renderReading')}<div class="study-layout"><div>${r?renderReadingArticle(r,READINGS.indexOf(r),false):'<div class="empty">没有文章</div>'}</div><aside class="side-panel"><div class="panel"><h2>读解动作</h2><p class="muted">先看设问，再读首尾段和转折句。信息检索题只定位，不逐字精读。</p></div>${pagerPanel('readingPage',state.readingPage,totalPages,'renderReading')}</aside></div>`}
-function renderReadingArticle(r,ri,inSession,onlyQi=null){let text=r.type==='統合理解'?`<div class="two-text"><div><div class="q-type">文章 A</div><div class="reading-box">${esc(r.contentA||'')}</div></div><div><div class="q-type">文章 B</div><div class="reading-box">${esc(r.contentB||'')}</div></div></div>`:`<div class="reading-box">${esc(r.content||'')}</div>`;let qs=(r.questions||[]).map((q,qi)=>({q,qi}));if(onlyQi!=null)qs=qs.filter(x=>x.qi===onlyQi);return`<div class="question-card"><div class="q-head"><div><div class="q-type">${esc(r.type)}</div><div class="reading-title">${esc(r.title||'読解問題')}</div></div><button class="mini-btn ${isFav('reading',ri)?'solid':''}" onclick="setFav('reading',${ri},${!isFav('reading',ri)})">收藏</button></div>${text}${qs.map(({q,qi})=>`<div style="margin-top:16px"><div class="q-text">問${qi+1}. ${esc(q.question)}</div>${optionsHtml('reading',ri,qi,q.options,(q.answer||1)-1,{type:r.type,title:r.title},inSession)}</div>`).join('')}</div>`}
-
-function optionsHtml(kind,id,sub,options,answer,meta,inSession){return`<div class="options">${(options||[]).map((o,i)=>`<button class="option" id="opt-${kind}-${id}-${sub??'x'}-${i}" onclick='chooseAnswer(${JSON.stringify(kind)},${JSON.stringify(id)},${JSON.stringify(sub)},${i},${answer},${JSON.stringify(meta)},${inSession})'><span class="option-text" onclick="optionTextClick(event)">${esc(o)}</span><span class="option-audio" onclick='playOptionAudio(${JSON.stringify(kind)},${JSON.stringify(id)},${JSON.stringify(sub)},${i},${JSON.stringify(o)},this,event)'>听</span></button>`).join('')}</div>`}
-function chooseAnswer(kind,id,sub,chosen,answer,meta,inSession){if(window.getSelection().toString())return;const correct=chosen===answer;recordAnswer(kind,id,sub,correct,chosen,meta);if(inSession&&state.session)state.session.answered[answerKey(kind,id,sub)]=correct;const prefix=`opt-${kind}-${id}-${sub??'x'}-`;document.querySelectorAll(`[id^="${prefix}"]`).forEach((b,i)=>{b.classList.add('answered');if(i===answer)b.classList.add('correct');else if(i===chosen)b.classList.add('wrong')});const exp=document.getElementById(`exp-${kind}-${id}`);if(exp)exp.classList.add('show')}
-function renderAnyQuestion(item,inSession){if(item.kind==='listening')return renderListeningQuestion(LISTENING.find(q=>q.id===item.id),inSession);const r=READINGS[item.id];return renderReadingArticle(r,item.id,inSession,item.sub)}
-
-function renderReview(){const vals=Object.values(store.answers).sort((a,b)=>b.at-a.at);const favs=Object.values(store.favorites).sort((a,b)=>b.at-a.at);let rows=[];if(state.reviewType==='wrong')rows=vals.filter(a=>!a.correct).map(a=>({kind:a.kind,id:a.id,sub:a.sub,type:a.meta.type}));else if(state.reviewType==='recent')rows=vals.map(a=>({kind:a.kind,id:a.id,sub:a.sub,type:a.meta.type}));else rows=favs.map(f=>({kind:f.kind,id:f.id}));const totalPages=Math.max(1,Math.ceil(rows.length/PER_PAGE.review));state.reviewPage=Math.min(state.reviewPage,totalPages);const page=rows.slice((state.reviewPage-1)*PER_PAGE.review,state.reviewPage*PER_PAGE.review);document.getElementById('review').innerHTML=`<div class="toolbar"><div class="filters"><button class="chip ${state.reviewType==='wrong'?'active':''}" onclick="state.reviewType='wrong';state.reviewPage=1;renderReview()">错题</button><button class="chip ${state.reviewType==='recent'?'active':''}" onclick="state.reviewType='recent';state.reviewPage=1;renderReview()">最近</button><button class="chip ${state.reviewType==='fav'?'active':''}" onclick="state.reviewType='fav';state.reviewPage=1;renderReview()">收藏</button></div><button class="btn danger" onclick="clearWrong()">清空错题记录</button></div><div class="review-list">${page.map(x=>renderReviewItem(x)).join('')||'<div class="empty">当前没有内容</div>'}</div>${pager('reviewPage',state.reviewPage,totalPages,'renderReview')}`}
-function renderReviewItem(x){if(x.kind==='example')return renderExample(EXAMPLES.find(e=>e.id===x.id));if(x.kind==='listening')return renderListeningQuestion(LISTENING.find(q=>q.id===x.id),false);if(x.kind==='reading'){const r=READINGS[x.id];return renderReadingArticle(r,x.id,false,x.sub)}return''}
-function clearWrong(){Object.keys(store.answers).forEach(k=>{if(!store.answers[k].correct)delete store.answers[k]});saveStore();renderReview();toast('已清空错题记录')}
-
-function renderStrategy(){document.getElementById('strategy').innerHTML=`<div class="grid cols-3"><div class="strategy"><h3>每日节奏</h3><ul><li>例文输入 20 条，只选高频和陌生项收藏。</li><li>听解至少 10 题，答前不看原文。</li><li>读解至少 2 篇，限时后再精读。</li><li>错题只做一件事：写清错因。</li></ul></div><div class="strategy"><h3>听解</h3><ul><li>課題理解抓行动、时间、对象。</li><li>ポイント理解抓转折后的评价。</li><li>概要理解不要陷入细节，选主旨。</li><li>即時応答重视场景和敬语关系。</li></ul></div><div class="strategy"><h3>读解</h3><ul><li>先读问题，划定位词。</li><li>看到しかし、つまり、むしろ要减速。</li><li>长文先抓主张，再回原文验证选项。</li><li>信息检索题按表格字段定位。</li></ul></div><div class="strategy"><h3>文法词汇</h3><ul><li>不背孤立词，绑定例句和语气。</li><li>相似文型放一起辨析。</li><li>能用日语复述才算掌握。</li></ul></div><div class="strategy"><h3>考场分配</h3><ul><li>不会题先标记，不在单题上纠缠。</li><li>读解优先保证信息检索和短文正确率。</li><li>听解错过一句时立刻回到下一句。</li></ul></div><div class="strategy"><h3>最后七天</h3><ul><li>停止扩新材料，主攻错题和收藏。</li><li>每天一组混合训练保持手感。</li><li>复盘只看错因，不追求页面完成感。</li></ul></div></div>`}
-
-function tabs(values,key,pageKey,render){return`<div class="toolbar"><div class="filters">${values.map(v=>`<button class="chip ${state[key]===v?'active':''}" onclick="state.${key}='${v}';state.${pageKey}=1;${render}()">${v==='all'?'全部':esc(v)}</button>`).join('')}</div></div>`}
-function pagerPanel(key,cur,total,render){return`<div class="panel"><h2>分页</h2>${pager(key,cur,total,render)}</div>`}
-function pager(key,cur,total,render){if(total<=1)return`<span class="muted">1 / 1</span>`;return`<div class="pager"><button class="page" ${cur===1?'disabled':''} onclick="state.${key}=1;${render}()">«</button><button class="page" ${cur===1?'disabled':''} onclick="state.${key}--;${render}()">‹</button><span class="pill">${cur} / ${total}</span><button class="page" ${cur===total?'disabled':''} onclick="state.${key}++;${render}()">›</button><button class="page" ${cur===total?'disabled':''} onclick="state.${key}=${total};${render}()">»</button></div>`}
-
-renderCurrent();updateTop();
-</script>
-</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="JLPT N1 备考中心：听解、读解、文法词汇三线练习，错题自动回收，记录只存本机。" />
+    <meta name="color-scheme" content="light dark" />
+    <title>JLPT N1 备考中心</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>本站需要启用 JavaScript 才能加载题库与学习记录。</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

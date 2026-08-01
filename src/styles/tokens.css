@@ -1,0 +1,184 @@
+/* =============================================================
+   JLPT N1 备考中心 — Design Tokens (SINGLE SOURCE OF TRUTH)
+   Canonical runtime path: src/styles/tokens.css
+   Register: Product (标杆 Linear / Notion) · 主题「墨と藍」Ink & Sea
+   Scales: DESIGN_VARIANCE 3 · MOTION_INTENSITY 2 · VISUAL_DENSITY 7
+   四层架构: A1-identity / A1-structure / A2 / B-slot / C-extension
+
+   命名约定（与架构 tokens 契约一致）:
+     - 颜色一律 --color-*，组件禁止硬编码，只用 var(--color-*)
+     - 结构类保留语义前缀: --space-* / --radius-* / --text-* / --font-* / --motion-*
+   仅允许的硬编码色: #fff / #000
+   基线: 沿用旧版单文件配色迭代（非另起炉灶）
+   ============================================================= */
+
+/* -------------------------------------------------------------
+   LIGHT THEME (default — 白天学习台)
+   ------------------------------------------------------------- */
+:root {
+  color-scheme: light;
+
+  /* ---- Surface (A1) ---- */
+  --color-bg:            #F6F7F4;   /* 页面底 (旧版基线) */
+  --color-surface:       #FFFFFF;   /* 卡片/容器 */
+  --color-surface-2:     #EEF2EE;   /* 三级表面/侧栏底 (旧版基线) B-slot */
+
+  /* ---- Foreground (A1) ---- */
+  --color-text:          #1F2933;   /* 主文本 (旧版基线) ~13:1 */
+  --color-text-2:        #3C4A44;   /* 次级文本 B-slot ~8:1 */
+  --color-text-muted:    #66756F;   /* 副文本/标题辅助 (旧版基线) ~4.9:1 AA */
+  --color-text-meta:     #8A958E;   /* 三级/元数据 (仅非关键) B-slot */
+
+  /* ---- Border (A1) ---- */
+  --color-border:        #D9DFD7;   /* 默认边框 (旧版基线) */
+  --color-border-soft:   #E8ECE6;   /* 内部行分隔 B-slot */
+  --color-border-strong: #C7D0C8;   /* hover/强调边框 B-slot */
+
+  /* ---- Primary / 品牌 accent (墨蓝 · 旧版基线) — 每屏 ≤2 处可见 ---- */
+  --color-primary:        #173F4D;  /* 深青 ink-sea (白字 ~10:1 AAA) */
+  --color-primary-hover:  #10303B;
+  --color-primary-active: #0B2530;
+  --color-primary-on:     #FFFFFF;  /* primary 背景上的前景 (A2) */
+  --color-primary-soft:   #E4ECEC;  /* 选中态浅底 (nav active/chip) C-ext */
+  --color-focus-ring:     rgba(23, 63, 77, 0.32);
+
+  /* ---- Semantic — 答题反馈 (旧版 correct/wrong 基线) ---- */
+  --color-success:        #2E7D50;  /* 正解 边框/中调 */
+  --color-success-soft:   #EFF8F2;  /* 正解浅底 */
+  --color-success-strong: #1F6B3D;  /* 正解文字 */
+  --color-danger:         #B84A3D;  /* 错误/清空 (旧版基线) */
+  --color-danger-soft:    #FFF1EF;  /* 错误浅底 */
+  --color-danger-strong:  #9B342A;  /* 错误文字/危险深 (旧版基线) */
+  --color-warn:           #B4790E;  /* 提示 琥珀 */
+  --color-warn-soft:      #FBF1DE;
+
+  /* ---- Typography — Fonts (A2) ---- */
+  --font-ui:      "Inter", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+  --font-jp:      "Noto Sans JP", "Inter", system-ui, sans-serif;          /* 日文 UI/例文/题干/选项 */
+  --font-reading: "Noto Serif JP", "Noto Sans JP", serif;                  /* 读解长文正文 (明朝体) */
+  --font-cn:      "Noto Sans SC", "Inter", system-ui, sans-serif;          /* 中文译文/说明 */
+  --font-mono:    "JetBrains Mono", "SF Mono", ui-monospace, monospace;     /* 数字/统计 (等宽) */
+
+  /* ---- Type scale (A1-structure, base 16px) ---- */
+  --text-xs:   0.75rem;    /* 12 — tag/meta */
+  --text-sm:   0.8125rem;  /* 13 — 次要 */
+  --text-base: 0.9375rem;  /* 15 — UI 默认 (密而可读) */
+  --text-md:   1rem;       /* 16 — 读解正文下限 */
+  --text-lg:   1.125rem;   /* 18 — 日文例句 */
+  --text-xl:   1.25rem;    /* 20 — 卡片标题 */
+  --text-2xl:  1.5rem;     /* 24 — 视图大标题 */
+  --text-3xl:  1.875rem;   /* 30 — 仪表盘数字 */
+
+  /* ---- Leading & Tracking (A1-structure) ---- */
+  --leading-jp:      1.85;  /* 日文 */
+  --leading-reading: 1.95;  /* 读解长文 */
+  --leading-body:    1.6;
+  --leading-tight:   1.25;  /* 标题/数字 */
+  --tracking-jp:     0.02em;
+  --tracking-caps:   0.08em; /* ALL CAPS 分组标签 */
+  --tracking-tight: -0.01em; /* ≥24px 标题 */
+
+  /* ---- Font weights (三级) ---- */
+  --fw-read:     400;
+  --fw-emphasis: 500;
+  --fw-announce: 700;
+
+  /* ---- Spacing (A2, 4px grid) ---- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px;
+
+  /* ---- Radius (≤14px, 反过度圆角) ---- */
+  --radius-sm:   6px;   /* button/input/chip */
+  --radius-md:   10px;  /* card */
+  --radius-lg:   14px;  /* panel/modal */
+  --radius-pill: 999px; /* audio 圆钮/tag */
+
+  /* ---- Elevation (product: 优先边框, 阴影克制) ---- */
+  --elev-flat:    none;
+  --elev-ring:    0 0 0 1px var(--color-border);
+  --elev-raised:  0 1px 2px rgba(20,30,25,0.04), 0 4px 12px rgba(20,30,25,0.06);
+  --elev-overlay: 0 8px 28px rgba(20,30,25,0.14);
+
+  /* ---- Focus & Motion (MOTION_INTENSITY 2) ---- */
+  --focus-ring:   0 0 0 3px var(--color-focus-ring);
+  --motion-fast:  120ms;
+  --motion-base:  180ms;
+  --motion-slow:  240ms;
+  --ease:         cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---- Layout (A1-structure) ---- */
+  --sidebar-w:         248px;
+  --sidebar-rail-w:    64px;
+  --container-max:     1160px;
+  --gutter-desktop:    28px;
+  --gutter-tablet:     20px;
+  --gutter-phone:      16px;
+  --section-y-desktop: 32px;
+  --section-y-tablet:  24px;
+  --section-y-phone:   16px;
+  --tap-min:           44px;   /* 触摸目标下限 WCAG 2.5.5 */
+}
+
+/* -------------------------------------------------------------
+   DARK THEME (夜间学习 — 降眼疲劳)
+   通过亮度递进表达层级, 而非阴影
+   ------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg:            #0E1512;
+  --color-surface:       #151D19;
+  --color-surface-2:     #1C2723;
+
+  --color-text:          #E8EDE9;
+  --color-text-2:        #C2CCC6;
+  --color-text-muted:    #94A099;   /* ~5:1 on bg */
+  --color-text-meta:     #6E7A73;
+
+  --color-border:        rgba(255,255,255,0.10);
+  --color-border-soft:   rgba(255,255,255,0.06);
+  --color-border-strong: rgba(255,255,255,0.16);
+
+  /* 暗底 primary 需提亮 (深 #173F4D 在暗底不可见); primary-on 翻转为深色 */
+  --color-primary:        #4DB3AC;
+  --color-primary-hover:  #5FC4BC;
+  --color-primary-active: #3A9A93;
+  --color-primary-on:     #06231F;   /* 深字压在亮 teal 上 ~7:1 */
+  --color-primary-soft:   rgba(77,179,172,0.15);
+  --color-focus-ring:     rgba(77,179,172,0.40);
+
+  --color-success:        #57C08E;
+  --color-success-soft:   rgba(87,192,142,0.14);
+  --color-success-strong: #7ED3A8;
+  --color-danger:         #E5695C;
+  --color-danger-soft:    rgba(229,105,92,0.15);
+  --color-danger-strong:  #F0897E;
+  --color-warn:           #D8A43C;
+  --color-warn-soft:      rgba(216,164,60,0.15);
+
+  --elev-ring:    0 0 0 1px var(--color-border);
+  --elev-raised:  0 0 0 1px var(--color-border-soft), 0 6px 20px rgba(0,0,0,0.35);
+  --elev-overlay: 0 0 0 1px var(--color-border-soft), 0 12px 36px rgba(0,0,0,0.5);
+}
+
+/* -------------------------------------------------------------
+   Reduced motion — 关闭非必要动效
+   ------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   Focus-visible baseline — 键盘可达
+   ------------------------------------------------------------- */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
