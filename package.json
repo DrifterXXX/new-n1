@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && node scripts/prune-woff.mjs",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
     "lint": "eslint .",
