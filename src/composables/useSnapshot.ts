@@ -2,7 +2,7 @@
  * 备份导入/导出的 UI 编排(AC-05)。
  * snapshot-service 保持纯净(不碰 DOM), 下载/读文件/水合都在这里。
  */
-import { ref } from 'vue';
+import { ref, type Ref } from 'vue';
 import {
   SnapshotError,
   exportSnapshot,
@@ -41,8 +41,8 @@ function readFile(file: File): Promise<string> {
 }
 
 export function useSnapshot(): {
-  busy: import('vue').Ref<boolean>;
-  errorText: import('vue').Ref<string | null>;
+  busy: Ref<boolean>;
+  errorText: Ref<string | null>;
   onExport: () => Promise<void>;
   onImport: (file: File) => Promise<void>;
 } {

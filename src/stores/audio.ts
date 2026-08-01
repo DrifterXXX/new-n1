@@ -30,6 +30,9 @@ export const useAudioStore = defineStore('audio', () => {
   const currentTime = ref(0);
   const duration = ref(0);
   const usingTts = ref(false);
+  /** 最近一次 play 的入参: 暂停后 resume / TTS 重读要用, 与 currentKey 同生命周期。 */
+  const lastSrc = ref('');
+  const lastOptions = ref<PlayOptions>({});
 
   let el: HTMLAudioElement | null = null;
   let ttsText = '';
@@ -46,6 +49,8 @@ export const useAudioStore = defineStore('audio', () => {
     currentTime.value = 0;
     duration.value = 0;
     usingTts.value = false;
+    lastSrc.value = '';
+    lastOptions.value = {};
   }
 
   function cancelTts(): void {
@@ -111,6 +116,8 @@ export const useAudioStore = defineStore('audio', () => {
     ttsText = options.text ?? '';
     label.value = options.label ?? '';
     currentKey.value = key;
+    lastSrc.value = src;
+    lastOptions.value = options;
     usingTts.value = false;
     status.value = 'loading';
     if (!audio) {
@@ -132,6 +139,22 @@ export const useAudioStore = defineStore('audio', () => {
     }
     el?.pause();
     status.value = 'idle';
+  }
+
+  /**
+   * 暂停后继续播放(dock 暂停态仍可见, 见 AudioMiniDock)。
+   * 从暂停位置续播而非回到 0, 这样「暂停 → 拖进度条定位 → 继续」是连贯的。
+   * TTS 朗读无时间轴不能续播, 只能整条重读; 媒体元素已被 stop 清空时退化为重新起播。
+   */
+  function resume(): void {
+    const key = currentKey.value;
+    if (!key || !lastSrc.value) return;
+    if (usingTts.value || !el || !el.src) {
+      play(key, lastSrc.value, lastOptions.value);
+      return;
+    }
+    status.value = 'loading';
+    void el.play().catch(() => speak(ttsText));
   }
 
   /** 同一条目再点 = 暂停; 不同条目 = 切换播放。 */
@@ -164,6 +187,6 @@ export const useAudioStore = defineStore('audio', () => {
 
   return {
     status, currentKey, label, currentTime, duration, usingTts, progress,
-    isActive, play, pause, toggle, stop, seek, speak,
+    isActive, play, pause, resume, toggle, stop, seek, speak,
   };
 });

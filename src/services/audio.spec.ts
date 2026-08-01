@@ -111,3 +111,30 @@ describe('audio store · seek(AC-06 逐句定位)', () => {
     expect(el.currentTime).toBe(0);
   });
 });
+
+describe('audio store · resume(暂停态仍可定位后继续)', () => {
+  it('暂停后保留当前条目与时间轴 —— dock 据此继续显示', () => {
+    const audio = playing();
+    audio.pause();
+    expect(audio.currentKey).toBe('listening-01');
+    expect(audio.duration).toBe(10);
+  });
+
+  it('暂停 → 拖动定位 → resume 从定位点续播, 不回到开头', () => {
+    const audio = playing();
+    audio.pause();
+    audio.seek(0.5);
+    audio.resume();
+    el.emit('playing');
+    expect(el.currentTime).toBeCloseTo(5, 5);
+    expect(audio.status).toBe('playing');
+  });
+
+  it('stop 后已无可续播条目, resume 静默忽略不抛错', () => {
+    const audio = playing();
+    audio.stop();
+    expect(() => audio.resume()).not.toThrow();
+    expect(audio.currentKey).toBeNull();
+    expect(audio.status).toBe('idle');
+  });
+});

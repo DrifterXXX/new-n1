@@ -14,7 +14,16 @@ const audio = useAudioStore();
 const dragging = ref(false);
 const dragValue = ref(0);
 
-const visible = computed(() => audio.status === 'playing' || audio.status === 'loading');
+/**
+ * 有当前条目就常驻: 播放中 / 加载中固然要显示, 暂停后(status 回落 idle)只要时间轴还在,
+ * dock 也必须留着 —— 否则暂停就等于失去定位入口(AC-06)。stop/ended 会清空 currentKey, dock 随之收起。
+ */
+const visible = computed(
+  () =>
+    audio.currentKey !== null &&
+    (audio.status === 'playing' || audio.status === 'loading' || audio.duration > 0),
+);
+const paused = computed(() => visible.value && audio.status !== 'playing' && audio.status !== 'loading');
 const percent = computed(() => audio.progress * 100);
 /** TTS 降级朗读无时间轴, 不可定位。 */
 const seekable = computed(() => audio.duration > 0 && !audio.usingTts);
@@ -23,7 +32,13 @@ const roundedPercent = computed(() => Math.round(sliderValue.value));
 
 function toggle(): void {
   if (audio.status === 'playing') audio.pause();
+  else if (paused.value) audio.resume();
 }
+
+const toggleLabel = computed(() => {
+  if (audio.status === 'loading') return '加载中';
+  return audio.status === 'playing' ? '暂停播放' : '继续播放';
+});
 
 /** 拖动/点击/方向键均触发 input, 实时定位。 */
 function onSeek(event: Event): void {
@@ -52,16 +67,11 @@ const timeText = computed(() =>
 </script>
 
 <template>
-  <div v-if="visible" class="dock" role="region" aria-label="正在播放">
-    <AudioBtn
-      variant="ghost"
-      :status="audio.status"
-      :label="audio.status === 'playing' ? '暂停播放' : '加载中'"
-      @click="toggle"
-    />
+  <div v-if="visible" class="dock" role="region" aria-label="音频播放器">
+    <AudioBtn variant="ghost" :status="audio.status" :label="toggleLabel" @click="toggle" />
     <div class="dock__body">
       <p class="dock__label jp">
-        <span class="dock__title">{{ audio.label || '正在播放' }}</span>
+        <span class="dock__title">{{ audio.label || '当前音频' }}</span>
         <span v-if="timeText" class="dock__time">{{ timeText }}</span>
       </p>
       <input
