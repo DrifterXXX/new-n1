@@ -1,0 +1,183 @@
+openapi: 3.0.3
+info:
+  title: JLPT N1 备考中心 — 云同步 API (未来占位契约)
+  version: 1.0.0
+  description: >
+    本阶段无后端。此契约锁定 SyncAdapter 将来的 RemoteAdapter 实现所需的
+    REST 端点，使前端业务层零改动即可从 localStorage 切换到云同步。
+    对应前端契约: src/services/sync/types.ts (SyncAdapter)。
+servers:
+  - url: /api/v1
+paths:
+  /state:
+    get:
+      summary: 拉取当前用户的完整状态快照 (对应 SyncAdapter.pull)
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SyncResult'
+    put:
+      summary: 覆盖写入完整用户状态 (对应 SyncAdapter.push, last-write-wins + 乐观锁)
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: header
+          name: If-Match
+          required: false
+          schema:
+            type: string
+          description: 客户端当前 revision, 用于乐观锁冲突检测
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserState'
+      responses:
+        '200':
+          description: 写入成功, 返回带新 revision 的快照
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SyncResult'
+        '409':
+          description: 版本冲突(远端 revision 已更新), 客户端需先 pull 合并
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SyncResult'
+    delete:
+      summary: 清空当前用户状态 (对应 SyncAdapter.clear)
+      security:
+        - bearerAuth: []
+      responses:
+        '204':
+          description: 已清空
+  /state/stream:
+    get:
+      summary: 订阅外部状态变更 (对应 SyncAdapter.subscribe, SSE)
+      description: text/event-stream, 每次远端变更推送一条 SyncResult 事件
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: SSE 流
+          content:
+            text/event-stream:
+              schema:
+                type: string
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    UserSettings:
+      type: object
+      required: [dailyTarget, volume, theme, fontSize, playbackRate]
+      properties:
+        dailyTarget:
+          type: integer
+          example: 20
+        volume:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+          example: 0.9
+        theme:
+          type: string
+          enum: [light, dark]
+          example: light
+        fontSize:
+          type: integer
+          minimum: 14
+          maximum: 20
+          example: 16
+        playbackRate:
+          type: number
+          format: float
+          enum: [0.75, 1, 1.25]
+          example: 1
+    AnswerRecord:
+      type: object
+      required: [kind, id, sub, correct, chosen, meta, at]
+      properties:
+        kind:
+          type: string
+          enum: [example, listening, reading]
+        id:
+          type: integer
+        sub:
+          type: integer
+          nullable: true
+        correct:
+          type: boolean
+        chosen:
+          type: integer
+        meta:
+          type: object
+          properties:
+            type: { type: string }
+            title: { type: string }
+        at:
+          type: integer
+          format: int64
+    FavoriteRecord:
+      type: object
+      required: [kind, id, at]
+      properties:
+        kind:
+          type: string
+          enum: [example, listening, reading]
+        id: { type: integer }
+        at: { type: integer, format: int64 }
+    DailyRecord:
+      type: object
+      properties:
+        done:
+          type: object
+          additionalProperties: { type: boolean }
+        tasks:
+          type: object
+          additionalProperties: { type: boolean }
+    UserState:
+      type: object
+      required: [schemaVersion, answers, favorites, daily, settings]
+      properties:
+        schemaVersion:
+          type: integer
+          example: 1
+        answers:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/AnswerRecord'
+        favorites:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/FavoriteRecord'
+        daily:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/DailyRecord'
+        settings:
+          $ref: '#/components/schemas/UserSettings'
+    SyncResult:
+      type: object
+      required: [state, revision, syncedAt]
+      properties:
+        state:
+          $ref: '#/components/schemas/UserState'
+        revision:
+          type: integer
+          description: 单调递增版本号
+        syncedAt:
+          type: integer
+          format: int64
+          description: 同步完成时间(epoch ms)

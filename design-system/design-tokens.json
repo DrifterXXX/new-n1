@@ -1,0 +1,145 @@
+{
+  "$meta": {
+    "project": "JLPT N1 备考中心",
+    "register": "product",
+    "theme": "墨と藍 Ink & Sea",
+    "canonicalPath": "src/styles/tokens.css",
+    "naming": "colors use --color-* ; structural use --space-*/--radius-*/--text-*/--font-*/--motion-*",
+    "baseline": "沿用旧版单文件配色迭代",
+    "scales": { "designVariance": 3, "motionIntensity": 2, "visualDensity": 7 },
+    "iconLibrary": { "name": "lucide", "vuePackage": "lucide-vue-next", "version": "^1.0.0", "strokeWidth": 2, "sizes": [16, 20, 24], "color": "currentColor" }
+  },
+  "color": {
+    "light": {
+      "bg":             { "value": "#F6F7F4", "type": "color", "layer": "A1" },
+      "surface":        { "value": "#FFFFFF", "type": "color", "layer": "A1" },
+      "surface-2":      { "value": "#EEF2EE", "type": "color", "layer": "B" },
+      "text":           { "value": "#1F2933", "type": "color", "layer": "A1" },
+      "text-2":         { "value": "#3C4A44", "type": "color", "layer": "B" },
+      "text-muted":     { "value": "#66756F", "type": "color", "layer": "A1" },
+      "text-meta":      { "value": "#8A958E", "type": "color", "layer": "B" },
+      "border":         { "value": "#D9DFD7", "type": "color", "layer": "A1" },
+      "border-soft":    { "value": "#E8ECE6", "type": "color", "layer": "B" },
+      "border-strong":  { "value": "#C7D0C8", "type": "color", "layer": "B" },
+      "primary":        { "value": "#173F4D", "type": "color", "layer": "A1" },
+      "primary-hover":  { "value": "#10303B", "type": "color", "layer": "A2" },
+      "primary-active": { "value": "#0B2530", "type": "color", "layer": "A2" },
+      "primary-on":     { "value": "#FFFFFF", "type": "color", "layer": "A2" },
+      "primary-soft":   { "value": "#E4ECEC", "type": "color", "layer": "C" },
+      "focus-ring":     { "value": "rgba(23,63,77,0.32)", "type": "color", "layer": "A2" },
+      "success":        { "value": "#2E7D50", "type": "color", "layer": "A2" },
+      "success-soft":   { "value": "#EFF8F2", "type": "color", "layer": "A2" },
+      "success-strong": { "value": "#1F6B3D", "type": "color", "layer": "A2" },
+      "danger":         { "value": "#B84A3D", "type": "color", "layer": "A2" },
+      "danger-soft":    { "value": "#FFF1EF", "type": "color", "layer": "A2" },
+      "danger-strong":  { "value": "#9B342A", "type": "color", "layer": "A2" },
+      "warn":           { "value": "#B4790E", "type": "color", "layer": "A2" },
+      "warn-soft":      { "value": "#FBF1DE", "type": "color", "layer": "A2" }
+    },
+    "dark": {
+      "bg":             { "value": "#0E1512", "type": "color", "layer": "A1" },
+      "surface":        { "value": "#151D19", "type": "color", "layer": "A1" },
+      "surface-2":      { "value": "#1C2723", "type": "color", "layer": "B" },
+      "text":           { "value": "#E8EDE9", "type": "color", "layer": "A1" },
+      "text-2":         { "value": "#C2CCC6", "type": "color", "layer": "B" },
+      "text-muted":     { "value": "#94A099", "type": "color", "layer": "A1" },
+      "text-meta":      { "value": "#6E7A73", "type": "color", "layer": "B" },
+      "border":         { "value": "rgba(255,255,255,0.10)", "type": "color", "layer": "A1" },
+      "border-soft":    { "value": "rgba(255,255,255,0.06)", "type": "color", "layer": "B" },
+      "border-strong":  { "value": "rgba(255,255,255,0.16)", "type": "color", "layer": "B" },
+      "primary":        { "value": "#4DB3AC", "type": "color", "layer": "A1" },
+      "primary-hover":  { "value": "#5FC4BC", "type": "color", "layer": "A2" },
+      "primary-active": { "value": "#3A9A93", "type": "color", "layer": "A2" },
+      "primary-on":     { "value": "#06231F", "type": "color", "layer": "A2" },
+      "primary-soft":   { "value": "rgba(77,179,172,0.15)", "type": "color", "layer": "C" },
+      "focus-ring":     { "value": "rgba(77,179,172,0.40)", "type": "color", "layer": "A2" },
+      "success":        { "value": "#57C08E", "type": "color", "layer": "A2" },
+      "success-soft":   { "value": "rgba(87,192,142,0.14)", "type": "color", "layer": "A2" },
+      "success-strong": { "value": "#7ED3A8", "type": "color", "layer": "A2" },
+      "danger":         { "value": "#E5695C", "type": "color", "layer": "A2" },
+      "danger-soft":    { "value": "rgba(229,105,92,0.15)", "type": "color", "layer": "A2" },
+      "danger-strong":  { "value": "#F0897E", "type": "color", "layer": "A2" },
+      "warn":           { "value": "#D8A43C", "type": "color", "layer": "A2" },
+      "warn-soft":      { "value": "rgba(216,164,60,0.15)", "type": "color", "layer": "A2" }
+    }
+  },
+  "font": {
+    "family": {
+      "ui":      { "value": "Inter, Noto Sans SC, system-ui, sans-serif", "type": "fontFamily" },
+      "jp":      { "value": "Noto Sans JP, Inter, system-ui, sans-serif", "type": "fontFamily" },
+      "reading": { "value": "Noto Serif JP, Noto Sans JP, serif", "type": "fontFamily" },
+      "cn":      { "value": "Noto Sans SC, Inter, system-ui, sans-serif", "type": "fontFamily" },
+      "mono":    { "value": "JetBrains Mono, SF Mono, ui-monospace, monospace", "type": "fontFamily" }
+    },
+    "size": {
+      "xs":   { "value": "0.75rem",   "type": "dimension" },
+      "sm":   { "value": "0.8125rem", "type": "dimension" },
+      "base": { "value": "0.9375rem", "type": "dimension" },
+      "md":   { "value": "1rem",      "type": "dimension" },
+      "lg":   { "value": "1.125rem",  "type": "dimension" },
+      "xl":   { "value": "1.25rem",   "type": "dimension" },
+      "2xl":  { "value": "1.5rem",    "type": "dimension" },
+      "3xl":  { "value": "1.875rem",  "type": "dimension" }
+    },
+    "weight": {
+      "read":     { "value": 400, "type": "fontWeight" },
+      "emphasis": { "value": 500, "type": "fontWeight" },
+      "announce": { "value": 700, "type": "fontWeight" }
+    },
+    "leading": {
+      "jp":      { "value": 1.85, "type": "number" },
+      "reading": { "value": 1.95, "type": "number" },
+      "body":    { "value": 1.6,  "type": "number" },
+      "tight":   { "value": 1.25, "type": "number" }
+    },
+    "tracking": {
+      "jp":    { "value": "0.02em",  "type": "dimension" },
+      "caps":  { "value": "0.08em",  "type": "dimension" },
+      "tight": { "value": "-0.01em", "type": "dimension" }
+    }
+  },
+  "space": {
+    "1": { "value": "4px",  "type": "dimension" },
+    "2": { "value": "8px",  "type": "dimension" },
+    "3": { "value": "12px", "type": "dimension" },
+    "4": { "value": "16px", "type": "dimension" },
+    "5": { "value": "20px", "type": "dimension" },
+    "6": { "value": "24px", "type": "dimension" },
+    "8": { "value": "32px", "type": "dimension" },
+    "10": { "value": "40px", "type": "dimension" },
+    "12": { "value": "48px", "type": "dimension" },
+    "16": { "value": "64px", "type": "dimension" }
+  },
+  "radius": {
+    "sm":   { "value": "6px",   "type": "dimension" },
+    "md":   { "value": "10px",  "type": "dimension" },
+    "lg":   { "value": "14px",  "type": "dimension" },
+    "pill": { "value": "999px", "type": "dimension" }
+  },
+  "shadow": {
+    "ring":    { "value": "0 0 0 1px #D9DFD7", "type": "boxShadow" },
+    "raised":  { "value": "0 1px 2px rgba(20,30,25,0.04), 0 4px 12px rgba(20,30,25,0.06)", "type": "boxShadow" },
+    "overlay": { "value": "0 8px 28px rgba(20,30,25,0.14)", "type": "boxShadow" }
+  },
+  "motion": {
+    "fast": { "value": "120ms", "type": "duration" },
+    "base": { "value": "180ms", "type": "duration" },
+    "slow": { "value": "240ms", "type": "duration" },
+    "ease": { "value": "cubic-bezier(0.2, 0, 0, 1)", "type": "cubicBezier" }
+  },
+  "layout": {
+    "sidebar-w":      { "value": "248px",  "type": "dimension" },
+    "sidebar-rail-w": { "value": "64px",   "type": "dimension" },
+    "container-max":  { "value": "1160px", "type": "dimension" },
+    "tap-min":        { "value": "44px",   "type": "dimension" }
+  },
+  "icons": {
+    "nav": ["layout-dashboard", "dumbbell", "book-open", "headphones", "file-text", "rotate-ccw", "target"],
+    "audio": ["play", "pause", "volume-2", "volume-x", "gauge", "loader"],
+    "feedback": ["check", "circle-check", "x", "circle-x", "circle", "info"],
+    "action": ["bookmark", "search", "chevron-down", "chevron-up", "arrow-right", "arrow-left", "refresh-cw", "trash-2", "ellipsis", "sun", "moon", "settings-2", "pencil", "arrow-up", "download", "upload"],
+    "pager": ["chevron-left", "chevron-right", "chevrons-left", "chevrons-right"],
+    "dashboard-metric": ["check-circle", "layers", "percent"],
+    "strategy": ["calendar", "clock", "flag"]
+  }
+}
