@@ -11,3 +11,8 @@ dist/
 # 回滚快照只需恢复源码；音频停留磁盘，git 不会删除未跟踪文件
 listening_audio/
 option_audio/
+
+# public/ 下由 scripts/sync-audio.mjs 从根音频拷贝的本地服务副本(可再生, 不入库)
+public/audio/
+public/listening_audio/
+public/option_audio/
