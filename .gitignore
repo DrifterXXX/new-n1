@@ -5,8 +5,7 @@ _archive/
 node_modules/
 test-results/
 .tmp-pw/
-package-lock.json
-package.json
+dist/
 
 # 可再生音频资产（由 generate_tts.py 重新生成，避免仓库膨胀）
 # 回滚快照只需恢复源码；音频停留磁盘，git 不会删除未跟踪文件
