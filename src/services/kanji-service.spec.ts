@@ -188,6 +188,12 @@ describe('generateQuiz — 边界', () => {
     expect(quiz.options.length).toBe(1);
     expect(quiz.correctIndex).toBe(0);
   });
+
+  it('空列表时抛出描述性 Error 而非崩溃', () => {
+    expect(() => generateQuiz([], 'term→reading')).toThrow(
+      'generateQuiz: list is empty',
+    );
+  });
 });
 
 describe('generateQuizForEntry — 指定条目', () => {

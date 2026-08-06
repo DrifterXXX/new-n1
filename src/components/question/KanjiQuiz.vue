@@ -2,7 +2,7 @@
 /**
  * 汉字选择题: 20 题 MC, term→reading 和 reading→term 混合, 答完显示小结。
  */
-import { computed, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import AppButton from '@/components/common/AppButton.vue';
 import { useKanjiStore } from '@/stores/kanji';
 import type { KanjiQuiz } from '@/services/kanji-service';
@@ -18,8 +18,12 @@ const questions = ref<KanjiQuiz[]>([]);
 const quizIndex = ref(0);
 const answers = ref<boolean[]>([]);
 const finished = ref(false);
+const started = ref(false);
 
 function start(): void {
+  // Guard: prevent re-entrant start while already running
+  if (started.value && !finished.value) return;
+
   const qs: KanjiQuiz[] = [];
   for (let i = 0; i < QUIZ_SIZE; i++) {
     const dir: 'term→reading' | 'reading→term' =
@@ -35,7 +39,12 @@ function start(): void {
   quizIndex.value = 0;
   answers.value = [];
   finished.value = false;
+  started.value = true;
 }
+
+onMounted(() => {
+  start();
+});
 
 const current = computed(() => questions.value[quizIndex.value]);
 
@@ -58,8 +67,6 @@ const rate = computed(() =>
     ? 0
     : Math.round((correctCount.value / answers.value.length) * 100),
 );
-
-start();
 </script>
 
 <template>

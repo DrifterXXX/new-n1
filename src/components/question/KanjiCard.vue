@@ -45,7 +45,7 @@ function next(): void {
 
 <template>
   <div class="card-area">
-    <div class="card-progress">
+    <div v-if="currentCard" class="card-progress">
       <span class="mono">{{ cardIndex + 1 }} / {{ kanji.entries.length }}</span>
     </div>
 

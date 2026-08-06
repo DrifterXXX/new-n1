@@ -124,6 +124,12 @@ export function generateQuiz(
   list: readonly KanjiEntry[],
   direction: 'term→reading' | 'reading→term',
 ): KanjiQuiz {
+  if (list.length === 0) {
+    throw new Error(
+      'generateQuiz: list is empty — cannot generate a quiz without entries. ' +
+        'Ensure kanji data is loaded before calling generateQuiz.',
+    );
+  }
   const total = list.length;
   const idx = Math.floor(Math.random() * total);
   const entry: KanjiEntry = idx < total ? (list[idx] as KanjiEntry) : (list[0] as KanjiEntry);
