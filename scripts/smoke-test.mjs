@@ -214,6 +214,25 @@ async function main() {
     const readingText = await page.textContent('.card-flip__reading');
     console.log(`   Card reading: "${readingText?.trim()}"`);
 
+    // ── 4c. AI 生成学习例句 (revealed) ────────────────────────────────────
+    console.log('\n── 4c. AI 生成学习例句 (revealed) ──');
+    const aiLabel = page.locator('.kanji-example__label');
+    const aiLabelCount = await aiLabel.count();
+    console.log(`   AI example label present: ${aiLabelCount > 0}`);
+    if (aiLabelCount === 0) throw new Error('Expected "AI 生成学习例句" label after reveal');
+    const aiLabelText = (await aiLabel.first().textContent())?.trim() ?? '';
+    if (!aiLabelText.includes('AI')) throw new Error(`Expected AI label to mention AI, got "${aiLabelText}"`);
+    const aiJa = (await page.textContent('.kanji-example__ja'))?.trim() ?? '';
+    const aiZh = (await page.textContent('.kanji-example__zh'))?.trim() ?? '';
+    console.log(`   AI example ja: "${aiJa}"`);
+    console.log(`   AI example zh: "${aiZh}"`);
+    if (!aiJa) throw new Error('Expected a non-empty Japanese example sentence after reveal');
+    if (!aiZh) throw new Error('Expected a non-empty Chinese translation after reveal');
+    const aiAudioBtn = page.locator('.kanji-example .audio-btn');
+    const aiAudioBtnCount = await aiAudioBtn.count();
+    console.log(`   AI example audio button present: ${aiAudioBtnCount > 0}`);
+    if (aiAudioBtnCount === 0) throw new Error('Expected an audio button for the AI example');
+
     // ── 5. Self-rate ──────────────────────────────────────────────────────
     console.log('\n── 5. Self-rate ──');
     const rateBtns = page.locator('.card-rating button');

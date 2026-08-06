@@ -118,9 +118,14 @@ def normalize_audio(path):
 
 async def generate_item(sem, idx, text, out, kind, force):
     async with sem:
-        if out.exists() and not force:
-            print(f"[{idx:03d}] SKIP {out}")
-            return
+        # 安全续跑: 已存在且非空(有效)的文件直接跳过, 绝不删除有效文件。
+        # 仅当文件缺失或为空(0 字节, 视为损坏)时才重新生成。
+        if out.exists():
+            if not force and out.stat().st_size > 0:
+                print(f"[{idx:03d}] SKIP {out}")
+                return
+            if not force:
+                print(f"[{idx:03d}] REGEN (empty/corrupt) {out}")
         out.parent.mkdir(parents=True, exist_ok=True)
         if kind == "listening":
             await synthesize_dialogue(out, text)
@@ -182,7 +187,7 @@ async def synthesize_dialogue(out, script):
 
 async def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--kind", choices=["examples", "listening", "options", "kanji"], default="examples")
+    parser.add_argument("--kind", choices=["examples", "listening", "options", "kanji", "kanji-examples"], default="examples")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--concurrency", type=int, default=4)
@@ -201,6 +206,15 @@ async def main():
             # 从 id "kanji-0001" 提取数字序号
             num = int(entry["id"].replace("kanji-", ""))
             items.append((num, entry["reading"].strip(), Path("kanji_audio") / f'{num:04d}.mp3'))
+    elif args.kind == "kanji-examples":
+        # AI 生成的学习例句: 从 src/data/kanji-examples-v1.json 读取 sentenceJa。
+        # 输出到 kanji_example_audio/{num:04d}.mp3, 与 kanji-v1.json 的 id 序号一一对应。
+        data = json.loads(Path("src/data/kanji-examples-v1.json").read_text(encoding="utf-8"))
+        entries = data["entries"]
+        items = []
+        for entry in entries:
+            num = int(entry["id"].replace("kanji-", ""))
+            items.append((num, entry["sentenceJa"].strip(), Path("kanji_example_audio") / f'{num:04d}.mp3'))
     else:
         items = []
         listening = load_json_array_from_data_js("LISTENING")

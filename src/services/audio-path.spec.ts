@@ -3,7 +3,7 @@
  * 环境: node(纯 TS 层, 不需要 jsdom)。
  */
 import { describe, expect, it } from 'vitest';
-import { exampleAudio, listeningAudio, listeningOptionAudio, readingOptionAudio, kanjiAudio, pad4 } from './audio-path';
+import { exampleAudio, listeningAudio, listeningOptionAudio, readingOptionAudio, kanjiAudio, kanjiExampleAudio, pad4 } from './audio-path';
 
 describe('pad4', () => {
   it('1 -> 0001', () => {
@@ -57,5 +57,22 @@ describe('kanjiAudio', () => {
   it('numericId=0 -> /kanji_audio/0000.mp3 (edge case)', () => {
     const path = kanjiAudio(0);
     expect(path).toMatch(/\/kanji_audio\/0000\.mp3$/);
+  });
+});
+
+describe('kanjiExampleAudio', () => {
+  it('numericId=1 -> /kanji_example_audio/0001.mp3', () => {
+    const path = kanjiExampleAudio(1);
+    expect(path).toMatch(/\/kanji_example_audio\/0001\.mp3$/);
+  });
+
+  it('numericId=520 -> /kanji_example_audio/0520.mp3', () => {
+    const path = kanjiExampleAudio(520);
+    expect(path).toMatch(/\/kanji_example_audio\/0520\.mp3$/);
+  });
+
+  it('numericId=0 -> /kanji_example_audio/0000.mp3 (edge case)', () => {
+    const path = kanjiExampleAudio(0);
+    expect(path).toMatch(/\/kanji_example_audio\/0000\.mp3$/);
   });
 });

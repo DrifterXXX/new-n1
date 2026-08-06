@@ -1,0 +1,3130 @@
+{
+  "metadata": {
+    "generatedBy": "AI",
+    "contentKind": "original-study-examples",
+    "prompt": "Generate one original Japanese example sentence per N1 kanji term. Each sentence: uses the term at least once, is 12-35 Japanese characters (excluding punctuation), natural and learner-friendly, suitable for N1 study. No unsafe/political/adult/sensitive content. Include Chinese translation.",
+    "version": "v1"
+  },
+  "entries": [
+    {
+      "id": "kanji-0001",
+      "term": "お年寄り",
+      "sentenceJa": "お年寄りに席を譲るのは大切なマナーです。",
+      "translationZh": "给老年人让座是重要的礼仪。"
+    },
+    {
+      "id": "kanji-0002",
+      "term": "悪化",
+      "sentenceJa": "環境汚染で空気の質が悪化している。",
+      "translationZh": "由于环境污染，空气质量正在恶化。"
+    },
+    {
+      "id": "kanji-0003",
+      "term": "安易",
+      "sentenceJa": "安易な方法で問題を解決しようとしても失敗する。",
+      "translationZh": "试图用简单的方法解决问题会失败。"
+    },
+    {
+      "id": "kanji-0004",
+      "term": "以前",
+      "sentenceJa": "以前住んでいた町を久しぶりに訪れた。",
+      "translationZh": "时隔许久访问了以前住过的城镇。"
+    },
+    {
+      "id": "kanji-0005",
+      "term": "位置",
+      "sentenceJa": "机の上に本を置く位置を決めてください。",
+      "translationZh": "请决定把书放在桌子上的位置。"
+    },
+    {
+      "id": "kanji-0006",
+      "term": "委員会",
+      "sentenceJa": "委員会のメンバーが来月の予定を話し合った。",
+      "translationZh": "委员会的成员讨论了下一个月的计划。"
+    },
+    {
+      "id": "kanji-0007",
+      "term": "委員長",
+      "sentenceJa": "委員長が会議の進行を担当している。",
+      "translationZh": "委员长负责主持会议的进行。"
+    },
+    {
+      "id": "kanji-0008",
+      "term": "威力",
+      "sentenceJa": "彼の言葉には人を動かす威力がある。",
+      "translationZh": "他的话具有打动人心的力量。"
+    },
+    {
+      "id": "kanji-0009",
+      "term": "意外",
+      "sentenceJa": "彼女が医者だとは意外だった。",
+      "translationZh": "没想到她是医生，真是意外。"
+    },
+    {
+      "id": "kanji-0010",
+      "term": "意識",
+      "sentenceJa": "安全運転を意識して車を運転している。",
+      "translationZh": "我有意识地安全驾驶汽车。"
+    },
+    {
+      "id": "kanji-0011",
+      "term": "異議",
+      "sentenceJa": "その計画には多くの異議が出ている。",
+      "translationZh": "那个计划受到了很多异议。"
+    },
+    {
+      "id": "kanji-0012",
+      "term": "異常",
+      "sentenceJa": "今日の気温は異常に高いですね。",
+      "translationZh": "今天的气温异常地高呢。"
+    },
+    {
+      "id": "kanji-0013",
+      "term": "異文化",
+      "sentenceJa": "異文化を理解するには語学の勉強が役立つ。",
+      "translationZh": "学习语言有助于理解不同文化。"
+    },
+    {
+      "id": "kanji-0014",
+      "term": "移植",
+      "sentenceJa": "患者の心臓を移植する手術が成功した。",
+      "translationZh": "移植患者心脏的手术成功了。"
+    },
+    {
+      "id": "kanji-0015",
+      "term": "胃",
+      "sentenceJa": "胃の調子が悪いので病院に行った。",
+      "translationZh": "因为胃不舒服所以去了医院。"
+    },
+    {
+      "id": "kanji-0016",
+      "term": "違う",
+      "sentenceJa": "思っていたのと違う結果が出た。",
+      "translationZh": "出现了与预想不同的结果。"
+    },
+    {
+      "id": "kanji-0017",
+      "term": "違反",
+      "sentenceJa": "駐車違反で罰金を払わなければならない。",
+      "translationZh": "因为违章停车必须缴纳罚款。"
+    },
+    {
+      "id": "kanji-0018",
+      "term": "医師",
+      "sentenceJa": "医師は患者に丁寧に病状を説明した。",
+      "translationZh": "医生向患者仔细说明了病情。"
+    },
+    {
+      "id": "kanji-0019",
+      "term": "医者",
+      "sentenceJa": "医者に健康診断の結果を聞きに行く。",
+      "translationZh": "去找医生询问体检结果。"
+    },
+    {
+      "id": "kanji-0020",
+      "term": "一気",
+      "sentenceJa": "彼は水を一気に飲み干した。",
+      "translationZh": "他一口气把水喝完了。"
+    },
+    {
+      "id": "kanji-0021",
+      "term": "一挙",
+      "sentenceJa": "その問題を一挙に解決する方法はないか。",
+      "translationZh": "有没有一举解决那个问题的方法呢。"
+    },
+    {
+      "id": "kanji-0022",
+      "term": "一言",
+      "sentenceJa": "彼の一言で全員の気持ちが変わった。",
+      "translationZh": "因为他的一句话，所有人的心情都改变了。"
+    },
+    {
+      "id": "kanji-0023",
+      "term": "一種",
+      "sentenceJa": "この鳥は一種類しか見つかっていない。",
+      "translationZh": "这种鸟只发现了一种。"
+    },
+    {
+      "id": "kanji-0024",
+      "term": "一斉",
+      "sentenceJa": "生徒たちは一斉に立ち上がった。",
+      "translationZh": "学生们一齐站了起来。"
+    },
+    {
+      "id": "kanji-0025",
+      "term": "一致",
+      "sentenceJa": "二人の意見がついに一致した。",
+      "translationZh": "两人的意见终于达成了一致。"
+    },
+    {
+      "id": "kanji-0026",
+      "term": "一部",
+      "sentenceJa": "この問題の一部はまだ解決していない。",
+      "translationZh": "这个问题的一部分还没有解决。"
+    },
+    {
+      "id": "kanji-0027",
+      "term": "隠す",
+      "sentenceJa": "彼は顔を隠すために帽子を深くかぶった。",
+      "translationZh": "他为了遮住脸深深地戴上了帽子。"
+    },
+    {
+      "id": "kanji-0028",
+      "term": "運んだ",
+      "sentenceJa": "彼女は重い荷物を家まで運んだ。",
+      "translationZh": "她把沉重的行李搬到了家里。"
+    },
+    {
+      "id": "kanji-0029",
+      "term": "運搬",
+      "sentenceJa": "工場内の運搬はすべて機械で行っている。",
+      "translationZh": "工厂内的搬运全部用机械进行。"
+    },
+    {
+      "id": "kanji-0030",
+      "term": "鋭い",
+      "sentenceJa": "彼は鋭い観察力で問題点を見つけた。",
+      "translationZh": "他以敏锐的观察力发现了问题点。"
+    },
+    {
+      "id": "kanji-0031",
+      "term": "援助",
+      "sentenceJa": "被災地への援助物資が届けられた。",
+      "translationZh": "向灾区的援助物资已经送达。"
+    },
+    {
+      "id": "kanji-0032",
+      "term": "演奏",
+      "sentenceJa": "彼女のピアノ演奏はとても感動的だった。",
+      "translationZh": "她的钢琴演奏非常感人。"
+    },
+    {
+      "id": "kanji-0033",
+      "term": "遠ざかる",
+      "sentenceJa": "彼の成功は目標から遠ざかることなく努力した結果だ。",
+      "translationZh": "他的成功是不远离目标而努力的结果。"
+    },
+    {
+      "id": "kanji-0034",
+      "term": "応急",
+      "sentenceJa": "応急処置を施してから病院に運んだ。",
+      "translationZh": "进行应急处理后送往了医院。"
+    },
+    {
+      "id": "kanji-0035",
+      "term": "応答",
+      "sentenceJa": "質問にはすぐに応答してください。",
+      "translationZh": "请立即回答提问。"
+    },
+    {
+      "id": "kanji-0036",
+      "term": "応用",
+      "sentenceJa": "この理論は実生活に応用できる。",
+      "translationZh": "这个理论可以应用于实际生活。"
+    },
+    {
+      "id": "kanji-0037",
+      "term": "温めて",
+      "sentenceJa": "スープを温めてから食事を始めましょう。",
+      "translationZh": "把汤加热后再开始吃饭吧。"
+    },
+    {
+      "id": "kanji-0038",
+      "term": "温暖",
+      "sentenceJa": "地球の温暖化が進んでいる。",
+      "translationZh": "地球的温室效应正在加剧。"
+    },
+    {
+      "id": "kanji-0039",
+      "term": "価値",
+      "sentenceJa": "この絵には芸術的な価値がある。",
+      "translationZh": "这幅画具有艺术价值。"
+    },
+    {
+      "id": "kanji-0040",
+      "term": "加減",
+      "sentenceJa": "料理の味付けは加減が難しい。",
+      "translationZh": "菜肴的调味加减很难掌握。"
+    },
+    {
+      "id": "kanji-0041",
+      "term": "家計",
+      "sentenceJa": "家計のやりくりを工夫している。",
+      "translationZh": "我在想办法维持家庭收支。"
+    },
+    {
+      "id": "kanji-0042",
+      "term": "家庭",
+      "sentenceJa": "家庭での会話が子どもの成長に大切だ。",
+      "translationZh": "家庭中的对话对孩子的成长很重要。"
+    },
+    {
+      "id": "kanji-0043",
+      "term": "科学",
+      "sentenceJa": "科学の進歩は私たちの生活を便利にした。",
+      "translationZh": "科学的进步使我们的生活变得便利。"
+    },
+    {
+      "id": "kanji-0044",
+      "term": "火災",
+      "sentenceJa": "火災が発生したらすぐに避難してください。",
+      "translationZh": "发生火灾时请立即避难。"
+    },
+    {
+      "id": "kanji-0045",
+      "term": "荷物",
+      "sentenceJa": "旅行の荷物は最小限にしたほうがいい。",
+      "translationZh": "旅行的行李最好控制在最小限度。"
+    },
+    {
+      "id": "kanji-0046",
+      "term": "貨幣",
+      "sentenceJa": "貨幣の価値は時代とともに変化する。",
+      "translationZh": "货币的价值随着时代而变化。"
+    },
+    {
+      "id": "kanji-0047",
+      "term": "過半数",
+      "sentenceJa": "過半数の賛成でこの法案は可決された。",
+      "translationZh": "超过半数赞成，这项法案通过了。"
+    },
+    {
+      "id": "kanji-0048",
+      "term": "過労気味",
+      "sentenceJa": "最近の過労気味の体調を改善したい。",
+      "translationZh": "我想改善最近有些过度疲劳的身体状况。"
+    },
+    {
+      "id": "kanji-0049",
+      "term": "画期的",
+      "sentenceJa": "この発明は画期的な技術だと言える。",
+      "translationZh": "这项发明可以说是划时代的技术。"
+    },
+    {
+      "id": "kanji-0050",
+      "term": "介護",
+      "sentenceJa": "祖母の介護のために仕事を休んでいる。",
+      "translationZh": "为了照顾祖母正在请假。"
+    },
+    {
+      "id": "kanji-0051",
+      "term": "会議",
+      "sentenceJa": "会議の内容をメモに取っておいた。",
+      "translationZh": "我把会议的内容记在了笔记上。"
+    },
+    {
+      "id": "kanji-0052",
+      "term": "解決",
+      "sentenceJa": "この問題は簡単には解決できない。",
+      "translationZh": "这个问题不容易解决。"
+    },
+    {
+      "id": "kanji-0053",
+      "term": "解釈",
+      "sentenceJa": "文章の解釈は人によって違うことがある。",
+      "translationZh": "文章的解释有时因人而异。"
+    },
+    {
+      "id": "kanji-0054",
+      "term": "解説",
+      "sentenceJa": "先生がこの文法をわかりやすく解説してくれた。",
+      "translationZh": "老师通俗易懂地解释了这个语法。"
+    },
+    {
+      "id": "kanji-0055",
+      "term": "解説者",
+      "sentenceJa": "解説者の話を聞いて試合の流れが理解できた。",
+      "translationZh": "听了解说员的说明后理解了比赛的进程。"
+    },
+    {
+      "id": "kanji-0056",
+      "term": "回収",
+      "sentenceJa": "使用済みのペットボトルを回収する。",
+      "translationZh": "回收使用过的塑料瓶。"
+    },
+    {
+      "id": "kanji-0057",
+      "term": "壊して",
+      "sentenceJa": "子どもが誤って時計を壊してしまった。",
+      "translationZh": "孩子不小心把钟表弄坏了。"
+    },
+    {
+      "id": "kanji-0058",
+      "term": "改め",
+      "sentenceJa": "規則を改めてより良いものにしましょう。",
+      "translationZh": "让我们修改规则使其变得更好。"
+    },
+    {
+      "id": "kanji-0059",
+      "term": "絵",
+      "sentenceJa": "彼女は美しい絵を描くのが上手だ。",
+      "translationZh": "她擅长画美丽的画。"
+    },
+    {
+      "id": "kanji-0060",
+      "term": "開会式",
+      "sentenceJa": "開会式で社長が挨拶を述べた。",
+      "translationZh": "在开幕式上社长发表了致辞。"
+    },
+    {
+      "id": "kanji-0061",
+      "term": "開発",
+      "sentenceJa": "新製品の開発に三年かかった。",
+      "translationZh": "新产品的开发花了三年时间。"
+    },
+    {
+      "id": "kanji-0062",
+      "term": "階段",
+      "sentenceJa": "階段を上るときに足を滑らせないように注意する。",
+      "translationZh": "上楼梯时注意不要滑倒。"
+    },
+    {
+      "id": "kanji-0063",
+      "term": "学費",
+      "sentenceJa": "学費を払うためにアルバイトをしている。",
+      "translationZh": "为了支付学费正在打工。"
+    },
+    {
+      "id": "kanji-0064",
+      "term": "楽観的",
+      "sentenceJa": "彼はいつも楽観的に物事を考える。",
+      "translationZh": "他总是乐观地思考事情。"
+    },
+    {
+      "id": "kanji-0065",
+      "term": "活動",
+      "sentenceJa": "地域の清掃活動に参加している。",
+      "translationZh": "正在参加地区的清扫活动。"
+    },
+    {
+      "id": "kanji-0066",
+      "term": "活躍",
+      "sentenceJa": "彼女は国際会議で大いに活躍した。",
+      "translationZh": "她在国际会议上大显身手。"
+    },
+    {
+      "id": "kanji-0067",
+      "term": "巻き込む",
+      "sentenceJa": "彼は面倒な仕事に巻き込むことが多い。",
+      "translationZh": "他经常被卷入麻烦的工作中。"
+    },
+    {
+      "id": "kanji-0068",
+      "term": "完成",
+      "sentenceJa": "長かった工事がようやく完成した。",
+      "translationZh": "漫长的工程终于完成了。"
+    },
+    {
+      "id": "kanji-0069",
+      "term": "完了",
+      "sentenceJa": "準備が完了したら連絡してください。",
+      "translationZh": "准备完成后请联系我。"
+    },
+    {
+      "id": "kanji-0070",
+      "term": "感情的",
+      "sentenceJa": "彼は感情的になりやすい性格だ。",
+      "translationZh": "他是容易情绪化的性格。"
+    },
+    {
+      "id": "kanji-0071",
+      "term": "看病",
+      "sentenceJa": "母は病気の父を看病している。",
+      "translationZh": "母亲正在照顾生病的父亲。"
+    },
+    {
+      "id": "kanji-0072",
+      "term": "観光事業",
+      "sentenceJa": "この地域では観光事業が盛んである。",
+      "translationZh": "这个地区的旅游业很兴盛。"
+    },
+    {
+      "id": "kanji-0073",
+      "term": "観察",
+      "sentenceJa": "彼は星の動きを観察するのが趣味だ。",
+      "translationZh": "他的爱好是观察星星的运动。"
+    },
+    {
+      "id": "kanji-0074",
+      "term": "間接的",
+      "sentenceJa": "間接的に彼の意見を聞いた。",
+      "translationZh": "间接地听取了他的意见。"
+    },
+    {
+      "id": "kanji-0075",
+      "term": "企業",
+      "sentenceJa": "この企業は環境問題に力を入れている。",
+      "translationZh": "这家企业致力于环境问题。"
+    },
+    {
+      "id": "kanji-0076",
+      "term": "危ない",
+      "sentenceJa": "一人で夜道を歩くのは危ない。",
+      "translationZh": "一个人走夜路很危险。"
+    },
+    {
+      "id": "kanji-0077",
+      "term": "喜んで",
+      "sentenceJa": "彼は喜んでボランティアを引き受けた。",
+      "translationZh": "他高兴地接受了志愿者工作。"
+    },
+    {
+      "id": "kanji-0078",
+      "term": "基準",
+      "sentenceJa": "この製品は安全基準を満たしている。",
+      "translationZh": "这个产品符合安全标准。"
+    },
+    {
+      "id": "kanji-0079",
+      "term": "寄付",
+      "sentenceJa": "被災地に寄付をする人が増えている。",
+      "translationZh": "向灾区捐款的人正在增加。"
+    },
+    {
+      "id": "kanji-0080",
+      "term": "寄与",
+      "sentenceJa": "この研究は社会に大きく寄与している。",
+      "translationZh": "这项研究对社会做出了巨大贡献。"
+    },
+    {
+      "id": "kanji-0081",
+      "term": "机",
+      "sentenceJa": "机の上を整理してから勉強を始めた。",
+      "translationZh": "整理好桌子后才开始学习。"
+    },
+    {
+      "id": "kanji-0082",
+      "term": "旗",
+      "sentenceJa": "運動会で旗を掲げて応援した。",
+      "translationZh": "在运动会上举着旗子加油。"
+    },
+    {
+      "id": "kanji-0083",
+      "term": "期限",
+      "sentenceJa": "この書類の提出期限は来週の金曜日です。",
+      "translationZh": "这份文件的提交期限是下周五。"
+    },
+    {
+      "id": "kanji-0084",
+      "term": "機会",
+      "sentenceJa": "この機会を逃さずに挑戦しよう。",
+      "translationZh": "不要错过这个机会，挑战一下吧。"
+    },
+    {
+      "id": "kanji-0085",
+      "term": "機械",
+      "sentenceJa": "工場の機械を定期的に点検している。",
+      "translationZh": "定期检查工厂的机器。"
+    },
+    {
+      "id": "kanji-0086",
+      "term": "機械化",
+      "sentenceJa": "農業の機械化が進んでいる。",
+      "translationZh": "农业的机械化正在推进。"
+    },
+    {
+      "id": "kanji-0087",
+      "term": "帰国",
+      "sentenceJa": "彼は三年ぶりに日本へ帰国した。",
+      "translationZh": "他时隔三年回到了日本。"
+    },
+    {
+      "id": "kanji-0088",
+      "term": "気候",
+      "sentenceJa": "この地域の気候は温暖で過ごしやすい。",
+      "translationZh": "这个地区气候温暖，生活舒适。"
+    },
+    {
+      "id": "kanji-0089",
+      "term": "気配",
+      "sentenceJa": "周りに人の気配がして振り返った。",
+      "translationZh": "感觉到周围有人，回头看了看。"
+    },
+    {
+      "id": "kanji-0090",
+      "term": "気味",
+      "sentenceJa": "彼の話し方には少し皮肉な気味がある。",
+      "translationZh": "他的说话方式有点讽刺的意味。"
+    },
+    {
+      "id": "kanji-0091",
+      "term": "規制",
+      "sentenceJa": "新しい法律で排出ガスが規制された。",
+      "translationZh": "新法律对废气排放进行了限制。"
+    },
+    {
+      "id": "kanji-0092",
+      "term": "規模",
+      "sentenceJa": "このイベントは大規模なものだ。",
+      "translationZh": "这个活动是大型的。"
+    },
+    {
+      "id": "kanji-0093",
+      "term": "記事",
+      "sentenceJa": "新聞の記事を読んで驚いた。",
+      "translationZh": "读了报纸的报道后很吃惊。"
+    },
+    {
+      "id": "kanji-0094",
+      "term": "記録",
+      "sentenceJa": "実験の結果を記録に残しておく。",
+      "translationZh": "把实验的结果记录下来。"
+    },
+    {
+      "id": "kanji-0095",
+      "term": "技術",
+      "sentenceJa": "最新の技術を使った製品が人気だ。",
+      "translationZh": "使用最新技术的产品很受欢迎。"
+    },
+    {
+      "id": "kanji-0096",
+      "term": "技術的",
+      "sentenceJa": "技術的な問題で開発が遅れている。",
+      "translationZh": "由于技术问题开发延迟了。"
+    },
+    {
+      "id": "kanji-0097",
+      "term": "義務",
+      "sentenceJa": "親には子どもを教育する義務がある。",
+      "translationZh": "父母有教育孩子的义务。"
+    },
+    {
+      "id": "kanji-0098",
+      "term": "議会",
+      "sentenceJa": "議会で新しい法案が審議されている。",
+      "translationZh": "议会上正在审议新的法案。"
+    },
+    {
+      "id": "kanji-0099",
+      "term": "議論",
+      "sentenceJa": "彼の意見について活発な議論が交わされた。",
+      "translationZh": "就他的意见进行了活跃的讨论。"
+    },
+    {
+      "id": "kanji-0100",
+      "term": "休暇",
+      "sentenceJa": "夏休みの計画を立てて休暇を楽しむ。",
+      "translationZh": "制定暑假计划，享受假期。"
+    },
+    {
+      "id": "kanji-0101",
+      "term": "救援",
+      "sentenceJa": "災害時に救援チームが派遣された。",
+      "translationZh": "灾害时派遣了救援队伍。"
+    },
+    {
+      "id": "kanji-0102",
+      "term": "救助",
+      "sentenceJa": "川で溺れている人を救助した。",
+      "translationZh": "救助了在河里溺水的人。"
+    },
+    {
+      "id": "kanji-0103",
+      "term": "居眠り",
+      "sentenceJa": "授業中に居眠りをしてしまった。",
+      "translationZh": "上课时不小心打瞌睡了。"
+    },
+    {
+      "id": "kanji-0104",
+      "term": "許されない",
+      "sentenceJa": "そんな失礼な態度は許されない。",
+      "translationZh": "那种失礼的态度是不被允许的。"
+    },
+    {
+      "id": "kanji-0105",
+      "term": "強化",
+      "sentenceJa": "筋肉を強化するために毎日運動している。",
+      "translationZh": "为了强化肌肉每天运动。"
+    },
+    {
+      "id": "kanji-0106",
+      "term": "狭い",
+      "sentenceJa": "この道は車が通れないほど狭い。",
+      "translationZh": "这条路窄得车都过不去。"
+    },
+    {
+      "id": "kanji-0107",
+      "term": "胸一杯",
+      "sentenceJa": "彼の優しい言葉に胸一杯になった。",
+      "translationZh": "他温柔的话语让我内心充满了感动。"
+    },
+    {
+      "id": "kanji-0108",
+      "term": "驚く",
+      "sentenceJa": "彼の突然の訪問に驚くのは無理もない。",
+      "translationZh": "对他的突然来访感到吃惊也是理所当然的。"
+    },
+    {
+      "id": "kanji-0109",
+      "term": "極端",
+      "sentenceJa": "彼の考えは極端すぎて理解できない。",
+      "translationZh": "他的想法太极端了，无法理解。"
+    },
+    {
+      "id": "kanji-0110",
+      "term": "禁止",
+      "sentenceJa": "図書館では飲食が禁止されている。",
+      "translationZh": "图书馆内禁止饮食。"
+    },
+    {
+      "id": "kanji-0111",
+      "term": "金庫",
+      "sentenceJa": "金庫に大切な書類を保管している。",
+      "translationZh": "把重要的文件保管在保险柜里。"
+    },
+    {
+      "id": "kanji-0112",
+      "term": "銀行員",
+      "sentenceJa": "銀行員はお客様に丁寧に対応する。",
+      "translationZh": "银行职员礼貌地接待客户。"
+    },
+    {
+      "id": "kanji-0113",
+      "term": "区別",
+      "sentenceJa": "事実と意見を区別して考える必要がある。",
+      "translationZh": "有必要区分事实和意见来思考。"
+    },
+    {
+      "id": "kanji-0114",
+      "term": "苦難",
+      "sentenceJa": "彼は多くの苦難を乗り越えて成功した。",
+      "translationZh": "他克服了许多苦难取得了成功。"
+    },
+    {
+      "id": "kanji-0115",
+      "term": "苦労",
+      "sentenceJa": "親の苦労を知って感謝している。",
+      "translationZh": "知道了父母的辛苦，很感激。"
+    },
+    {
+      "id": "kanji-0116",
+      "term": "空間",
+      "sentenceJa": "この部屋は狭くて空間が足りない。",
+      "translationZh": "这个房间很窄，空间不够。"
+    },
+    {
+      "id": "kanji-0117",
+      "term": "掘る",
+      "sentenceJa": "庭に穴を掘るのは大変な作業だ。",
+      "translationZh": "在院子里挖洞是件辛苦的工作。"
+    },
+    {
+      "id": "kanji-0118",
+      "term": "兄",
+      "sentenceJa": "兄は私より五歳年上です。",
+      "translationZh": "哥哥比我大五岁。"
+    },
+    {
+      "id": "kanji-0119",
+      "term": "景気",
+      "sentenceJa": "最近の景気は少しずつ良くなっている。",
+      "translationZh": "最近的经济状况正在慢慢好转。"
+    },
+    {
+      "id": "kanji-0120",
+      "term": "景色",
+      "sentenceJa": "山の景色がとても美しかった。",
+      "translationZh": "山上的景色非常美丽。"
+    },
+    {
+      "id": "kanji-0121",
+      "term": "経緯",
+      "sentenceJa": "このプロジェクトの経緯を説明します。",
+      "translationZh": "我来说明一下这个项目的经过。"
+    },
+    {
+      "id": "kanji-0122",
+      "term": "経営",
+      "sentenceJa": "彼は小さな会社を経営している。",
+      "translationZh": "他经营着一家小公司。"
+    },
+    {
+      "id": "kanji-0123",
+      "term": "経験",
+      "sentenceJa": "海外で働く貴重な経験を積んだ。",
+      "translationZh": "积累了在海外工作的宝贵经验。"
+    },
+    {
+      "id": "kanji-0124",
+      "term": "経済",
+      "sentenceJa": "経済の動きをニュースで確認する。",
+      "translationZh": "通过新闻确认经济动向。"
+    },
+    {
+      "id": "kanji-0125",
+      "term": "経済学",
+      "sentenceJa": "彼は大学で経済学を教えている。",
+      "translationZh": "他在大学里教授经济学。"
+    },
+    {
+      "id": "kanji-0126",
+      "term": "経済的",
+      "sentenceJa": "経済的な理由で旅行を断念した。",
+      "translationZh": "因为经济原因放弃了旅行。"
+    },
+    {
+      "id": "kanji-0127",
+      "term": "計画",
+      "sentenceJa": "来年の予算計画を立てている。",
+      "translationZh": "正在制定明年的预算计划。"
+    },
+    {
+      "id": "kanji-0128",
+      "term": "警戒",
+      "sentenceJa": "不審者を見かけたら警戒してください。",
+      "translationZh": "如果看到可疑人员请保持警惕。"
+    },
+    {
+      "id": "kanji-0129",
+      "term": "警察",
+      "sentenceJa": "警察に盗難の届け出をした。",
+      "translationZh": "向警察申报了盗窃。"
+    },
+    {
+      "id": "kanji-0130",
+      "term": "軽減",
+      "sentenceJa": "新しいシステムで作業時間が軽減された。",
+      "translationZh": "新系统减少了作业时间。"
+    },
+    {
+      "id": "kanji-0131",
+      "term": "軽率",
+      "sentenceJa": "彼の軽率な発言で問題が大きくなった。",
+      "translationZh": "他轻率的发言使问题变大了。"
+    },
+    {
+      "id": "kanji-0132",
+      "term": "迎えて",
+      "sentenceJa": "空港で友人を迎えてホテルに向かった。",
+      "translationZh": "在机场迎接朋友后前往酒店。"
+    },
+    {
+      "id": "kanji-0133",
+      "term": "劇団",
+      "sentenceJa": "彼女は地元の劇団で演技を学んでいる。",
+      "translationZh": "她在当地的剧团学习表演。"
+    },
+    {
+      "id": "kanji-0134",
+      "term": "激しい",
+      "sentenceJa": "外は風が激しい勢いで吹いている。",
+      "translationZh": "外面风刮得很猛烈。"
+    },
+    {
+      "id": "kanji-0135",
+      "term": "結論",
+      "sentenceJa": "長い議論の末に結論が出た。",
+      "translationZh": "经过长时间的讨论得出了结论。"
+    },
+    {
+      "id": "kanji-0136",
+      "term": "血液",
+      "sentenceJa": "健康診断で血液検査を受けた。",
+      "translationZh": "在健康检查中接受了血液检查。"
+    },
+    {
+      "id": "kanji-0137",
+      "term": "健康",
+      "sentenceJa": "健康のために毎朝ジョギングをしている。",
+      "translationZh": "为了健康每天早上慢跑。"
+    },
+    {
+      "id": "kanji-0138",
+      "term": "検査結果",
+      "sentenceJa": "検査結果を聞きに病院へ行く。",
+      "translationZh": "去医院听检查结果。"
+    },
+    {
+      "id": "kanji-0139",
+      "term": "検出",
+      "sentenceJa": "食品から有害物質が検出された。",
+      "translationZh": "从食品中检测出了有害物质。"
+    },
+    {
+      "id": "kanji-0140",
+      "term": "検討",
+      "sentenceJa": "この問題はもう一度検討する必要がある。",
+      "translationZh": "这个问题需要重新探讨。"
+    },
+    {
+      "id": "kanji-0141",
+      "term": "権威",
+      "sentenceJa": "彼はこの分野の権威として知られている。",
+      "translationZh": "他作为这个领域的权威而闻名。"
+    },
+    {
+      "id": "kanji-0142",
+      "term": "権利",
+      "sentenceJa": "誰にも平等な権利があるべきだ。",
+      "translationZh": "每个人都应该拥有平等的权利。"
+    },
+    {
+      "id": "kanji-0143",
+      "term": "研究",
+      "sentenceJa": "この研究には多くの時間と労力がかかる。",
+      "translationZh": "这项研究需要很多时间和精力。"
+    },
+    {
+      "id": "kanji-0144",
+      "term": "研究室",
+      "sentenceJa": "教授は研究室で新しい実験をしている。",
+      "translationZh": "教授在研究室里做新的实验。"
+    },
+    {
+      "id": "kanji-0145",
+      "term": "研究者",
+      "sentenceJa": "この研究者は新しい治療法を開発した。",
+      "translationZh": "这位研究者开发了新的治疗方法。"
+    },
+    {
+      "id": "kanji-0146",
+      "term": "見舞い",
+      "sentenceJa": "友達のお見舞いに病院へ行った。",
+      "translationZh": "去医院探望了朋友。"
+    },
+    {
+      "id": "kanji-0147",
+      "term": "顕微鏡",
+      "sentenceJa": "顕微鏡で小さな生物を観察した。",
+      "translationZh": "用显微镜观察了微小的生物。"
+    },
+    {
+      "id": "kanji-0148",
+      "term": "減量",
+      "sentenceJa": "ダイエットのために食事の減量を始めた。",
+      "translationZh": "为了减肥开始了饮食减量。"
+    },
+    {
+      "id": "kanji-0149",
+      "term": "現在",
+      "sentenceJa": "現在の気温は二十五度です。",
+      "translationZh": "现在的气温是二十五度。"
+    },
+    {
+      "id": "kanji-0150",
+      "term": "現場",
+      "sentenceJa": "事故の現場には多くの人が集まっていた。",
+      "translationZh": "事故现场聚集了很多人。"
+    },
+    {
+      "id": "kanji-0151",
+      "term": "現地",
+      "sentenceJa": "現地の天気予報を確認してから出かけた。",
+      "translationZh": "确认了当地的天气预报后出门。"
+    },
+    {
+      "id": "kanji-0152",
+      "term": "言葉",
+      "sentenceJa": "彼の言葉には深い意味がある。",
+      "translationZh": "他的话有深刻的含义。"
+    },
+    {
+      "id": "kanji-0153",
+      "term": "古代人",
+      "sentenceJa": "古代人の生活について博物館で学んだ。",
+      "translationZh": "在博物馆学习了古代人的生活。"
+    },
+    {
+      "id": "kanji-0154",
+      "term": "互い",
+      "sentenceJa": "互いに助け合うことが大切だ。",
+      "translationZh": "互相帮助是很重要的。"
+    },
+    {
+      "id": "kanji-0155",
+      "term": "誤解",
+      "sentenceJa": "彼の説明には誤解を招く点がある。",
+      "translationZh": "他的说明中有容易引起误解的地方。"
+    },
+    {
+      "id": "kanji-0156",
+      "term": "交通事故",
+      "sentenceJa": "交通事故を防ぐためにシートベルトを着用する。",
+      "translationZh": "为了防止交通事故系好安全带。"
+    },
+    {
+      "id": "kanji-0157",
+      "term": "交流",
+      "sentenceJa": "留学生との交流を通じて文化を学んだ。",
+      "translationZh": "通过与留学生的交流学习了文化。"
+    },
+    {
+      "id": "kanji-0158",
+      "term": "光景",
+      "sentenceJa": "夕焼けの光景がとても美しかった。",
+      "translationZh": "晚霞的景色非常美丽。"
+    },
+    {
+      "id": "kanji-0159",
+      "term": "効果",
+      "sentenceJa": "この薬には即効性の効果がある。",
+      "translationZh": "这种药有速效的效果。"
+    },
+    {
+      "id": "kanji-0160",
+      "term": "工場",
+      "sentenceJa": "工場の見学に行って製造工程を学んだ。",
+      "translationZh": "去工厂参观学习了制造工序。"
+    },
+    {
+      "id": "kanji-0161",
+      "term": "校庭",
+      "sentenceJa": "校庭で子どもたちが元気に遊んでいる。",
+      "translationZh": "孩子们在校园里精神地玩耍。"
+    },
+    {
+      "id": "kanji-0162",
+      "term": "洪水",
+      "sentenceJa": "大雨で川が氾濫して洪水が発生した。",
+      "translationZh": "大雨导致河流泛滥发生了洪水。"
+    },
+    {
+      "id": "kanji-0163",
+      "term": "港町",
+      "sentenceJa": "港町には新鮮な魚介類がたくさんある。",
+      "translationZh": "港口城市有很多新鲜的海鲜。"
+    },
+    {
+      "id": "kanji-0164",
+      "term": "考え",
+      "sentenceJa": "彼の考えはとてもユニークだ。",
+      "translationZh": "他的想法非常独特。"
+    },
+    {
+      "id": "kanji-0165",
+      "term": "行動",
+      "sentenceJa": "環境保護の行動を起こすことが重要だ。",
+      "translationZh": "采取环境保护的行动很重要。"
+    },
+    {
+      "id": "kanji-0166",
+      "term": "高原",
+      "sentenceJa": "夏は高原で涼しく過ごすことができる。",
+      "translationZh": "夏天可以在高原上凉爽地度过。"
+    },
+    {
+      "id": "kanji-0167",
+      "term": "高山植物",
+      "sentenceJa": "高山植物は厳しい環境でも美しく咲く。",
+      "translationZh": "高山植物即使在严酷的环境中也能美丽绽放。"
+    },
+    {
+      "id": "kanji-0168",
+      "term": "高層",
+      "sentenceJa": "高層ビルの最上階から街を見下ろした。",
+      "translationZh": "从高层建筑的最顶层俯瞰街道。"
+    },
+    {
+      "id": "kanji-0169",
+      "term": "高速道路",
+      "sentenceJa": "高速道路を使って隣の県までドライブした。",
+      "translationZh": "走高速公路开车去了邻县。"
+    },
+    {
+      "id": "kanji-0170",
+      "term": "高齢化",
+      "sentenceJa": "日本では高齢化が進んでいる。",
+      "translationZh": "日本的高龄化正在加剧。"
+    },
+    {
+      "id": "kanji-0171",
+      "term": "合間",
+      "sentenceJa": "仕事の合間にコーヒーを飲んで休憩した。",
+      "translationZh": "在工作间隙喝咖啡休息了一下。"
+    },
+    {
+      "id": "kanji-0172",
+      "term": "国際交流",
+      "sentenceJa": "国際交流イベントに参加して楽しかった。",
+      "translationZh": "参加了国际交流活动，很开心。"
+    },
+    {
+      "id": "kanji-0173",
+      "term": "国民",
+      "sentenceJa": "国民の健康を守るために政策が必要だ。",
+      "translationZh": "为了保护国民的健康需要政策。"
+    },
+    {
+      "id": "kanji-0174",
+      "term": "腰",
+      "sentenceJa": "腰を痛めてしまいまっすぐ歩けない。",
+      "translationZh": "腰疼得无法直走。"
+    },
+    {
+      "id": "kanji-0175",
+      "term": "困る",
+      "sentenceJa": "財布を忘れて困る場面がよくある。",
+      "translationZh": "经常有忘记钱包而困扰的时候。"
+    },
+    {
+      "id": "kanji-0176",
+      "term": "困難",
+      "sentenceJa": "彼は困難に直面しても諦めなかった。",
+      "translationZh": "他即使面对困难也没有放弃。"
+    },
+    {
+      "id": "kanji-0177",
+      "term": "昆虫",
+      "sentenceJa": "夏の夜に昆虫の声が聞こえる。",
+      "translationZh": "夏天的夜晚能听到昆虫的声音。"
+    },
+    {
+      "id": "kanji-0178",
+      "term": "根拠",
+      "sentenceJa": "その説には科学的な根拠がない。",
+      "translationZh": "那个说法没有科学依据。"
+    },
+    {
+      "id": "kanji-0179",
+      "term": "差別的",
+      "sentenceJa": "差別的という言葉の意味を辞書で調べた。",
+      "translationZh": "在字典里查了差别的这个词的意思。"
+    },
+    {
+      "id": "kanji-0180",
+      "term": "再開発",
+      "sentenceJa": "駅前の再開発計画が進んでいる。",
+      "translationZh": "站前的再开发计划正在进行中。"
+    },
+    {
+      "id": "kanji-0181",
+      "term": "最近",
+      "sentenceJa": "最近は毎日暑い日が続いている。",
+      "translationZh": "最近每天都很热。"
+    },
+    {
+      "id": "kanji-0182",
+      "term": "最後",
+      "sentenceJa": "最後まで諦めずに頑張りたい。",
+      "translationZh": "我想坚持到最后不放弃。"
+    },
+    {
+      "id": "kanji-0183",
+      "term": "妻",
+      "sentenceJa": "妻と一緒に料理を作るのが楽しみだ。",
+      "translationZh": "和妻子一起做饭很开心。"
+    },
+    {
+      "id": "kanji-0184",
+      "term": "採用",
+      "sentenceJa": "新しい社員を採用するための面接を行った。",
+      "translationZh": "进行了录用新员工的面试。"
+    },
+    {
+      "id": "kanji-0185",
+      "term": "災害",
+      "sentenceJa": "自然災害に備えて非常食を準備している。",
+      "translationZh": "为了应对自然灾害准备了应急食品。"
+    },
+    {
+      "id": "kanji-0186",
+      "term": "細胞",
+      "sentenceJa": "人間の細胞は常に生まれ変わっている。",
+      "translationZh": "人体的细胞不断在更新。"
+    },
+    {
+      "id": "kanji-0187",
+      "term": "裁判",
+      "sentenceJa": "裁判の結果は来週発表される予定だ。",
+      "translationZh": "审判的结果预计下周公布。"
+    },
+    {
+      "id": "kanji-0188",
+      "term": "裁判官",
+      "sentenceJa": "裁判官は公平な判断を下した。",
+      "translationZh": "法官做出了公平的判断。"
+    },
+    {
+      "id": "kanji-0189",
+      "term": "雑誌",
+      "sentenceJa": "この雑誌には役立つ情報がたくさん載っている。",
+      "translationZh": "这本杂志上有很多有用的信息。"
+    },
+    {
+      "id": "kanji-0190",
+      "term": "参考",
+      "sentenceJa": "この資料を参考にレポートを書いた。",
+      "translationZh": "参考这份资料写了报告。"
+    },
+    {
+      "id": "kanji-0191",
+      "term": "参照",
+      "sentenceJa": "詳細は別紙を参照してください。",
+      "translationZh": "详情请参照附件。"
+    },
+    {
+      "id": "kanji-0192",
+      "term": "山村",
+      "sentenceJa": "山村の生活は自然に囲まれている。",
+      "translationZh": "山村的生活被大自然包围着。"
+    },
+    {
+      "id": "kanji-0193",
+      "term": "賛成",
+      "sentenceJa": "彼の提案に全員が賛成した。",
+      "translationZh": "全员赞成他的提案。"
+    },
+    {
+      "id": "kanji-0194",
+      "term": "酸素",
+      "sentenceJa": "人間は酸素を吸って生きている。",
+      "translationZh": "人类吸入氧气生存。"
+    },
+    {
+      "id": "kanji-0195",
+      "term": "司会者",
+      "sentenceJa": "司会者が会の進行をスムーズに行った。",
+      "translationZh": "主持人顺利地推进了会议进程。"
+    },
+    {
+      "id": "kanji-0196",
+      "term": "始める",
+      "sentenceJa": "新しい趣味を始めることにした。",
+      "translationZh": "决定开始新的爱好。"
+    },
+    {
+      "id": "kanji-0197",
+      "term": "姿勢",
+      "sentenceJa": "正しい姿勢で座ると疲れにくい。",
+      "translationZh": "以正确的姿势坐着不容易疲劳。"
+    },
+    {
+      "id": "kanji-0198",
+      "term": "指導",
+      "sentenceJa": "先生の指導のおかげで上達した。",
+      "translationZh": "多亏了老师的指导进步了。"
+    },
+    {
+      "id": "kanji-0199",
+      "term": "指輪",
+      "sentenceJa": "彼女は指輪を左手の薬指にはめている。",
+      "translationZh": "她把戒指戴在左手无名指上。"
+    },
+    {
+      "id": "kanji-0200",
+      "term": "支店",
+      "sentenceJa": "銀行の支店が駅前に新しくできた。",
+      "translationZh": "银行的分店在站前新开了。"
+    },
+    {
+      "id": "kanji-0201",
+      "term": "支配",
+      "sentenceJa": "彼は感情を支配することができない。",
+      "translationZh": "他无法控制自己的感情。"
+    },
+    {
+      "id": "kanji-0202",
+      "term": "視野",
+      "sentenceJa": "旅行に行くと視野が広がる。",
+      "translationZh": "去旅行可以开阔视野。"
+    },
+    {
+      "id": "kanji-0203",
+      "term": "視力",
+      "sentenceJa": "最近視力が落ちてきたので眼鏡を買った。",
+      "translationZh": "最近视力下降了所以买了眼镜。"
+    },
+    {
+      "id": "kanji-0204",
+      "term": "詩",
+      "sentenceJa": "この詩を読んで心が温かくなった。",
+      "translationZh": "读了这首诗心里变得温暖了。"
+    },
+    {
+      "id": "kanji-0205",
+      "term": "試験",
+      "sentenceJa": "試験の結果に一喜一憂している。",
+      "translationZh": "为考试的结果时而高兴时而担忧。"
+    },
+    {
+      "id": "kanji-0206",
+      "term": "資格",
+      "sentenceJa": "彼は医者の資格を取るために勉強している。",
+      "translationZh": "他为了取得医生资格正在学习。"
+    },
+    {
+      "id": "kanji-0207",
+      "term": "資金",
+      "sentenceJa": "新しい事業を始めるための資金を集めている。",
+      "translationZh": "正在筹集开始新事业的资金。"
+    },
+    {
+      "id": "kanji-0208",
+      "term": "資金援助",
+      "sentenceJa": "発展途上国への資金援助が重要だ。",
+      "translationZh": "对发展中国家的资金援助很重要。"
+    },
+    {
+      "id": "kanji-0209",
+      "term": "資料",
+      "sentenceJa": "図書館で研究に使う資料を探している。",
+      "translationZh": "在图书馆寻找研究用的资料。"
+    },
+    {
+      "id": "kanji-0210",
+      "term": "事件",
+      "sentenceJa": "その事件の真相は今も不明だ。",
+      "translationZh": "那个事件的真相至今不明。"
+    },
+    {
+      "id": "kanji-0211",
+      "term": "事故",
+      "sentenceJa": "工場で事故が発生したがけが人はいなかった。",
+      "translationZh": "工厂发生了事故但没有人员受伤。"
+    },
+    {
+      "id": "kanji-0212",
+      "term": "治療",
+      "sentenceJa": "この病気の治療には長い時間がかかる。",
+      "translationZh": "这种疾病的治疗需要很长时间。"
+    },
+    {
+      "id": "kanji-0213",
+      "term": "自然",
+      "sentenceJa": "自然の中で過ごす時間が好きだ。",
+      "translationZh": "我喜欢在大自然中度过的时间。"
+    },
+    {
+      "id": "kanji-0214",
+      "term": "自転車",
+      "sentenceJa": "毎日自転車で学校に通っている。",
+      "translationZh": "每天骑自行车上学。"
+    },
+    {
+      "id": "kanji-0215",
+      "term": "自分",
+      "sentenceJa": "自分の意見をはっきり言うことが大切だ。",
+      "translationZh": "清楚地表达自己的意见很重要。"
+    },
+    {
+      "id": "kanji-0216",
+      "term": "自慢",
+      "sentenceJa": "彼は料理の腕前を自慢している。",
+      "translationZh": "他在炫耀自己的厨艺。"
+    },
+    {
+      "id": "kanji-0217",
+      "term": "辞書",
+      "sentenceJa": "分からない単語は辞書で調べる。",
+      "translationZh": "不懂的单词查字典。"
+    },
+    {
+      "id": "kanji-0218",
+      "term": "実益",
+      "sentenceJa": "この勉強法には実益があると感じる。",
+      "translationZh": "我觉得这种学习方法有实际收益。"
+    },
+    {
+      "id": "kanji-0219",
+      "term": "実行",
+      "sentenceJa": "計画を実行に移す時期が来た。",
+      "translationZh": "到了将计划付诸实施的时期。"
+    },
+    {
+      "id": "kanji-0220",
+      "term": "借りた",
+      "sentenceJa": "友達から本を借りたので読んでいる。",
+      "translationZh": "从朋友那里借了书正在读。"
+    },
+    {
+      "id": "kanji-0221",
+      "term": "借金",
+      "sentenceJa": "借金を返すために節約している。",
+      "translationZh": "为了还债正在节约。"
+    },
+    {
+      "id": "kanji-0222",
+      "term": "主人公",
+      "sentenceJa": "この物語の主人公は勇敢な少年だ。",
+      "translationZh": "这个故事的主人公是勇敢的少年。"
+    },
+    {
+      "id": "kanji-0223",
+      "term": "主張",
+      "sentenceJa": "彼は自分の意見を強く主張した。",
+      "translationZh": "他强烈主张自己的意见。"
+    },
+    {
+      "id": "kanji-0224",
+      "term": "取引",
+      "sentenceJa": "株の取引はリスクが伴う。",
+      "translationZh": "股票交易伴随着风险。"
+    },
+    {
+      "id": "kanji-0225",
+      "term": "手間",
+      "sentenceJa": "この作業は手間がかかるがやりがいがある。",
+      "translationZh": "这项工作很费工夫但很有价值。"
+    },
+    {
+      "id": "kanji-0226",
+      "term": "趣旨",
+      "sentenceJa": "このイベントの趣旨を説明します。",
+      "translationZh": "我来说明一下这个活动的宗旨。"
+    },
+    {
+      "id": "kanji-0227",
+      "term": "趣味",
+      "sentenceJa": "彼の趣味は写真を撮ることだ。",
+      "translationZh": "他的爱好是拍照。"
+    },
+    {
+      "id": "kanji-0228",
+      "term": "首相",
+      "sentenceJa": "首相が記者会見で新しい政策を発表した。",
+      "translationZh": "首相在记者会上发表了新政策。"
+    },
+    {
+      "id": "kanji-0229",
+      "term": "収穫",
+      "sentenceJa": "秋は稲の収穫の季節だ。",
+      "translationZh": "秋天是稻米收获的季节。"
+    },
+    {
+      "id": "kanji-0230",
+      "term": "周囲",
+      "sentenceJa": "周囲の人の意見にも耳を傾けよう。",
+      "translationZh": "也倾听一下周围人的意见吧。"
+    },
+    {
+      "id": "kanji-0231",
+      "term": "周期的",
+      "sentenceJa": "この機械は周期的に点検が必要だ。",
+      "translationZh": "这台机器需要定期检查。"
+    },
+    {
+      "id": "kanji-0232",
+      "term": "周辺",
+      "sentenceJa": "駅の周辺にはたくさん店がある。",
+      "translationZh": "车站周边有很多店铺。"
+    },
+    {
+      "id": "kanji-0233",
+      "term": "終点",
+      "sentenceJa": "このバスの終点は博物館前です。",
+      "translationZh": "这辆公交车的终点是博物馆前。"
+    },
+    {
+      "id": "kanji-0234",
+      "term": "住宅地",
+      "sentenceJa": "新しい住宅地が造成されている。",
+      "translationZh": "新的住宅区正在开发中。"
+    },
+    {
+      "id": "kanji-0235",
+      "term": "重大",
+      "sentenceJa": "これは重大な問題なので早急に対応する。",
+      "translationZh": "这是重大问题，需要尽快应对。"
+    },
+    {
+      "id": "kanji-0236",
+      "term": "重大",
+      "sentenceJa": "この事件は重大な影響を及ぼした。",
+      "translationZh": "这个事件产生了重大影响。"
+    },
+    {
+      "id": "kanji-0237",
+      "term": "祝日",
+      "sentenceJa": "今日は祝日なので学校は休みだ。",
+      "translationZh": "今天是法定假日所以学校休息。"
+    },
+    {
+      "id": "kanji-0238",
+      "term": "縮小",
+      "sentenceJa": "予算を縮小せざるを得なかった。",
+      "translationZh": "不得不缩小预算。"
+    },
+    {
+      "id": "kanji-0239",
+      "term": "瞬間",
+      "sentenceJa": "その瞬間、彼の顔色が変わった。",
+      "translationZh": "那一瞬间，他的脸色变了。"
+    },
+    {
+      "id": "kanji-0240",
+      "term": "順調",
+      "sentenceJa": "計画は順調に進んでいる。",
+      "translationZh": "计划进展顺利。"
+    },
+    {
+      "id": "kanji-0241",
+      "term": "順番",
+      "sentenceJa": "順番を守って並んでください。",
+      "translationZh": "请按顺序排队。"
+    },
+    {
+      "id": "kanji-0242",
+      "term": "処置",
+      "sentenceJa": "医者が傷の処置をしてくれた。",
+      "translationZh": "医生处理了伤口。"
+    },
+    {
+      "id": "kanji-0243",
+      "term": "所得",
+      "sentenceJa": "所得が増えると税金も増える。",
+      "translationZh": "收入增加的话税金也会增加。"
+    },
+    {
+      "id": "kanji-0244",
+      "term": "暑さ",
+      "sentenceJa": "夏の暑さで食欲が落ちている。",
+      "translationZh": "因为夏天的炎热食欲下降了。"
+    },
+    {
+      "id": "kanji-0245",
+      "term": "勝負",
+      "sentenceJa": "今日の試合はいい勝負だった。",
+      "translationZh": "今天的比赛是场好较量。"
+    },
+    {
+      "id": "kanji-0246",
+      "term": "勝利",
+      "sentenceJa": "チームの勝利を皆で喜んだ。",
+      "translationZh": "大家一起为团队的胜利而高兴。"
+    },
+    {
+      "id": "kanji-0247",
+      "term": "商売",
+      "sentenceJa": "彼は小さな店で商売を始めた。",
+      "translationZh": "他在小店里开始了生意。"
+    },
+    {
+      "id": "kanji-0248",
+      "term": "将来",
+      "sentenceJa": "将来は海外で働きたいと思っている。",
+      "translationZh": "将来想在海外工作。"
+    },
+    {
+      "id": "kanji-0249",
+      "term": "小説",
+      "sentenceJa": "この小説はとても面白いと評判だ。",
+      "translationZh": "这本小说据说非常有趣。"
+    },
+    {
+      "id": "kanji-0250",
+      "term": "小説家",
+      "sentenceJa": "彼女は有名な小説家になる夢を持っている。",
+      "translationZh": "她有着成为著名小说家的梦想。"
+    },
+    {
+      "id": "kanji-0251",
+      "term": "消防車",
+      "sentenceJa": "消防車のサイレンが聞こえてきた。",
+      "translationZh": "听到了消防车的警笛声。"
+    },
+    {
+      "id": "kanji-0252",
+      "term": "焦点",
+      "sentenceJa": "議論の焦点がずれてしまった。",
+      "translationZh": "讨论的焦点偏离了。"
+    },
+    {
+      "id": "kanji-0253",
+      "term": "証言",
+      "sentenceJa": "彼は法廷で真実を証言した。",
+      "translationZh": "他在法庭上作证说了真相。"
+    },
+    {
+      "id": "kanji-0254",
+      "term": "詳細",
+      "sentenceJa": "詳細な説明書が製品に付いている。",
+      "translationZh": "产品附有详细的说明书。"
+    },
+    {
+      "id": "kanji-0255",
+      "term": "賞賛",
+      "sentenceJa": "彼の勇気ある行動に賞賛の声が集まった。",
+      "translationZh": "他勇敢的行动获得了赞扬。"
+    },
+    {
+      "id": "kanji-0256",
+      "term": "場合",
+      "sentenceJa": "緊急の場合はすぐに連絡してください。",
+      "translationZh": "紧急情况下请立即联系。"
+    },
+    {
+      "id": "kanji-0257",
+      "term": "常識",
+      "sentenceJa": "彼の行動は常識の範囲内だ。",
+      "translationZh": "他的行为在常识范围内。"
+    },
+    {
+      "id": "kanji-0258",
+      "term": "条件",
+      "sentenceJa": "この仕事には語学力が条件だ。",
+      "translationZh": "语言能力是这份工作的条件。"
+    },
+    {
+      "id": "kanji-0259",
+      "term": "条約",
+      "sentenceJa": "両国は平和条約を結んだ。",
+      "translationZh": "两国签订了和平条约。"
+    },
+    {
+      "id": "kanji-0260",
+      "term": "状況",
+      "sentenceJa": "現在の経済状況は厳しい。",
+      "translationZh": "现在的经济状况很严峻。"
+    },
+    {
+      "id": "kanji-0261",
+      "term": "状態",
+      "sentenceJa": "機械の状態を確認してください。",
+      "translationZh": "请确认机器的状态。"
+    },
+    {
+      "id": "kanji-0262",
+      "term": "植物",
+      "sentenceJa": "庭にいろいろな植物を育てている。",
+      "translationZh": "在院子里种植了各种植物。"
+    },
+    {
+      "id": "kanji-0263",
+      "term": "職業",
+      "sentenceJa": "彼の職業は建築士です。",
+      "translationZh": "他的职业是建筑师。"
+    },
+    {
+      "id": "kanji-0264",
+      "term": "触れる",
+      "sentenceJa": "展示物に手で触れることは禁止されている。",
+      "translationZh": "用手触摸展品是被禁止的。"
+    },
+    {
+      "id": "kanji-0265",
+      "term": "信念",
+      "sentenceJa": "彼は強い信念を持って研究を続けた。",
+      "translationZh": "他怀着坚定的信念继续研究。"
+    },
+    {
+      "id": "kanji-0266",
+      "term": "信用",
+      "sentenceJa": "彼は約束を守るので信用できる。",
+      "translationZh": "他遵守约定所以值得信赖。"
+    },
+    {
+      "id": "kanji-0267",
+      "term": "心臓",
+      "sentenceJa": "心臓の鼓動が速くなっている。",
+      "translationZh": "心脏的跳动变快了。"
+    },
+    {
+      "id": "kanji-0268",
+      "term": "心地",
+      "sentenceJa": "この椅子は座り心地がいい。",
+      "translationZh": "这把椅子坐着很舒服。"
+    },
+    {
+      "id": "kanji-0269",
+      "term": "森林",
+      "sentenceJa": "森林を守ることは地球の未来につながる。",
+      "translationZh": "保护森林关系到地球的未来。"
+    },
+    {
+      "id": "kanji-0270",
+      "term": "深刻",
+      "sentenceJa": "環境問題は深刻な状況にある。",
+      "translationZh": "环境问题处于严峻状况。"
+    },
+    {
+      "id": "kanji-0271",
+      "term": "診て",
+      "sentenceJa": "医者に傷を診てもらった。",
+      "translationZh": "让医生看了伤口。"
+    },
+    {
+      "id": "kanji-0272",
+      "term": "進歩",
+      "sentenceJa": "科学技術の進歩は目覚ましい。",
+      "translationZh": "科学技术的进步令人瞩目。"
+    },
+    {
+      "id": "kanji-0273",
+      "term": "進路",
+      "sentenceJa": "卒業後の進路について考えている。",
+      "translationZh": "正在考虑毕业后的去向。"
+    },
+    {
+      "id": "kanji-0274",
+      "term": "人気",
+      "sentenceJa": "このレストランは地元で人気がある。",
+      "translationZh": "这家餐厅在当地很受欢迎。"
+    },
+    {
+      "id": "kanji-0275",
+      "term": "人柄",
+      "sentenceJa": "彼の人柄に惹かれて友達になった。",
+      "translationZh": "被他的为人所吸引成为了朋友。"
+    },
+    {
+      "id": "kanji-0276",
+      "term": "迅速",
+      "sentenceJa": "問題に迅速に対応することが求められる。",
+      "translationZh": "要求迅速应对问题。"
+    },
+    {
+      "id": "kanji-0277",
+      "term": "推進",
+      "sentenceJa": "新技術の推進に力を入れている。",
+      "translationZh": "致力于推进新技术。"
+    },
+    {
+      "id": "kanji-0278",
+      "term": "水素",
+      "sentenceJa": "水素は燃えると水になる。",
+      "translationZh": "氢气燃烧后会变成水。"
+    },
+    {
+      "id": "kanji-0279",
+      "term": "水面",
+      "sentenceJa": "湖の水面が風で揺れている。",
+      "translationZh": "湖面被风吹动而荡漾。"
+    },
+    {
+      "id": "kanji-0280",
+      "term": "数学",
+      "sentenceJa": "数学の問題を解くのが好きだ。",
+      "translationZh": "我喜欢解数学题。"
+    },
+    {
+      "id": "kanji-0281",
+      "term": "数十名",
+      "sentenceJa": "数十名の学生がボランティアに参加した。",
+      "translationZh": "数十名学生参加了志愿者活动。"
+    },
+    {
+      "id": "kanji-0282",
+      "term": "制限速度",
+      "sentenceJa": "制限速度を守って安全運転を心がける。",
+      "translationZh": "遵守限速，注意安全驾驶。"
+    },
+    {
+      "id": "kanji-0283",
+      "term": "勢力",
+      "sentenceJa": "その会社は業界で大きな勢力を持っている。",
+      "translationZh": "那家公司在业界拥有很大的势力。"
+    },
+    {
+      "id": "kanji-0284",
+      "term": "性格",
+      "sentenceJa": "彼女は明るくて性格がいい。",
+      "translationZh": "她性格开朗，性格很好。"
+    },
+    {
+      "id": "kanji-0285",
+      "term": "政治",
+      "sentenceJa": "政治に関心を持つことが大切だ。",
+      "translationZh": "关心政治是很重要的。"
+    },
+    {
+      "id": "kanji-0286",
+      "term": "政府",
+      "sentenceJa": "政府は新しい経済政策を発表した。",
+      "translationZh": "政府公布了新的经济政策。"
+    },
+    {
+      "id": "kanji-0287",
+      "term": "整える",
+      "sentenceJa": "部屋を整えることで気分も良くなる。",
+      "translationZh": "整理房间心情也会变好。"
+    },
+    {
+      "id": "kanji-0288",
+      "term": "正確",
+      "sentenceJa": "この地図は正確に描かれている。",
+      "translationZh": "这张地图画得很准确。"
+    },
+    {
+      "id": "kanji-0289",
+      "term": "生じる",
+      "sentenceJa": "この薬は副作用を生じる可能性がある。",
+      "translationZh": "这种药有可能产生副作用。"
+    },
+    {
+      "id": "kanji-0290",
+      "term": "生活",
+      "sentenceJa": "毎日の生活リズムを整えることが大切だ。",
+      "translationZh": "调整每天的生活节奏很重要。"
+    },
+    {
+      "id": "kanji-0291",
+      "term": "精神的",
+      "sentenceJa": "精神的な支えが必要な時もある。",
+      "translationZh": "有时也需要精神上的支持。"
+    },
+    {
+      "id": "kanji-0292",
+      "term": "声",
+      "sentenceJa": "彼女の声はとてもきれいだ。",
+      "translationZh": "她的声音非常动听。"
+    },
+    {
+      "id": "kanji-0293",
+      "term": "製品",
+      "sentenceJa": "この製品は品質が良くて評判だ。",
+      "translationZh": "这个产品质量好，很有口碑。"
+    },
+    {
+      "id": "kanji-0294",
+      "term": "青年",
+      "sentenceJa": "彼は青年の頃から海外に興味があった。",
+      "translationZh": "他从青年时期就对海外感兴趣。"
+    },
+    {
+      "id": "kanji-0295",
+      "term": "税金",
+      "sentenceJa": "税金の申告を忘れずに行う。",
+      "translationZh": "不要忘记进行纳税申报。"
+    },
+    {
+      "id": "kanji-0296",
+      "term": "税務署",
+      "sentenceJa": "税務署に確定申告書を提出した。",
+      "translationZh": "向税务局提交了确定申报书。"
+    },
+    {
+      "id": "kanji-0297",
+      "term": "昔",
+      "sentenceJa": "昔の写真を見ながら思い出を語った。",
+      "translationZh": "一边看旧照片一边谈论回忆。"
+    },
+    {
+      "id": "kanji-0298",
+      "term": "責任",
+      "sentenceJa": "自分の行動に責任を持ちなさい。",
+      "translationZh": "请对自己的行为负责。"
+    },
+    {
+      "id": "kanji-0299",
+      "term": "切実",
+      "sentenceJa": "彼の環境問題への関心は切実だ。",
+      "translationZh": "他对环境问题的关心是迫切的。"
+    },
+    {
+      "id": "kanji-0300",
+      "term": "切符",
+      "sentenceJa": "駅で切符を買ってから改札を通った。",
+      "translationZh": "在车站买了票后通过了检票口。"
+    },
+    {
+      "id": "kanji-0301",
+      "term": "接している",
+      "sentenceJa": "日本は海に接している島国だ。",
+      "translationZh": "日本是临海的岛国。"
+    },
+    {
+      "id": "kanji-0302",
+      "term": "設計",
+      "sentenceJa": "新しい橋の設計を担当している。",
+      "translationZh": "负责新桥的设计。"
+    },
+    {
+      "id": "kanji-0303",
+      "term": "雪山",
+      "sentenceJa": "冬になると雪山でスキーが楽しめる。",
+      "translationZh": "到了冬天可以在雪山享受滑雪。"
+    },
+    {
+      "id": "kanji-0304",
+      "term": "絶える",
+      "sentenceJa": "その習慣は今では絶えることがない。",
+      "translationZh": "那个习惯至今没有断绝。"
+    },
+    {
+      "id": "kanji-0305",
+      "term": "先祖代々",
+      "sentenceJa": "この土地は先祖代々受け継がれてきた。",
+      "translationZh": "这块土地是祖祖辈辈传承下来的。"
+    },
+    {
+      "id": "kanji-0306",
+      "term": "宣伝",
+      "sentenceJa": "新商品の宣伝のためにテレビ広告を出した。",
+      "translationZh": "为了宣传新产品投放了电视广告。"
+    },
+    {
+      "id": "kanji-0307",
+      "term": "専門家",
+      "sentenceJa": "専門家の意見を聞いてから決めよう。",
+      "translationZh": "听取专家的意见后再决定吧。"
+    },
+    {
+      "id": "kanji-0308",
+      "term": "選ぶ",
+      "sentenceJa": "プレゼントを選ぶのに時間がかかった。",
+      "translationZh": "挑选礼物花了时间。"
+    },
+    {
+      "id": "kanji-0309",
+      "term": "選挙",
+      "sentenceJa": "選挙の投票に行くのは国民の義務だ。",
+      "translationZh": "去选举投票是国民的义务。"
+    },
+    {
+      "id": "kanji-0310",
+      "term": "選手",
+      "sentenceJa": "彼はオリンピックの選手として活躍している。",
+      "translationZh": "他作为奥运选手活跃着。"
+    },
+    {
+      "id": "kanji-0311",
+      "term": "全体",
+      "sentenceJa": "クラスの全体で話し合いを行った。",
+      "translationZh": "全班进行了讨论。"
+    },
+    {
+      "id": "kanji-0312",
+      "term": "全般的",
+      "sentenceJa": "全般的に今年の業績は良いと言える。",
+      "translationZh": "总的来说今年的业绩可以说不错。"
+    },
+    {
+      "id": "kanji-0313",
+      "term": "全力",
+      "sentenceJa": "全力で試合に臨むことが大切だ。",
+      "translationZh": "全力以赴地面对比赛很重要。"
+    },
+    {
+      "id": "kanji-0314",
+      "term": "祖父",
+      "sentenceJa": "祖父は毎朝庭の手入れをしている。",
+      "translationZh": "祖父每天早上打理院子。"
+    },
+    {
+      "id": "kanji-0315",
+      "term": "素材",
+      "sentenceJa": "このケーキは新鮮な素材を使っている。",
+      "translationZh": "这个蛋糕使用了新鲜的材料。"
+    },
+    {
+      "id": "kanji-0316",
+      "term": "素晴らしい",
+      "sentenceJa": "夕日が海に沈む景色は素晴らしい。",
+      "translationZh": "夕阳沉入大海的景色非常壮观。"
+    },
+    {
+      "id": "kanji-0317",
+      "term": "素直",
+      "sentenceJa": "彼女は素直な性格で誰からも好かれる。",
+      "translationZh": "她性格坦率，受到大家的喜爱。"
+    },
+    {
+      "id": "kanji-0318",
+      "term": "組織",
+      "sentenceJa": "この組織は地域のボランティアで構成されている。",
+      "translationZh": "这个组织由地区志愿者构成。"
+    },
+    {
+      "id": "kanji-0319",
+      "term": "僧",
+      "sentenceJa": "お寺の僧が静かに読経している。",
+      "translationZh": "寺庙的僧侣在静静地诵经。"
+    },
+    {
+      "id": "kanji-0320",
+      "term": "操業",
+      "sentenceJa": "工場の操業を再開する準備が整った。",
+      "translationZh": "工厂恢复运营的准备已经就绪。"
+    },
+    {
+      "id": "kanji-0321",
+      "term": "総会",
+      "sentenceJa": "株主総会で今年の業績が報告された。",
+      "translationZh": "在股东大会上报告了今年的业绩。"
+    },
+    {
+      "id": "kanji-0322",
+      "term": "騒ぎ",
+      "sentenceJa": "隣の部屋から騒ぎが聞こえてきた。",
+      "translationZh": "从隔壁房间传来了吵闹声。"
+    },
+    {
+      "id": "kanji-0323",
+      "term": "増加",
+      "sentenceJa": "人口の増加に伴い交通量も増えた。",
+      "translationZh": "随着人口增加交通量也增加了。"
+    },
+    {
+      "id": "kanji-0324",
+      "term": "臓器",
+      "sentenceJa": "臓器提供の意思表示が増えている。",
+      "translationZh": "表示愿意捐献器官的人在增加。"
+    },
+    {
+      "id": "kanji-0325",
+      "term": "続出",
+      "sentenceJa": "新しい商品の注文が続出している。",
+      "translationZh": "新商品的订单接连不断。"
+    },
+    {
+      "id": "kanji-0326",
+      "term": "存続",
+      "sentenceJa": "この伝統は今後も存続していくべきだ。",
+      "translationZh": "这个传统今后也应该继续存在下去。"
+    },
+    {
+      "id": "kanji-0327",
+      "term": "他人",
+      "sentenceJa": "他人の意見を尊重することも必要だ。",
+      "translationZh": "尊重他人的意见也是必要的。"
+    },
+    {
+      "id": "kanji-0328",
+      "term": "多額",
+      "sentenceJa": "彼はその事業に多額の資金を投じた。",
+      "translationZh": "他向那个事业投入了巨额资金。"
+    },
+    {
+      "id": "kanji-0329",
+      "term": "多少",
+      "sentenceJa": "多少の失敗は気にしないほうがいい。",
+      "translationZh": "多少的失败最好不要太在意。"
+    },
+    {
+      "id": "kanji-0330",
+      "term": "体制",
+      "sentenceJa": "新しい体制のもとで改革が進められている。",
+      "translationZh": "在新体制下正在推进改革。"
+    },
+    {
+      "id": "kanji-0331",
+      "term": "対策",
+      "sentenceJa": "環境問題への対策を話し合った。",
+      "translationZh": "讨论了应对环境问题的对策。"
+    },
+    {
+      "id": "kanji-0332",
+      "term": "対処",
+      "sentenceJa": "問題に迅速に対処する必要がある。",
+      "translationZh": "需要迅速应对问题。"
+    },
+    {
+      "id": "kanji-0333",
+      "term": "対戦相手",
+      "sentenceJa": "対戦相手のチームはとても強い。",
+      "translationZh": "对手队伍非常强大。"
+    },
+    {
+      "id": "kanji-0334",
+      "term": "対等",
+      "sentenceJa": "両者は対等な立場で話し合った。",
+      "translationZh": "双方以对等的立场进行了协商。"
+    },
+    {
+      "id": "kanji-0335",
+      "term": "対比",
+      "sentenceJa": "二つの商品を対比してみると違いがわかる。",
+      "translationZh": "对比两种商品就能看出差异。"
+    },
+    {
+      "id": "kanji-0336",
+      "term": "対面",
+      "sentenceJa": "初めての対面で緊張した。",
+      "translationZh": "第一次见面很紧张。"
+    },
+    {
+      "id": "kanji-0337",
+      "term": "態度",
+      "sentenceJa": "彼の真剣な態度に感心した。",
+      "translationZh": "对他认真的态度感到钦佩。"
+    },
+    {
+      "id": "kanji-0338",
+      "term": "大臣",
+      "sentenceJa": "大臣が新しい政策について説明した。",
+      "translationZh": "大臣说明了新政策。"
+    },
+    {
+      "id": "kanji-0339",
+      "term": "大都市",
+      "sentenceJa": "大都市には多くの人が集まる。",
+      "translationZh": "大都市聚集了很多人。"
+    },
+    {
+      "id": "kanji-0340",
+      "term": "探検隊",
+      "sentenceJa": "探検隊が未知の地域へ出発した。",
+      "translationZh": "探险队向未知地区出发了。"
+    },
+    {
+      "id": "kanji-0341",
+      "term": "短縮",
+      "sentenceJa": "会議時間を短縮するために議題を絞った。",
+      "translationZh": "为了缩短会议时间精简了议题。"
+    },
+    {
+      "id": "kanji-0342",
+      "term": "弾ける",
+      "sentenceJa": "風船が割れて大きな音が弾ける。",
+      "translationZh": "气球破裂发出很大的声响。"
+    },
+    {
+      "id": "kanji-0343",
+      "term": "男女",
+      "sentenceJa": "男女問わず多くの人が参加した。",
+      "translationZh": "不论男女有很多人参加了。"
+    },
+    {
+      "id": "kanji-0344",
+      "term": "値段",
+      "sentenceJa": "この商品の値段は手頃だ。",
+      "translationZh": "这个商品的价格很合适。"
+    },
+    {
+      "id": "kanji-0345",
+      "term": "知識",
+      "sentenceJa": "知識を深めるために本を読んでいる。",
+      "translationZh": "为了加深知识正在读书。"
+    },
+    {
+      "id": "kanji-0346",
+      "term": "地震",
+      "sentenceJa": "地震に備えて防災グッズを準備している。",
+      "translationZh": "为了应对地震准备了防灾用品。"
+    },
+    {
+      "id": "kanji-0347",
+      "term": "地中",
+      "sentenceJa": "地中に埋まっている遺跡が発見された。",
+      "translationZh": "发现了埋藏在地下的遗迹。"
+    },
+    {
+      "id": "kanji-0348",
+      "term": "地方",
+      "sentenceJa": "地方の町には自然がたくさん残っている。",
+      "translationZh": "地方城镇保留着很多自然风光。"
+    },
+    {
+      "id": "kanji-0349",
+      "term": "地面",
+      "sentenceJa": "地面に座って休憩した。",
+      "translationZh": "坐在地上休息了。"
+    },
+    {
+      "id": "kanji-0350",
+      "term": "仲間",
+      "sentenceJa": "仲間と一緒に目標に向かって頑張っている。",
+      "translationZh": "和伙伴们一起朝着目标努力。"
+    },
+    {
+      "id": "kanji-0351",
+      "term": "注目",
+      "sentenceJa": "彼の話に注目が集まった。",
+      "translationZh": "他的发言引起了关注。"
+    },
+    {
+      "id": "kanji-0352",
+      "term": "駐車違反",
+      "sentenceJa": "駐車違反の切符を切られた。",
+      "translationZh": "被开了违章停车罚单。"
+    },
+    {
+      "id": "kanji-0353",
+      "term": "駐車禁止",
+      "sentenceJa": "この場所は駐車禁止になっている。",
+      "translationZh": "这个地方禁止停车。"
+    },
+    {
+      "id": "kanji-0354",
+      "term": "駐車場",
+      "sentenceJa": "駅の近くに駐車場がある。",
+      "translationZh": "车站附近有停车场。"
+    },
+    {
+      "id": "kanji-0355",
+      "term": "丁寧",
+      "sentenceJa": "彼はお客様に丁寧に応対した。",
+      "translationZh": "他礼貌地接待了客人。"
+    },
+    {
+      "id": "kanji-0356",
+      "term": "聴講",
+      "sentenceJa": "大学の講義を聴講する申し込みをした。",
+      "translationZh": "申请了旁听大学的课程。"
+    },
+    {
+      "id": "kanji-0357",
+      "term": "長雨",
+      "sentenceJa": "今年は長雨で農作物の生育が心配だ。",
+      "translationZh": "今年因为长时间的降雨担心农作物的生长。"
+    },
+    {
+      "id": "kanji-0358",
+      "term": "長年",
+      "sentenceJa": "長年使い続けた道具には愛着がある。",
+      "translationZh": "对多年使用的工具有感情。"
+    },
+    {
+      "id": "kanji-0359",
+      "term": "直前",
+      "sentenceJa": "出発の直前になって忘れ物に気づいた。",
+      "translationZh": "在出发前一刻发现了忘带的东西。"
+    },
+    {
+      "id": "kanji-0360",
+      "term": "賃金",
+      "sentenceJa": "賃金が上がらないので生活が苦しい。",
+      "translationZh": "工资不涨所以生活很艰难。"
+    },
+    {
+      "id": "kanji-0361",
+      "term": "痛み",
+      "sentenceJa": "歯の痛みがひどくて眠れなかった。",
+      "translationZh": "牙疼得厉害睡不着。"
+    },
+    {
+      "id": "kanji-0362",
+      "term": "通知",
+      "sentenceJa": "結果の通知が郵便で届いた。",
+      "translationZh": "结果的通知通过邮寄送达了。"
+    },
+    {
+      "id": "kanji-0363",
+      "term": "停止",
+      "sentenceJa": "工事の間は水道が停止している。",
+      "translationZh": "施工期间自来水停止供应。"
+    },
+    {
+      "id": "kanji-0364",
+      "term": "停滞",
+      "sentenceJa": "経済の停滞が続いている。",
+      "translationZh": "经济停滞持续着。"
+    },
+    {
+      "id": "kanji-0365",
+      "term": "定期的",
+      "sentenceJa": "定期的に健康診断を受けるようにしている。",
+      "translationZh": "定期接受健康检查。"
+    },
+    {
+      "id": "kanji-0366",
+      "term": "定年",
+      "sentenceJa": "父は来年定年を迎える。",
+      "translationZh": "父亲明年将迎来退休。"
+    },
+    {
+      "id": "kanji-0367",
+      "term": "程度",
+      "sentenceJa": "ある程度のリスクは覚悟している。",
+      "translationZh": "对一定程度的风险有心理准备。"
+    },
+    {
+      "id": "kanji-0368",
+      "term": "適応",
+      "sentenceJa": "新しい環境に適応するのに時間がかかった。",
+      "translationZh": "适应新环境花了时间。"
+    },
+    {
+      "id": "kanji-0369",
+      "term": "展望",
+      "sentenceJa": "屋上からの展望は素晴らしかった。",
+      "translationZh": "从屋顶眺望的景色非常壮观。"
+    },
+    {
+      "id": "kanji-0370",
+      "term": "店員",
+      "sentenceJa": "店員が親切に商品を説明してくれた。",
+      "translationZh": "店员亲切地说明了商品。"
+    },
+    {
+      "id": "kanji-0371",
+      "term": "伝記",
+      "sentenceJa": "偉人の伝記を読んで感動した。",
+      "translationZh": "读了伟人的传记很感动。"
+    },
+    {
+      "id": "kanji-0372",
+      "term": "伝染病",
+      "sentenceJa": "伝染病の予防には手洗いが効果的だ。",
+      "translationZh": "洗手对预防传染病很有效。"
+    },
+    {
+      "id": "kanji-0373",
+      "term": "伝統的",
+      "sentenceJa": "伝統的な祭りが毎年開催されている。",
+      "translationZh": "传统的节日每年都会举办。"
+    },
+    {
+      "id": "kanji-0374",
+      "term": "田園",
+      "sentenceJa": "田園風景の中を自転車で走るのが好きだ。",
+      "translationZh": "喜欢在田园风景中骑自行车。"
+    },
+    {
+      "id": "kanji-0375",
+      "term": "途中",
+      "sentenceJa": "途中で雨が降ってきたので急いで帰った。",
+      "translationZh": "途中下起了雨所以匆忙回家了。"
+    },
+    {
+      "id": "kanji-0376",
+      "term": "都合",
+      "sentenceJa": "明日の都合が悪くなったら連絡します。",
+      "translationZh": "如果明天不方便的话我会联系你。"
+    },
+    {
+      "id": "kanji-0377",
+      "term": "都市",
+      "sentenceJa": "都市の生活は便利だがストレスも多い。",
+      "translationZh": "都市生活虽然方便但压力也大。"
+    },
+    {
+      "id": "kanji-0378",
+      "term": "都心",
+      "sentenceJa": "都心のマンションは家賃が高い。",
+      "translationZh": "市中心的公寓房租很贵。"
+    },
+    {
+      "id": "kanji-0379",
+      "term": "努力",
+      "sentenceJa": "目標達成のために努力を続けている。",
+      "translationZh": "为了达成目标持续努力。"
+    },
+    {
+      "id": "kanji-0380",
+      "term": "投書",
+      "sentenceJa": "新聞社に投書して意見を伝えた。",
+      "translationZh": "向报社投稿表达了自己的意见。"
+    },
+    {
+      "id": "kanji-0381",
+      "term": "投票",
+      "sentenceJa": "投票に行って自分の意見を反映させよう。",
+      "translationZh": "去投票反映自己的意见吧。"
+    },
+    {
+      "id": "kanji-0382",
+      "term": "湯気",
+      "sentenceJa": "鍋から湯気が立ち上っている。",
+      "translationZh": "从锅里冒出热气。"
+    },
+    {
+      "id": "kanji-0383",
+      "term": "動物",
+      "sentenceJa": "動物園でさまざまな動物を見た。",
+      "translationZh": "在动物园看到了各种各样的动物。"
+    },
+    {
+      "id": "kanji-0384",
+      "term": "同感",
+      "sentenceJa": "彼の意見に強く同感した。",
+      "translationZh": "非常赞同他的意见。"
+    },
+    {
+      "id": "kanji-0385",
+      "term": "得た",
+      "sentenceJa": "彼はその経験から多くのことを得た。",
+      "translationZh": "他从那个经历中获得了许多。"
+    },
+    {
+      "id": "kanji-0386",
+      "term": "得点",
+      "sentenceJa": "試験で満点の得点を取った。",
+      "translationZh": "在考试中取得了满分。"
+    },
+    {
+      "id": "kanji-0387",
+      "term": "突然",
+      "sentenceJa": "突然の雨で服が濡れてしまった。",
+      "translationZh": "突然下雨衣服被淋湿了。"
+    },
+    {
+      "id": "kanji-0388",
+      "term": "難しい",
+      "sentenceJa": "この問題はとても難しい。",
+      "translationZh": "这个问题非常难。"
+    },
+    {
+      "id": "kanji-0389",
+      "term": "入門",
+      "sentenceJa": "日本語の入門クラスに申し込んだ。",
+      "translationZh": "报名了日语入门班。"
+    },
+    {
+      "id": "kanji-0390",
+      "term": "任命権",
+      "sentenceJa": "部長には新しいプロジェクトの任命権がある。",
+      "translationZh": "部长有任命新项目的权力。"
+    },
+    {
+      "id": "kanji-0391",
+      "term": "認識",
+      "sentenceJa": "問題の重要性を認識する必要がある。",
+      "translationZh": "需要认识到问题的重要性。"
+    },
+    {
+      "id": "kanji-0392",
+      "term": "年齢",
+      "sentenceJa": "年齢を重ねると経験が増える。",
+      "translationZh": "随着年龄增长经验也会增加。"
+    },
+    {
+      "id": "kanji-0393",
+      "term": "悩む",
+      "sentenceJa": "将来のことで悩むことがある。",
+      "translationZh": "有时会为将来的事情烦恼。"
+    },
+    {
+      "id": "kanji-0394",
+      "term": "能率",
+      "sentenceJa": "この方法は能率が悪いので改善しよう。",
+      "translationZh": "这个方法效率低，改进一下吧。"
+    },
+    {
+      "id": "kanji-0395",
+      "term": "波",
+      "sentenceJa": "波の音を聞いていると落ち着く。",
+      "translationZh": "听着海浪的声音会平静下来。"
+    },
+    {
+      "id": "kanji-0396",
+      "term": "排気",
+      "sentenceJa": "車の排気ガスが環境に悪影響を与える。",
+      "translationZh": "汽车尾气对环境有不良影响。"
+    },
+    {
+      "id": "kanji-0397",
+      "term": "背景",
+      "sentenceJa": "この物語の背景は戦後の日本だ。",
+      "translationZh": "这个故事的背景是战后的日本。"
+    },
+    {
+      "id": "kanji-0398",
+      "term": "配置",
+      "sentenceJa": "家具の配置を変えて部屋の雰囲気を変えた。",
+      "translationZh": "改变家具的布置改变了房间的氛围。"
+    },
+    {
+      "id": "kanji-0399",
+      "term": "配慮",
+      "sentenceJa": "お客様への配慮を忘れないようにする。",
+      "translationZh": "不要忘记对客人的关怀。"
+    },
+    {
+      "id": "kanji-0400",
+      "term": "博士",
+      "sentenceJa": "彼は工学の博士号を取得している。",
+      "translationZh": "他取得了工学博士学位。"
+    },
+    {
+      "id": "kanji-0401",
+      "term": "博士論文",
+      "sentenceJa": "博士論文を書くために研究を続けている。",
+      "translationZh": "为了写博士论文继续研究。"
+    },
+    {
+      "id": "kanji-0402",
+      "term": "発掘",
+      "sentenceJa": "遺跡の発掘作業が始まった。",
+      "translationZh": "遗迹的发掘工作开始了。"
+    },
+    {
+      "id": "kanji-0403",
+      "term": "発見",
+      "sentenceJa": "新しい星を発見したと発表された。",
+      "translationZh": "宣布发现了新的星球。"
+    },
+    {
+      "id": "kanji-0404",
+      "term": "発言",
+      "sentenceJa": "会議で自由に発言することができる。",
+      "translationZh": "可以在会议上自由发言。"
+    },
+    {
+      "id": "kanji-0405",
+      "term": "発足",
+      "sentenceJa": "新しいプロジェクトが来月発足する。",
+      "translationZh": "新项目将于下个月启动。"
+    },
+    {
+      "id": "kanji-0406",
+      "term": "伴う",
+      "sentenceJa": "この仕事には大きな責任が伴う。",
+      "translationZh": "这项工作伴随着重大责任。"
+    },
+    {
+      "id": "kanji-0407",
+      "term": "判断",
+      "sentenceJa": "彼の判断はいつも正確だ。",
+      "translationZh": "他的判断总是准确的。"
+    },
+    {
+      "id": "kanji-0408",
+      "term": "半ば",
+      "sentenceJa": "試合の半ばで雨が降り出した。",
+      "translationZh": "比赛进行到一半时下起了雨。"
+    },
+    {
+      "id": "kanji-0409",
+      "term": "反応",
+      "sentenceJa": "アレルギー反応が出たので薬を飲んだ。",
+      "translationZh": "出现了过敏反应所以吃了药。"
+    },
+    {
+      "id": "kanji-0410",
+      "term": "犯人",
+      "sentenceJa": "その小説の犯人は意外な人物だった。",
+      "translationZh": "那本小说里的犯人是个意想不到的人物。"
+    },
+    {
+      "id": "kanji-0411",
+      "term": "悲しい",
+      "sentenceJa": "別れが悲しい気持ちを理解してほしい。",
+      "translationZh": "希望你能理解离别悲伤的心情。"
+    },
+    {
+      "id": "kanji-0412",
+      "term": "疲労",
+      "sentenceJa": "仕事の疲労がたまっている。",
+      "translationZh": "工作的疲劳在积累。"
+    },
+    {
+      "id": "kanji-0413",
+      "term": "秘密",
+      "sentenceJa": "彼は秘密を誰にも話さなかった。",
+      "translationZh": "他没有把秘密告诉任何人。"
+    },
+    {
+      "id": "kanji-0414",
+      "term": "被害",
+      "sentenceJa": "台風で農作物が被害を受けた。",
+      "translationZh": "台风导致农作物受灾。"
+    },
+    {
+      "id": "kanji-0415",
+      "term": "避難",
+      "sentenceJa": "火事の際は落ち着いて避難してください。",
+      "translationZh": "发生火灾时请冷静避难。"
+    },
+    {
+      "id": "kanji-0416",
+      "term": "非行",
+      "sentenceJa": "彼の非行が問題になっている。",
+      "translationZh": "他的不良行为成了问题。"
+    },
+    {
+      "id": "kanji-0417",
+      "term": "非常",
+      "sentenceJa": "非常の場合に備えて準備している。",
+      "translationZh": "为紧急情况做准备。"
+    },
+    {
+      "id": "kanji-0418",
+      "term": "非難",
+      "sentenceJa": "彼の行動を非難する人はいない。",
+      "translationZh": "没有人指责他的行为。"
+    },
+    {
+      "id": "kanji-0419",
+      "term": "飛び込む",
+      "sentenceJa": "プールに飛び込むのが好きだ。",
+      "translationZh": "喜欢跳进游泳池。"
+    },
+    {
+      "id": "kanji-0420",
+      "term": "微量",
+      "sentenceJa": "この薬は微量で効果がある。",
+      "translationZh": "这种药微量就有效果。"
+    },
+    {
+      "id": "kanji-0421",
+      "term": "鼻",
+      "sentenceJa": "風邪をひいて鼻が詰まっている。",
+      "translationZh": "感冒了鼻子不通气。"
+    },
+    {
+      "id": "kanji-0422",
+      "term": "必要",
+      "sentenceJa": "成功するには努力が必要だ。",
+      "translationZh": "成功需要努力。"
+    },
+    {
+      "id": "kanji-0423",
+      "term": "標識",
+      "sentenceJa": "道路に標識があるので迷わない。",
+      "translationZh": "路上有标志所以不会迷路。"
+    },
+    {
+      "id": "kanji-0424",
+      "term": "表現",
+      "sentenceJa": "彼は自分の気持ちをうまく表現できる。",
+      "translationZh": "他能很好地表达自己的感情。"
+    },
+    {
+      "id": "kanji-0425",
+      "term": "病院",
+      "sentenceJa": "病院で健康診断を受けた。",
+      "translationZh": "在医院接受了健康检查。"
+    },
+    {
+      "id": "kanji-0426",
+      "term": "病気",
+      "sentenceJa": "病気の時はゆっくり休むことが大切だ。",
+      "translationZh": "生病时好好休息很重要。"
+    },
+    {
+      "id": "kanji-0427",
+      "term": "頻繁",
+      "sentenceJa": "彼は頻繁に海外出張に行く。",
+      "translationZh": "他频繁地出差去海外。"
+    },
+    {
+      "id": "kanji-0428",
+      "term": "敏感",
+      "sentenceJa": "彼女は周りの意見に敏感だ。",
+      "translationZh": "她对周围人的意见很敏感。"
+    },
+    {
+      "id": "kanji-0429",
+      "term": "不安",
+      "sentenceJa": "試験の結果に不安を感じている。",
+      "translationZh": "对考试结果感到不安。"
+    },
+    {
+      "id": "kanji-0430",
+      "term": "不況",
+      "sentenceJa": "不況の影響で会社の業績が悪化した。",
+      "translationZh": "受不景气影响公司业绩恶化了。"
+    },
+    {
+      "id": "kanji-0431",
+      "term": "不景気",
+      "sentenceJa": "不景気になると消費が減る。",
+      "translationZh": "经济不景气时消费会减少。"
+    },
+    {
+      "id": "kanji-0432",
+      "term": "不信感",
+      "sentenceJa": "彼の言動に不信感を抱いた。",
+      "translationZh": "对他的言行产生了不信任感。"
+    },
+    {
+      "id": "kanji-0433",
+      "term": "不正",
+      "sentenceJa": "不正な取引が発覚した。",
+      "translationZh": "不正当的交易被发现了。"
+    },
+    {
+      "id": "kanji-0434",
+      "term": "不通",
+      "sentenceJa": "電話が不通になっている。",
+      "translationZh": "电话不通了。"
+    },
+    {
+      "id": "kanji-0435",
+      "term": "夫婦",
+      "sentenceJa": "あの夫婦は仲が良くて羨ましい。",
+      "translationZh": "那对夫妻关系很好令人羡慕。"
+    },
+    {
+      "id": "kanji-0436",
+      "term": "部下",
+      "sentenceJa": "部下の意見を尊重する上司がいい。",
+      "translationZh": "尊重下属意见的上司是好上司。"
+    },
+    {
+      "id": "kanji-0437",
+      "term": "風景",
+      "sentenceJa": "この辺りの風景はとても美しい。",
+      "translationZh": "这一带的风景非常美丽。"
+    },
+    {
+      "id": "kanji-0438",
+      "term": "風俗",
+      "sentenceJa": "その地域の風俗や習慣を学ぶのは面白い。",
+      "translationZh": "学习那个地区的风俗习惯很有趣。"
+    },
+    {
+      "id": "kanji-0439",
+      "term": "副社長",
+      "sentenceJa": "副社長が新商品の発表会に出席した。",
+      "translationZh": "副社长出席了新产品的发布会。"
+    },
+    {
+      "id": "kanji-0440",
+      "term": "復旧",
+      "sentenceJa": "地震で止まった水道が復旧した。",
+      "translationZh": "因地震停水的水道恢复了。"
+    },
+    {
+      "id": "kanji-0441",
+      "term": "福祉",
+      "sentenceJa": "高齢者の福祉を充実させる必要がある。",
+      "translationZh": "需要充实老年人的福利。"
+    },
+    {
+      "id": "kanji-0442",
+      "term": "複雑",
+      "sentenceJa": "この問題は複雑で簡単に説明できない。",
+      "translationZh": "这个问题很复杂，无法简单说明。"
+    },
+    {
+      "id": "kanji-0443",
+      "term": "払う",
+      "sentenceJa": "代金は来月払う約束をした。",
+      "translationZh": "约定下个月付款。"
+    },
+    {
+      "id": "kanji-0444",
+      "term": "物価",
+      "sentenceJa": "最近の物価上昇が家計を圧迫している。",
+      "translationZh": "最近的物价上涨压迫着家庭开支。"
+    },
+    {
+      "id": "kanji-0445",
+      "term": "物体",
+      "sentenceJa": "この物体はとても軽い素材でできている。",
+      "translationZh": "这个物体由非常轻的材料制成。"
+    },
+    {
+      "id": "kanji-0446",
+      "term": "分析",
+      "sentenceJa": "データを分析して傾向を調べた。",
+      "translationZh": "分析数据调查了趋势。"
+    },
+    {
+      "id": "kanji-0447",
+      "term": "分配",
+      "sentenceJa": "利益を公平に分配する方法を考えた。",
+      "translationZh": "考虑了公平分配利益的方法。"
+    },
+    {
+      "id": "kanji-0448",
+      "term": "紛争",
+      "sentenceJa": "紛争を解決するために話し合いが続けられている。",
+      "translationZh": "为了解决纷争继续协商。"
+    },
+    {
+      "id": "kanji-0449",
+      "term": "文句",
+      "sentenceJa": "彼の態度に文句を言いたくなった。",
+      "translationZh": "想对他的态度发牢骚。"
+    },
+    {
+      "id": "kanji-0450",
+      "term": "聞き取り",
+      "sentenceJa": "日本語の聞き取り練習を毎日している。",
+      "translationZh": "每天进行日语听力练习。"
+    },
+    {
+      "id": "kanji-0451",
+      "term": "平均的",
+      "sentenceJa": "平均的な日本人の寿命は延びている。",
+      "translationZh": "日本人的平均寿命在延长。"
+    },
+    {
+      "id": "kanji-0452",
+      "term": "並ぶ",
+      "sentenceJa": "入り口に長く並ぶ列ができている。",
+      "translationZh": "入口处排着长长的队伍。"
+    },
+    {
+      "id": "kanji-0453",
+      "term": "募金",
+      "sentenceJa": "募金活動に協力してくれた人に感謝する。",
+      "translationZh": "感谢协助募捐活动的人。"
+    },
+    {
+      "id": "kanji-0454",
+      "term": "募集",
+      "sentenceJa": "ボランティアの募集が始まった。",
+      "translationZh": "志愿者招募开始了。"
+    },
+    {
+      "id": "kanji-0455",
+      "term": "暮らす",
+      "sentenceJa": "田舎でゆっくり暮らすのが夢だ。",
+      "translationZh": "在乡下悠闲地生活是梦想。"
+    },
+    {
+      "id": "kanji-0456",
+      "term": "報告",
+      "sentenceJa": "実験の結果を上司に報告した。",
+      "translationZh": "向上司报告了实验结果。"
+    },
+    {
+      "id": "kanji-0457",
+      "term": "宝物",
+      "sentenceJa": "この指輪は家族の宝物だ。",
+      "translationZh": "这枚戒指是家人的宝物。"
+    },
+    {
+      "id": "kanji-0458",
+      "term": "放送局",
+      "sentenceJa": "放送局でニュース番組を制作している。",
+      "translationZh": "在电视台制作新闻节目。"
+    },
+    {
+      "id": "kanji-0459",
+      "term": "豊かな",
+      "sentenceJa": "この地域は自然が豊かな場所だ。",
+      "translationZh": "这个地区是自然丰富的地方。"
+    },
+    {
+      "id": "kanji-0460",
+      "term": "帽子",
+      "sentenceJa": "夏は帽子をかぶって日差しを避ける。",
+      "translationZh": "夏天戴帽子遮挡阳光。"
+    },
+    {
+      "id": "kanji-0461",
+      "term": "防ぐ",
+      "sentenceJa": "事故を防ぐために点検を徹底する。",
+      "translationZh": "为了防止事故彻底检查。"
+    },
+    {
+      "id": "kanji-0462",
+      "term": "本社",
+      "sentenceJa": "本社は東京の中心にあります。",
+      "translationZh": "总公司在东京的中心。"
+    },
+    {
+      "id": "kanji-0463",
+      "term": "毎晩",
+      "sentenceJa": "毎晩寝る前に日記を書いている。",
+      "translationZh": "每天晚上睡觉前写日记。"
+    },
+    {
+      "id": "kanji-0464",
+      "term": "末期的",
+      "sentenceJa": "その会社は末期的な状態にある。",
+      "translationZh": "那家公司处于末期状态。"
+    },
+    {
+      "id": "kanji-0465",
+      "term": "満場一致",
+      "sentenceJa": "その提案は満場一致で可決された。",
+      "translationZh": "那个提案全场一致通过了。"
+    },
+    {
+      "id": "kanji-0466",
+      "term": "満足",
+      "sentenceJa": "彼は今の仕事に満足している。",
+      "translationZh": "他对现在的工作很满意。"
+    },
+    {
+      "id": "kanji-0467",
+      "term": "夢",
+      "sentenceJa": "彼女は医者になる夢を持っている。",
+      "translationZh": "她拥有成为医生的梦想。"
+    },
+    {
+      "id": "kanji-0468",
+      "term": "無事",
+      "sentenceJa": "彼は無事に海外旅行から帰ってきた。",
+      "translationZh": "他平安无事地从海外旅行回来了。"
+    },
+    {
+      "id": "kanji-0469",
+      "term": "無駄",
+      "sentenceJa": "無駄な出費を減らすようにしている。",
+      "translationZh": "尽量削减不必要的开支。"
+    },
+    {
+      "id": "kanji-0470",
+      "term": "無難",
+      "sentenceJa": "彼の提案は無難な内容だった。",
+      "translationZh": "他的提案内容很稳妥。"
+    },
+    {
+      "id": "kanji-0471",
+      "term": "名物",
+      "sentenceJa": "この町の名物は新鮮な魚料理だ。",
+      "translationZh": "这个城镇的名产是新鲜的鱼料理。"
+    },
+    {
+      "id": "kanji-0472",
+      "term": "明確",
+      "sentenceJa": "彼の説明は明確でわかりやすい。",
+      "translationZh": "他的说明明确易懂。"
+    },
+    {
+      "id": "kanji-0473",
+      "term": "明白",
+      "sentenceJa": "彼の意図は明白だ。",
+      "translationZh": "他的意图很明显。"
+    },
+    {
+      "id": "kanji-0474",
+      "term": "明朗",
+      "sentenceJa": "彼は明朗な性格で人気がある。",
+      "translationZh": "他性格开朗很受欢迎。"
+    },
+    {
+      "id": "kanji-0475",
+      "term": "迷惑",
+      "sentenceJa": "隣の騒音に迷惑している。",
+      "translationZh": "被邻居的噪音所困扰。"
+    },
+    {
+      "id": "kanji-0476",
+      "term": "免許",
+      "sentenceJa": "運転免許を取るために教習所に通っている。",
+      "translationZh": "为了取得驾照正在上驾校。"
+    },
+    {
+      "id": "kanji-0477",
+      "term": "面会",
+      "sentenceJa": "面会時間は午後三時までです。",
+      "translationZh": "会面时间到下午三点为止。"
+    },
+    {
+      "id": "kanji-0478",
+      "term": "目的地",
+      "sentenceJa": "目的地に着いたら連絡してください。",
+      "translationZh": "到达目的地后请联系我。"
+    },
+    {
+      "id": "kanji-0479",
+      "term": "問題",
+      "sentenceJa": "この問題について話し合いたい。",
+      "translationZh": "想就这个问题进行讨论。"
+    },
+    {
+      "id": "kanji-0480",
+      "term": "野生",
+      "sentenceJa": "野生の動物を観察するのが趣味だ。",
+      "translationZh": "观察野生动物的爱好。"
+    },
+    {
+      "id": "kanji-0481",
+      "term": "輸出",
+      "sentenceJa": "日本は自動車を多く輸出している。",
+      "translationZh": "日本大量出口汽车。"
+    },
+    {
+      "id": "kanji-0482",
+      "term": "輸入",
+      "sentenceJa": "日本は多くの資源を輸入に頼っている。",
+      "translationZh": "日本依赖进口大量资源。"
+    },
+    {
+      "id": "kanji-0483",
+      "term": "優秀",
+      "sentenceJa": "彼は優秀な成績で大学を卒業した。",
+      "translationZh": "他以优秀的成绩从大学毕业了。"
+    },
+    {
+      "id": "kanji-0484",
+      "term": "優勝",
+      "sentenceJa": "彼女は大会で優勝して金メダルを獲得した。",
+      "translationZh": "她在大会上获胜获得了金牌。"
+    },
+    {
+      "id": "kanji-0485",
+      "term": "優勝戦",
+      "sentenceJa": "優勝戦は来週の日曜日に行われる。",
+      "translationZh": "决赛将于下周日举行。"
+    },
+    {
+      "id": "kanji-0486",
+      "term": "優美",
+      "sentenceJa": "この庭園は優美なデザインで知られている。",
+      "translationZh": "这个庭院以优美的设计而闻名。"
+    },
+    {
+      "id": "kanji-0487",
+      "term": "勇気",
+      "sentenceJa": "彼は勇気を出して自分の意見を言った。",
+      "translationZh": "他鼓起勇气说出了自己的意见。"
+    },
+    {
+      "id": "kanji-0488",
+      "term": "有益",
+      "sentenceJa": "この本は語学学習に有益だ。",
+      "translationZh": "这本书对语言学习有益。"
+    },
+    {
+      "id": "kanji-0489",
+      "term": "有効",
+      "sentenceJa": "この方法は時間の節約に有効だ。",
+      "translationZh": "这个方法对节约时间有效。"
+    },
+    {
+      "id": "kanji-0490",
+      "term": "有望",
+      "sentenceJa": "彼は将来有望な若手研究者だ。",
+      "translationZh": "他是将来有前途的年轻研究者。"
+    },
+    {
+      "id": "kanji-0491",
+      "term": "有利",
+      "sentenceJa": "この条件は私たちにとって有利だ。",
+      "translationZh": "这个条件对我们有利。"
+    },
+    {
+      "id": "kanji-0492",
+      "term": "有利な",
+      "sentenceJa": "彼は有利な立場を活かして交渉を進めた。",
+      "translationZh": "他利用有利的立场推进了谈判。"
+    },
+    {
+      "id": "kanji-0493",
+      "term": "有力者",
+      "sentenceJa": "地域の有力者が集まって会議を開いた。",
+      "translationZh": "地区的有力人士聚集召开了会议。"
+    },
+    {
+      "id": "kanji-0494",
+      "term": "予言",
+      "sentenceJa": "彼の予言が的中して驚いた。",
+      "translationZh": "他的预言说中了，很吃惊。"
+    },
+    {
+      "id": "kanji-0495",
+      "term": "予算",
+      "sentenceJa": "今年の予算は昨年より増えている。",
+      "translationZh": "今年的预算比去年增加了。"
+    },
+    {
+      "id": "kanji-0496",
+      "term": "予知",
+      "sentenceJa": "地震を予知する技術の研究が進んでいる。",
+      "translationZh": "预测地震的技术研究正在推进。"
+    },
+    {
+      "id": "kanji-0497",
+      "term": "用地",
+      "sentenceJa": "工場の用地を確保するための交渉をしている。",
+      "translationZh": "正在进行确保工厂用地的谈判。"
+    },
+    {
+      "id": "kanji-0498",
+      "term": "頼む",
+      "sentenceJa": "友達に手伝いを頼むのが上手だ。",
+      "translationZh": "很擅长请朋友帮忙。"
+    },
+    {
+      "id": "kanji-0499",
+      "term": "頼り",
+      "sentenceJa": "彼はいつも頼りになる存在だ。",
+      "translationZh": "他总是值得信赖的存在。"
+    },
+    {
+      "id": "kanji-0500",
+      "term": "利益",
+      "sentenceJa": "この投資は長期的な利益をもたらす。",
+      "translationZh": "这项投资会带来长期利益。"
+    },
+    {
+      "id": "kanji-0501",
+      "term": "理想",
+      "sentenceJa": "彼の理想は世界平和だ。",
+      "translationZh": "他的理想是世界和平。"
+    },
+    {
+      "id": "kanji-0502",
+      "term": "立て直し",
+      "sentenceJa": "会社の立て直しのために新しい戦略を考えた。",
+      "translationZh": "为了重建公司制定了新战略。"
+    },
+    {
+      "id": "kanji-0503",
+      "term": "流通",
+      "sentenceJa": "商品の流通経路を見直す必要がある。",
+      "translationZh": "需要重新审视商品的流通渠道。"
+    },
+    {
+      "id": "kanji-0504",
+      "term": "留学",
+      "sentenceJa": "彼女は来年日本へ留学する予定だ。",
+      "translationZh": "她计划明年去日本留学。"
+    },
+    {
+      "id": "kanji-0505",
+      "term": "留守番",
+      "sentenceJa": "留守番を頼まれて友達の家に行った。",
+      "translationZh": "被托付看家去了朋友家。"
+    },
+    {
+      "id": "kanji-0506",
+      "term": "両者",
+      "sentenceJa": "両者の意見には大きな違いがある。",
+      "translationZh": "两者的意见有很大的差异。"
+    },
+    {
+      "id": "kanji-0507",
+      "term": "両親",
+      "sentenceJa": "両親に感謝の気持ちを伝えた。",
+      "translationZh": "向父母表达了感谢之情。"
+    },
+    {
+      "id": "kanji-0508",
+      "term": "料理",
+      "sentenceJa": "彼女は料理がとても上手だ。",
+      "translationZh": "她非常擅长做饭。"
+    },
+    {
+      "id": "kanji-0509",
+      "term": "良好",
+      "sentenceJa": "患者の回復状態は良好だ。",
+      "translationZh": "患者的恢复状态良好。"
+    },
+    {
+      "id": "kanji-0510",
+      "term": "良識",
+      "sentenceJa": "彼の良識ある判断に感謝している。",
+      "translationZh": "感谢他明智的判断。"
+    },
+    {
+      "id": "kanji-0511",
+      "term": "良質",
+      "sentenceJa": "この店は良質な食材を使っている。",
+      "translationZh": "这家店使用优质的食材。"
+    },
+    {
+      "id": "kanji-0512",
+      "term": "領域",
+      "sentenceJa": "この研究領域はまだ開拓の余地がある。",
+      "translationZh": "这个研究领域还有开拓的余地。"
+    },
+    {
+      "id": "kanji-0513",
+      "term": "領事",
+      "sentenceJa": "領事館でビザの申請をした。",
+      "translationZh": "在领事馆申请了签证。"
+    },
+    {
+      "id": "kanji-0514",
+      "term": "領地",
+      "sentenceJa": "その領地は美しい自然に恵まれている。",
+      "translationZh": "那片领地拥有美丽的自然风光。"
+    },
+    {
+      "id": "kanji-0515",
+      "term": "領土",
+      "sentenceJa": "国の領土を守ることは重要だ。",
+      "translationZh": "保卫国家的领土很重要。"
+    },
+    {
+      "id": "kanji-0516",
+      "term": "歴史",
+      "sentenceJa": "歴史の授業で古い時代のことを学んだ。",
+      "translationZh": "在历史课上学习了古代的事情。"
+    },
+    {
+      "id": "kanji-0517",
+      "term": "列島",
+      "sentenceJa": "日本列島は南北に長い。",
+      "translationZh": "日本列岛南北狭长。"
+    },
+    {
+      "id": "kanji-0518",
+      "term": "連絡",
+      "sentenceJa": "友達と連絡を取り合うために電話をかけた。",
+      "translationZh": "为了和朋友联系打了电话。"
+    },
+    {
+      "id": "kanji-0519",
+      "term": "労働者",
+      "sentenceJa": "労働者の権利を守るための法律がある。",
+      "translationZh": "有保护劳动者权利的法律。"
+    },
+    {
+      "id": "kanji-0520",
+      "term": "話題",
+      "sentenceJa": "今日の話題は環境問題についてです。",
+      "translationZh": "今天的话题是关于环境问题。"
+    }
+  ]
+}

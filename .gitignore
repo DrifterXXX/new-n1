@@ -12,12 +12,14 @@ dist/
 listening_audio/
 option_audio/
 kanji_audio/
+kanji_example_audio/
 
 # public/ 下由 scripts/sync-audio.mjs 从根音频拷贝的本地服务副本(可再生, 不入库)
 public/audio/
 public/listening_audio/
 public/option_audio/
 public/kanji_audio/
+public/kanji_example_audio/
 
 # Agent 工作目录（.workbuddy/ 是 agent 自动生成的临时工作文件，不入库）
 .workbuddy/

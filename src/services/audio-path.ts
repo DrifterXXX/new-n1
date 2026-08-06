@@ -34,6 +34,11 @@ export function kanjiAudio(numericId: number): string {
   return `${base()}kanji_audio/${pad4(numericId)}.mp3`;
 }
 
+/** 汉字例句音频: /kanji_example_audio/{pad4(numericId)}.mp3 (numericId 为 kanji-v1.json 中的数字序号, 1 起)。 */
+export function kanjiExampleAudio(numericId: number): string {
+  return `${base()}kanji_example_audio/${pad4(numericId)}.mp3`;
+}
+
 /**
  * 读解选项音频: /option_audio/reading/{pad4(readingIndex+1)}_{subIdx+1}_{optIdx+1}.mp3。
  * readingIndex = Reading.id(数组下标); 文件名编号 = 下标 + 1。

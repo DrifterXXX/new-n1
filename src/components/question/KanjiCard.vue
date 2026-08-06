@@ -1,12 +1,18 @@
 <script setup lang="ts">
 /**
- * 汉字学习卡片模式: 隐藏 reading, 点击显示, 自评。
+ * 汉字学习卡片模式: 隐藏 reading, 点击显示, 自评, AI 生成学习例句。
  */
-import { computed, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import AppButton from '@/components/common/AppButton.vue';
 import AudioBtn from '@/components/common/AudioBtn.vue';
 import EmptyState from '@/components/common/EmptyState.vue';
-import { kanjiAudio } from '@/services/audio-path';
+import { kanjiAudio, kanjiExampleAudio } from '@/services/audio-path';
+import {
+  findExampleById,
+  loadKanjiExamples,
+  type KanjiExampleEntry,
+  type KanjiExamplesData,
+} from '@/services/kanji-examples-service';
 import { useAudioStore } from '@/stores/audio';
 import { useKanjiStore } from '@/stores/kanji';
 import type { KanjiEntry } from '@/services/kanji-service';
@@ -21,13 +27,35 @@ const audio = useAudioStore();
 const cardIndex = ref(0);
 const cardRevealed = ref(false);
 
+const examplesData = ref<KanjiExamplesData | null>(null);
+const examplesError = ref(false);
+
+onMounted(async () => {
+  try {
+    examplesData.value = await loadKanjiExamples();
+  } catch {
+    examplesError.value = true;
+  }
+});
+
 const currentCard = computed<KanjiEntry | undefined>(
   () => kanji.search('')[cardIndex.value],
 );
 
+const currentExample = computed<KanjiExampleEntry | undefined>(() => {
+  if (!examplesData.value || !currentCard.value) return undefined;
+  return findExampleById(examplesData.value, currentCard.value.id);
+});
+
 const audioKey = computed(() => currentCard.value ? `kanji:${currentCard.value.id}` : null);
 const audioStatus = computed(() => {
   if (!audioKey.value || audio.currentKey !== audioKey.value) return 'idle' as const;
+  return audio.status;
+});
+
+const exampleAudioKey = computed(() => currentCard.value ? `kanji-example:${currentCard.value.id}` : null);
+const exampleAudioStatus = computed(() => {
+  if (!exampleAudioKey.value || audio.currentKey !== exampleAudioKey.value) return 'idle' as const;
   return audio.status;
 });
 
@@ -38,6 +66,17 @@ function playAudio(): void {
   audio.toggle(audioKey.value!, kanjiAudio(num), {
     text: card.reading,
     label: card.term,
+  });
+}
+
+function playExampleAudio(): void {
+  const card = currentCard.value;
+  const example = currentExample.value;
+  if (!card || !example) return;
+  const num = parseInt(card.id.replace('kanji-', ''), 10);
+  audio.toggle(exampleAudioKey.value!, kanjiExampleAudio(num), {
+    text: example.sentenceJa,
+    label: `${card.term} 例句`,
   });
 }
 
@@ -90,6 +129,24 @@ function next(): void {
         <div class="card-flip__back">
           <span class="card-flip__term jp">{{ currentCard.term }}</span>
           <span class="card-flip__reading mono">{{ currentCard.reading }}</span>
+
+          <!-- AI 生成学习例句 -->
+          <div v-if="currentExample" class="kanji-example">
+            <span class="kanji-example__label">AI 生成学习例句</span>
+            <span class="kanji-example__ja jp">{{ currentExample.sentenceJa }}</span>
+            <span class="kanji-example__zh">{{ currentExample.translationZh }}</span>
+            <AudioBtn
+              :label="`播放 ${currentCard.term} 的例句`"
+              :status="exampleAudioStatus"
+              :using-tts="exampleAudioStatus === 'playing' && audio.usingTts"
+              variant="ghost"
+              @click.stop="playExampleAudio"
+            />
+          </div>
+          <div v-else-if="examplesError" class="kanji-example kanji-example--error">
+            <span class="kanji-example__label">AI 生成学习例句</span>
+            <span class="kanji-example__error-text">例句加载失败</span>
+          </div>
         </div>
       </div>
     </div>
@@ -140,6 +197,10 @@ function next(): void {
   perspective: 600px;
 }
 
+.card-flip--revealed {
+  min-height: 340px;
+}
+
 .card-flip__inner {
   position: relative;
   width: 100%;
@@ -184,6 +245,48 @@ function next(): void {
 }
 
 .card-flip__hint {
+  font-size: var(--text-sm);
+  color: var(--color-text-meta);
+}
+
+/* AI 生成学习例句 */
+.kanji-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.kanji-example--error {
+  opacity: 0.6;
+}
+
+.kanji-example__label {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-emphasis);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kanji-example__ja {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.kanji-example__zh {
+  font-size: var(--text-sm);
+  color: var(--color-text-2);
+  text-align: center;
+}
+
+.kanji-example__error-text {
   font-size: var(--text-sm);
   color: var(--color-text-meta);
 }

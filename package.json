@@ -10,6 +10,8 @@
     "dev": "vite",
     "sync:audio": "node scripts/sync-audio.mjs",
     "generate:kanji": "node scripts/generate-kanji.mjs",
+    "validate:kanji-examples": "node scripts/validate-kanji-examples.mjs",
+    "generate:kanji-examples": "python3 scripts/generate-kanji-examples.py",
     "build": "npm run sync:audio && vue-tsc --noEmit && vite build && node scripts/prune-woff.mjs",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
