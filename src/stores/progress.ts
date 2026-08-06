@@ -10,6 +10,7 @@ import { computed, ref } from 'vue';
 import { answerKey, type AnswerRecord, type ContentKind } from '@/types/domain';
 import { useUserStore } from './user';
 import { useDailyStore } from './daily';
+import { computeNextReview, type KanjiRating } from '@/services/kanji-srs';
 
 /** 连续答对多少次算掌握(Spec 裁决: 3)。 */
 export const MASTERY_STREAK = 3;
@@ -26,6 +27,8 @@ export interface RecordInput {
   chosen: number;
   correct: boolean;
   meta?: { type?: string; title?: string };
+  /** 汉字自评等级: 用于间隔复习调度。 */
+  kanjiRating?: KanjiRating;
 }
 
 export const useProgressStore = defineStore('progress', () => {
@@ -100,6 +103,11 @@ export const useProgressStore = defineStore('progress', () => {
     const prev = user.state.answers[key];
     const streak = input.correct ? (prev?.meta.streak ?? 0) + 1 : 0;
     const wrongTimes = (prev?.meta.wrongCount ?? 0) + (input.correct ? 0 : 1);
+    // 汉字间隔复习: 根据自评等级与先前 streak 计算下次复习时间
+    let nextReviewAt = prev?.nextReviewAt;
+    if (input.kind === 'kanji' && input.kanjiRating) {
+      nextReviewAt = computeNextReview(input.kanjiRating, prev?.meta.streak ?? 0);
+    }
     const next: AnswerRecord = {
       kind: input.kind,
       id: input.id,
@@ -114,6 +122,7 @@ export const useProgressStore = defineStore('progress', () => {
         wrongCount: wrongTimes,
       },
       at: Date.now(),
+      ...(nextReviewAt !== undefined ? { nextReviewAt } : {}),
     };
     user.state.answers[key] = next;
     daily.markDone(key);

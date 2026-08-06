@@ -16,6 +16,8 @@ export default tseslint.config(
       'audio/**',
       'listening_audio/**',
       'option_audio/**',
+      'kanji_audio/**',
+      'public/kanji_audio/**',
       'data.js',
     ],
   },
@@ -64,6 +66,7 @@ export default tseslint.config(
     /** SFC 模板里的日文正文同样会出现全角空格, 交给 vue 版规则并放行文本节点。 */
     files: ['**/*.vue'],
     rules: {
+      'max-lines': 'off',
       'no-irregular-whitespace': 'off',
       'vue/no-irregular-whitespace': [
         'error',
@@ -81,11 +84,14 @@ export default tseslint.config(
     /** 构建配置与单测跑在 Node 侧。 */
     files: ['*.config.ts', '*.config.js', 'src/**/*.spec.ts'],
     languageOptions: { globals: { ...globals.node } },
+    rules: {
+      'max-lines': 'off',
+    },
   },
   {
     /** scripts/ 下的 Node ESM 工具脚本 (CLI 入口, 非 Vue/TS 源码)。 */
     files: ['scripts/**/*.mjs'],
-    languageOptions: { globals: { ...globals.node } },
+    languageOptions: { globals: { ...globals.node, ...globals.browser } },
     rules: {
       'no-console': 'off',
     },

@@ -3,6 +3,7 @@
 Default mode regenerates the 200 example sentences. Use
 `--kind listening` to generate audio for listening scripts, which is what the
 training UI uses instead of the browser's robotic SpeechSynthesis voice.
+Use `--kind kanji` to generate kanji reading audio from src/data/kanji-v1.json.
 """
 import argparse
 import asyncio
@@ -181,7 +182,7 @@ async def synthesize_dialogue(out, script):
 
 async def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--kind", choices=["examples", "listening", "options"], default="examples")
+    parser.add_argument("--kind", choices=["examples", "listening", "options", "kanji"], default="examples")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--concurrency", type=int, default=4)
@@ -193,6 +194,13 @@ async def main():
     elif args.kind == "listening":
         data = load_json_array_from_data_js("LISTENING")
         items = [(item["id"], item["script"].strip(), Path("listening_audio") / f'{item["id"]:04d}.mp3') for item in data]
+    elif args.kind == "kanji":
+        data = json.loads(Path("src/data/kanji-v1.json").read_text(encoding="utf-8"))
+        items = []
+        for entry in data:
+            # 从 id "kanji-0001" 提取数字序号
+            num = int(entry["id"].replace("kanji-", ""))
+            items.append((num, entry["reading"].strip(), Path("kanji_audio") / f'{num:04d}.mp3'))
     else:
         items = []
         listening = load_json_array_from_data_js("LISTENING")

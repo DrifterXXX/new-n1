@@ -9,6 +9,7 @@ import EmptyState from '@/components/common/EmptyState.vue';
 import { ROUTE_NAMES } from '@/constants';
 import { useContentStore } from '@/stores/content';
 import { DAILY_TASKS, useDailyStore } from '@/stores/daily';
+import { useKanjiStore } from '@/stores/kanji';
 import { useProgressStore } from '@/stores/progress';
 import { useSessionStore } from '@/stores/session';
 import { useSettingsStore } from '@/stores/settings';
@@ -19,6 +20,7 @@ const daily = useDailyStore();
 const progress = useProgressStore();
 const session = useSessionStore();
 const settings = useSettingsStore();
+const kanji = useKanjiStore();
 
 const listeningStat = computed(() => progress.kindAccuracy('listening'));
 const readingStat = computed(() => progress.kindAccuracy('reading'));
@@ -90,7 +92,7 @@ async function go(name: string): Promise<void> {
       </div>
     </section>
 
-    <section class="grid-3">
+    <section class="grid-4">
       <div class="card panel">
         <h3 class="panel__title"><AppIcon name="headphones" :size="16" />听解正确率</h3>
         <p class="panel__big mono">
@@ -124,6 +126,33 @@ async function go(name: string): Promise<void> {
       </div>
 
       <div class="card panel">
+        <h3 class="panel__title"><AppIcon name="layers" :size="16" />汉字学习</h3>
+        <p class="panel__big mono">
+          {{ kanji.kanjiStats.totalStudied === 0 ? '未学' : kanji.kanjiStats.accuracy + '%' }}
+        </p>
+        <ul class="stat-rows">
+          <li class="stat-row">
+            <span>已学</span>
+            <span class="mono">{{ kanji.kanjiStats.totalStudied }} 个</span>
+          </li>
+          <li class="stat-row">
+            <span>今日待复习</span>
+            <span class="mono">{{ kanji.kanjiStats.dueToday }} 个</span>
+          </li>
+          <li class="stat-row">
+            <span>已掌握</span>
+            <span class="mono">{{ kanji.kanjiStats.mastered }} 个</span>
+          </li>
+          <li class="stat-row">
+            <span>困难</span>
+            <span class="mono" :class="kanji.kanjiStats.difficult.length > 0 ? 'danger' : ''">
+              {{ kanji.kanjiStats.difficult.length }} 个
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card panel">
         <h3 class="panel__title"><AppIcon name="layers" :size="16" />内容规模</h3>
         <ul class="stat-rows">
           <li class="stat-row"><span>例文</span><span class="mono">{{ content.examples.length }} 条</span></li>
@@ -148,6 +177,12 @@ async function go(name: string): Promise<void> {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-4);
 }
 
@@ -234,14 +269,16 @@ async function go(name: string): Promise<void> {
 }
 
 @media (max-width: 1200px) {
-  .grid-3 {
+  .grid-3,
+  .grid-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 960px) {
   .grid-2,
-  .grid-3 {
+  .grid-3,
+  .grid-4 {
     grid-template-columns: minmax(0, 1fr);
   }
 }

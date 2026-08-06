@@ -8,6 +8,7 @@ import {
   createDefaultUserState,
   type UserState,
 } from '@/types/domain';
+import { migrateLegacyKanjiNextReview } from '@/services/kanji-srs';
 
 /**
  * 将任意来源的原始对象规范化为当前版本的完整 UserState。
@@ -36,6 +37,11 @@ export function migrate(raw: unknown): UserState {
 
   // 预留: 将来跨版本升级在此按 src.schemaVersion 分支处理。
   // if ((src.schemaVersion ?? 0) < 2) { ...升级逻辑... }
+
+  // v1 → v2: 为缺少 nextReviewAt 的 kanji 记录设置 nextReviewAt=now
+  if ((src.schemaVersion ?? 0) < 2) {
+    migrateLegacyKanjiNextReview(merged.answers as unknown as Record<string, Record<string, unknown>>);
+  }
 
   return merged;
 }

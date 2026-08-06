@@ -22,7 +22,7 @@ const props = withDefaults(
   { status: 'idle', variant: 'solid', text: undefined, usingTts: false },
 );
 
-defineEmits<{ (e: 'click'): void }>();
+defineEmits<{ (e: 'click', ev?: MouseEvent): void }>();
 
 const icon = computed(() => {
   if (props.status === 'loading') return 'loader' as const;
@@ -38,7 +38,7 @@ const icon = computed(() => {
     :class="[`audio-btn--${variant}`, `is-${status}`, { 'has-text': Boolean(text) }]"
     :aria-label="label"
     :aria-pressed="status === 'playing' ? 'true' : 'false'"
-    @click.stop="$emit('click')"
+    @click.stop="$emit('click', $event)"
   >
     <AppIcon :name="icon" :size="16" :spin="status === 'loading'" />
     <span v-if="text" class="audio-btn__text">{{ text }}</span>

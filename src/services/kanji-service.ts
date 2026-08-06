@@ -5,6 +5,8 @@
  * answerKey 适配: kanji 的 id 为字符串(如 'kanji-0001'), 而现有 answerKey 签名
  * 为 (kind, id:number, sub)。使用 numericId = parseInt(id.split('-')[1]) 作为
  * answerKey 的 id 参数, 确保与 progress store 兼容。
+ *
+ * SRS (间隔复习) 相关函数已拆至 kanji-srs.ts。
  */
 export interface KanjiEntry {
   id: string;
@@ -136,17 +138,15 @@ export function generateQuiz(
   return generateQuizForEntry(list, entry, direction);
 }
 
-/** 从 kanji ID 字符串提取数字部分, 用于 answerKey 兼容。 */
-export function kanjiNumericId(id: string): number {
-  const num = parseInt(id.replace('kanji-', ''), 10);
-  return Number.isFinite(num) ? num : 0;
-}
+/* ---------- SRS (间隔复习) — 从 kanji-srs.ts 再导出 ---------- */
 
-/** 从列表中按数字 id 查找对应条目(形如 kanji-NNNN)。 */
-export function findEntryById(
-  list: readonly KanjiEntry[],
-  numericId: number,
-): KanjiEntry | undefined {
-  const target = `kanji-${String(numericId).padStart(4, '0')}`;
-  return list.find((e) => e.id === target);
-}
+export {
+  computeNextReview,
+  findEntryById,
+  getDueKanji,
+  kanjiDifficultStats,
+  kanjiNumericId,
+  migrateLegacyKanjiNextReview,
+  type KanjiRating,
+  type KanjiStats,
+} from './kanji-srs';

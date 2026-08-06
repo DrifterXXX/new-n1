@@ -12,7 +12,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const pairs = ['audio', 'listening_audio', 'option_audio'];
+const pairs = ['audio', 'listening_audio', 'option_audio', 'kanji_audio'];
 const publicDir = resolve(root, 'public');
 mkdirSync(publicDir, { recursive: true });
 

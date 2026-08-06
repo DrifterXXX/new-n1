@@ -9,7 +9,8 @@ import { useContentStore } from './content';
 import { useProgressStore } from './progress';
 import { useSettingsStore } from './settings';
 import { useKanjiStore } from './kanji';
-import { generateQuizForEntry, findEntryById } from '@/services/kanji-service';
+import { generateQuizForEntry } from '@/services/kanji-service';
+import { findEntryById } from '@/services/kanji-srs';
 
 export type SessionMode = 'mixed' | 'weak' | 'wrong' | 'listening' | 'reading' | 'kanji';
 

@@ -156,8 +156,8 @@ async function main() {
     await clearBtn.click();
     await page.waitForTimeout(300);
 
-    // ── 4. Switch to card mode and reveal a reading ───────────────────────
-    console.log('\n── 4. Card mode: reveal reading ──');
+    // ── 4. Switch to card mode ────────────────────────────────────────────
+    console.log('\n── 4. Card mode ──');
     const cardBtn = page.locator('.mode-bar button').nth(1);
     await cardBtn.click();
     await page.waitForTimeout(300);
@@ -167,8 +167,49 @@ async function main() {
     const cardText = await page.textContent('.card-flip__front');
     console.log(`   Card front: "${cardText?.trim()}"`);
 
-    // Click to reveal
-    await page.locator('.card-flip').click();
+    // ── 4a. Kanji audio control (before reveal — audio btn is on front face) ──
+    console.log('\n── 4a. Kanji audio control ──');
+    const audioBtn = page.locator('.card-flip__front .audio-btn');
+    await audioBtn.waitFor({ state: 'visible', timeout: 5000 });
+    console.log('   ✓ Kanji audio button is visible');
+
+    // Click the audio button to trigger playback
+    await audioBtn.click();
+    await page.waitForTimeout(500);
+
+    // Verify the audio store registered the play action: currentKey is set
+    // to a kanji key and status left idle (loading/playing/error).
+    const audioState = await page.evaluate(() => {
+      try {
+        const appEl = document.querySelector('#app');
+        if (appEl && appEl.__vue_app__) {
+          const pinia = appEl.__vue_app__.config.globalProperties.$pinia;
+          if (pinia && pinia.state && pinia.state.value && pinia.state.value.audio) {
+            return {
+              currentKey: pinia.state.value.audio.currentKey,
+              status: pinia.state.value.audio.status,
+            };
+          }
+        }
+      } catch { /* browser context — ignore */ }
+      return null;
+    });
+    console.log(`   Audio state: ${JSON.stringify(audioState)}`);
+    const currentKey = audioState?.currentKey ?? '';
+    if (!/^kanji:kanji-\d+$/.test(currentKey)) {
+      throw new Error(`Expected audio currentKey to match /^kanji:kanji-\\d+$/, got "${currentKey}"`);
+    }
+    if (!audioState?.status || audioState.status === 'idle') {
+      throw new Error(`Expected audio status to leave idle after click, got "${audioState?.status}"`);
+    }
+    console.log('   ✓ Audio play action registered (currentKey + status)');
+
+    // ── 4b. Reveal reading ─────────────────────────────────────────────────
+    console.log('\n── 4b. Reveal reading ──');
+
+    // Click to reveal (use dispatchEvent: the absolutely-positioned front
+    // layer intercepts Playwright's actionability click on the card container)
+    await page.dispatchEvent('.card-flip', 'click');
     await page.waitForTimeout(500);
     const readingText = await page.textContent('.card-flip__reading');
     console.log(`   Card reading: "${readingText?.trim()}"`);

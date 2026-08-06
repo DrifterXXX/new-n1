@@ -6,12 +6,19 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   generateQuiz,
   generateQuizForEntry,
-  findEntryById,
   loadKanji,
   resetKanjiCache,
   searchKanji,
   type KanjiEntry,
 } from './kanji-service';
+import {
+  computeNextReview,
+  findEntryById,
+  getDueKanji,
+  kanjiDifficultStats,
+  migrateLegacyKanjiNextReview,
+} from './kanji-srs';
+import type { AnswerRecord } from '@/types/domain';
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -251,5 +258,169 @@ describe('findEntryById', () => {
     const list = await loadKanji();
     const entry = findEntryById(list, 9999);
     expect(entry).toBeUndefined();
+  });
+});
+
+/* ---------- spaced repetition scheduling ---------- */
+
+describe('computeNextReview', () => {
+  it('不认识: same day (returns current timestamp)', () => {
+    const now = 1_700_000_000_000;
+    const result = computeNextReview('不认识', 0, now);
+    expect(result).toBe(now);
+  });
+
+  it('模糊: next day', () => {
+    const now = 1_700_000_000_000;
+    const result = computeNextReview('模糊', 0, now);
+    // next day at same time
+    expect(result).toBe(now + 86_400_000);
+  });
+
+  it('认识 with streak=0: 3 days', () => {
+    const now = 1_700_000_000_000;
+    const result = computeNextReview('认识', 0, now);
+    expect(result).toBe(now + 3 * 86_400_000);
+  });
+
+  it('认识 with streak=1: 7 days', () => {
+    const now = 1_700_000_000_000;
+    const result = computeNextReview('认识', 1, now);
+    expect(result).toBe(now + 7 * 86_400_000);
+  });
+
+  it('认识 with streak=2: 14 days', () => {
+    const now = 1_700_000_000_000;
+    const result = computeNextReview('认识', 2, now);
+    expect(result).toBe(now + 14 * 86_400_000);
+  });
+
+  it('认识 with streak=5 (3+): 14 days (capped)', () => {
+    const now = 1_700_000_000_000;
+    const result = computeNextReview('认识', 5, now);
+    expect(result).toBe(now + 14 * 86_400_000);
+  });
+});
+
+/* ---------- legacy migration ---------- */
+
+describe('migrateLegacyKanjiNextReview', () => {
+  it('sets nextReviewAt=now for legacy kanji answers without nextReviewAt', () => {
+    const now = 1_700_000_000_000;
+    const answers: Record<string, { kind: string; meta: Record<string, unknown> }> = {
+      'kanji:1': { kind: 'kanji', meta: { streak: 2 } },
+      'kanji:2': { kind: 'kanji', meta: {} },
+      'listening:1': { kind: 'listening', meta: {} },
+    };
+    migrateLegacyKanjiNextReview(answers, now);
+    // kanji:1 gets nextReviewAt=now (legacy, due immediately)
+    expect((answers['kanji:1'] as Record<string, unknown>).nextReviewAt).toBe(now);
+    // kanji:2 gets nextReviewAt=now
+    expect((answers['kanji:2'] as Record<string, unknown>).nextReviewAt).toBe(now);
+    // non-kanji records are untouched
+    expect((answers['listening:1'] as Record<string, unknown>).nextReviewAt).toBeUndefined();
+  });
+
+  it('does not overwrite existing nextReviewAt', () => {
+    const now = 1_700_000_000_000;
+    const answers: Record<string, { kind: string; nextReviewAt: number; meta: Record<string, unknown> }> = {
+      'kanji:1': { kind: 'kanji', nextReviewAt: 9_999_999_999_999, meta: {} },
+    };
+    migrateLegacyKanjiNextReview(answers, now);
+    expect(answers['kanji:1']!.nextReviewAt).toBe(9_999_999_999_999);
+  });
+
+  it('handles empty answers gracefully', () => {
+    migrateLegacyKanjiNextReview({}, 1_700_000_000_000);
+    // no crash
+  });
+});
+
+/* ---------- due queue ---------- */
+
+describe('getDueKanji', () => {
+  it('returns entries due at or before the supplied timestamp, ordered by nextReviewAt then id', () => {
+    const now = 1_700_000_000_000;
+    const answers: Record<string, Pick<AnswerRecord, 'nextReviewAt' | 'id'>> = {
+      'kanji:1': { nextReviewAt: now - 1000, id: 1 },
+      'kanji:3': { nextReviewAt: now, id: 3 },
+      'kanji:2': { nextReviewAt: now - 500, id: 2 },
+      'kanji:5': { nextReviewAt: now + 86_400_000, id: 5 }, // future, excluded
+    };
+    const list: KanjiEntry[] = [
+      { id: 'kanji-0001', term: '一', reading: 'いち' },
+      { id: 'kanji-0002', term: '二', reading: 'に' },
+      { id: 'kanji-0003', term: '三', reading: 'さん' },
+      { id: 'kanji-0005', term: '五', reading: 'ご' },
+    ];
+    const due = getDueKanji(list, answers, now);
+    // order: nextReviewAt asc, then canonical id asc
+    expect(due.map((e) => e.term)).toEqual(['一', '二', '三']);
+    // 一 (id=1, nextReviewAt=now-1000) comes before 二 (id=2, nextReviewAt=now-500)
+    // 三 (id=3, nextReviewAt=now) comes last
+  });
+
+  it('returns empty array when nothing is due', () => {
+    const now = 1_700_000_000_000;
+    const answers: Record<string, Pick<AnswerRecord, 'nextReviewAt' | 'id'>> = {
+      'kanji:1': { nextReviewAt: now + 1, id: 1 },
+    };
+    const list: KanjiEntry[] = [{ id: 'kanji-0001', term: '一', reading: 'いち' }];
+    expect(getDueKanji(list, answers, now)).toEqual([]);
+  });
+
+  it('includes entries with no answer record (never studied) as due', () => {
+    const now = 1_700_000_000_000;
+    const list: KanjiEntry[] = [
+      { id: 'kanji-0001', term: '一', reading: 'いち' },
+      { id: 'kanji-0002', term: '二', reading: 'に' },
+    ];
+    const due = getDueKanji(list, {}, now);
+    // never-studied entries are due
+    expect(due.length).toBe(2);
+    expect(due.map((e) => e.term)).toEqual(['一', '二']);
+  });
+});
+
+/* ---------- difficult / mastered / statistics ---------- */
+
+describe('kanjiDifficultStats', () => {
+  it('returns correct stats for kanji answers', () => {
+    const now = 1_700_000_000_000;
+    const answers: Record<string, Pick<AnswerRecord, 'correct' | 'meta' | 'nextReviewAt' | 'id'>> = {
+      'kanji:1': { correct: true, meta: { streak: 3 }, nextReviewAt: now + 86_400_000, id: 1 },
+      'kanji:2': { correct: false, meta: { streak: 0, wrongCount: 1 }, nextReviewAt: now, id: 2 },
+      'kanji:3': { correct: true, meta: { streak: 0 }, nextReviewAt: now, id: 3 },
+      'kanji:4': { correct: false, meta: { streak: 0, wrongCount: 2 }, nextReviewAt: now + 86_400_000, id: 4 },
+      'listening:1': { correct: true, meta: {}, nextReviewAt: 0, id: 1 },
+    };
+    const list: KanjiEntry[] = [
+      { id: 'kanji-0001', term: '一', reading: 'いち' },
+      { id: 'kanji-0002', term: '二', reading: 'に' },
+      { id: 'kanji-0003', term: '三', reading: 'さん' },
+      { id: 'kanji-0004', term: '四', reading: 'し' },
+    ];
+    const stats = kanjiDifficultStats(list, answers, now);
+    // totalStudied: 4 kanji entries in answers
+    expect(stats.totalStudied).toBe(4);
+    // dueToday: entries with nextReviewAt <= now (kanji:2, kanji:3)
+    expect(stats.dueToday).toBe(2);
+    // mastered: streak >= 3 (kanji:1)
+    expect(stats.mastered).toBe(1);
+    // accuracy: 2 correct out of 4 = 50%
+    expect(stats.accuracy).toBe(50);
+    // difficult: wrong entries (kanji:2 wrongCount=1, kanji:4 wrongCount=2) — ordered by wrongCount desc
+    expect(stats.difficult.length).toBe(2);
+    expect(stats.difficult[0]!.term).toBe('四');
+    expect(stats.difficult[1]!.term).toBe('二');
+  });
+
+  it('returns zero stats when no kanji answers exist', () => {
+    const stats = kanjiDifficultStats([], {}, 1_700_000_000_000);
+    expect(stats.totalStudied).toBe(0);
+    expect(stats.dueToday).toBe(0);
+    expect(stats.mastered).toBe(0);
+    expect(stats.accuracy).toBe(0);
+    expect(stats.difficult).toEqual([]);
   });
 });

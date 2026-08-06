@@ -4,7 +4,10 @@
  */
 import { computed, ref } from 'vue';
 import AppButton from '@/components/common/AppButton.vue';
+import AudioBtn from '@/components/common/AudioBtn.vue';
 import EmptyState from '@/components/common/EmptyState.vue';
+import { kanjiAudio } from '@/services/audio-path';
+import { useAudioStore } from '@/stores/audio';
 import { useKanjiStore } from '@/stores/kanji';
 import type { KanjiEntry } from '@/services/kanji-service';
 
@@ -13,6 +16,7 @@ const emit = defineEmits<{
 }>();
 
 const kanji = useKanjiStore();
+const audio = useAudioStore();
 
 const cardIndex = ref(0);
 const cardRevealed = ref(false);
@@ -21,6 +25,22 @@ const currentCard = computed<KanjiEntry | undefined>(
   () => kanji.search('')[cardIndex.value],
 );
 
+const audioKey = computed(() => currentCard.value ? `kanji:${currentCard.value.id}` : null);
+const audioStatus = computed(() => {
+  if (!audioKey.value || audio.currentKey !== audioKey.value) return 'idle' as const;
+  return audio.status;
+});
+
+function playAudio(): void {
+  const card = currentCard.value;
+  if (!card) return;
+  const num = parseInt(card.id.replace('kanji-', ''), 10);
+  audio.toggle(audioKey.value!, kanjiAudio(num), {
+    text: card.reading,
+    label: card.term,
+  });
+}
+
 function reveal(): void {
   cardRevealed.value = true;
 }
@@ -28,7 +48,7 @@ function reveal(): void {
 function rate(rating: '认识' | '模糊' | '不认识'): void {
   const entry = currentCard.value;
   if (!entry) return;
-  kanji.recordSelfRating(entry, rating === '认识');
+  kanji.recordSelfRating(entry, rating === '认识', rating);
   next();
 }
 
@@ -58,6 +78,13 @@ function next(): void {
       <div class="card-flip__inner">
         <div class="card-flip__front">
           <span class="card-flip__term jp">{{ currentCard.term }}</span>
+          <AudioBtn
+            :label="`播放 ${currentCard.term} 的读音`"
+            :status="audioStatus"
+            :using-tts="audioStatus === 'playing' && audio.usingTts"
+            variant="ghost"
+            @click.stop="playAudio"
+          />
           <span class="card-flip__hint">点击显示读音</span>
         </div>
         <div class="card-flip__back">

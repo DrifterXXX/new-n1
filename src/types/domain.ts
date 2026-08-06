@@ -72,8 +72,10 @@ export interface AnswerRecord {
   // note: 错因备注(错题本 ErrorNote 可编辑, blur 即存)
   // streak: 连续答对次数(AC-03 掌握判定, >=3 不再于复习中推送)
   // wrongCount: 累计答错次数(>0 即进入错题回收池, 直到 streak>=3 掌握为止)
+  // nextReviewAt: 下次复习时间戳(epoch ms), 用于汉字间隔复习
   meta: { type?: string; title?: string; note?: string; streak?: number; wrongCount?: number };
   at: number; // epoch ms
+  nextReviewAt?: number; // 汉字间隔复习: 下次应复习时间戳(epoch ms)
 }
 
 /** 一条收藏记录。key 形如 `${kind}:${id}`。 */
@@ -115,7 +117,7 @@ export interface UserState {
 }
 
 /** 当前 schema 版本。 */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 /** 默认用户状态(pull 失败/首次使用时的回退)。 */
 export function createDefaultUserState(): UserState {

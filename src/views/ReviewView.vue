@@ -17,7 +17,7 @@ import { useProgressStore } from '@/stores/progress';
 import { useSessionStore } from '@/stores/session';
 import { useToastStore } from '@/stores/toast';
 import { useKanjiStore } from '@/stores/kanji';
-import { findEntryById } from '@/services/kanji-service';
+import { findEntryById } from '@/services/kanji-srs';
 import type { ContentKind } from '@/types/domain';
 
 const router = useRouter();
