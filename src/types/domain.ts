@@ -5,7 +5,7 @@
  */
 
 /** 内容种类, 同时作为 answerKey/favKey 的前缀。 */
-export type ContentKind = 'example' | 'listening' | 'reading';
+export type ContentKind = 'example' | 'listening' | 'reading' | 'kanji';
 
 /* ---------- 只读题库内容 ---------- */
 

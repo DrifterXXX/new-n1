@@ -164,12 +164,14 @@ export async function loadContent(): Promise<ContentBundle> {
 export function getQuestionsByKind(bundle: ContentBundle, kind: 'example'): Example[];
 export function getQuestionsByKind(bundle: ContentBundle, kind: 'listening'): ListeningQuestion[];
 export function getQuestionsByKind(bundle: ContentBundle, kind: 'reading'): Reading[];
+export function getQuestionsByKind(bundle: ContentBundle, kind: 'kanji'): never;
 export function getQuestionsByKind(
   bundle: ContentBundle,
   kind: ContentKind,
 ): Example[] | ListeningQuestion[] | Reading[] {
   if (kind === 'example') return bundle.examples;
   if (kind === 'listening') return bundle.listening;
+  if (kind === 'kanji') throw new Error('kanji 不通过 content-service 管理，请使用 kanji store');
   return bundle.readings;
 }
 
@@ -185,6 +187,7 @@ export function getQuestion(
 ): Example | ListeningQuestion | Reading | ReadingQuestion | undefined {
   if (kind === 'example') return bundle.examples.find((e) => e.id === id);
   if (kind === 'listening') return bundle.listening.find((q) => q.id === id);
+  if (kind === 'kanji') throw new Error('kanji 不通过 content-service 管理，请使用 kanji store');
   const reading = bundle.readings[id];
   if (!reading) return undefined;
   if (sub == null) return reading;

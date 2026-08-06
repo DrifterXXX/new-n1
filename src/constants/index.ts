@@ -15,6 +15,7 @@ export const PER_PAGE = {
   listening: 8,
   reading: 1,
   review: 8,
+  kanji: 20,
 } as const;
 
 /** 听解题型。 */
@@ -44,6 +45,7 @@ export const ROUTE_NAMES = {
   reading: 'reading',
   review: 'review',
   strategy: 'strategy',
+  kanji: 'kanji',
 } as const;
 
 /** 持久化防抖间隔(ms): 突发写入合并后再 push。 */

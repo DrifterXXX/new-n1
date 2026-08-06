@@ -16,6 +16,8 @@ import { useFavoritesStore } from '@/stores/favorites';
 import { useProgressStore } from '@/stores/progress';
 import { useSessionStore } from '@/stores/session';
 import { useToastStore } from '@/stores/toast';
+import { useKanjiStore } from '@/stores/kanji';
+import { findEntryById } from '@/services/kanji-service';
 import type { ContentKind } from '@/types/domain';
 
 const router = useRouter();
@@ -24,6 +26,10 @@ const progress = useProgressStore();
 const favorites = useFavoritesStore();
 const session = useSessionStore();
 const toast = useToastStore();
+const kanji = useKanjiStore();
+
+// 确保汉字数据已加载, 用于错题本显示
+if (!kanji.ready) kanji.load();
 
 const tab = ref<'wrong' | 'recent' | 'fav'>('wrong');
 const confirming = ref(false);
@@ -48,6 +54,13 @@ function describe(
       answer: q?.answer ?? null,
       type: r.type,
     };
+  }
+  if (kind === 'kanji') {
+    const entry = findEntryById(kanji.entries, id);
+    if (entry) {
+      return { text: `${entry.term}（${entry.reading}）`, answer: null, type: '汉字' };
+    }
+    return { text: `汉字 No.${id}`, answer: null, type: '汉字' };
   }
   const e = content.exampleById(id);
   return { text: e?.jp ?? `例文 No.${id}`, answer: null, type: '例文' };

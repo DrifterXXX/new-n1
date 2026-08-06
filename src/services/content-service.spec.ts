@@ -15,7 +15,7 @@ import {
   stripOptionPrefix,
   type RawReading,
 } from './content-service';
-import type { ListeningQuestion } from '@/types/domain';
+import type { ContentBundle, ListeningQuestion } from '@/types/domain';
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -169,5 +169,15 @@ describe('loadContent — 真实题库归一', () => {
     expect(getQuestion(bundle, 'listening', 1)).toBe(bundle.listening.find((q) => q.id === 1));
     expect(getQuestion(bundle, 'listening', -1)).toBeUndefined();
     expect(getQuestion(bundle, 'example', 1)).toBe(bundle.examples.find((e) => e.id === 1));
+  });
+
+  it('getQuestionsByKind 拒绝 kanji 而非静默返回 reading', () => {
+    const bundle = { examples: [], listening: [], readings: [] };
+    expect(() => getQuestionsByKind(bundle as unknown as ContentBundle, 'kanji')).toThrow('kanji');
+  });
+
+  it('getQuestion 拒绝 kanji 而非静默返回 reading', () => {
+    const bundle = { examples: [], listening: [], readings: [] };
+    expect(() => getQuestion(bundle as unknown as ContentBundle, 'kanji', 0)).toThrow('kanji');
   });
 });

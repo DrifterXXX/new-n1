@@ -6,7 +6,7 @@ import { useProgressStore } from '@/stores/progress';
 
 export interface ReviewRow {
   key: string;
-  kind: 'listening' | 'reading' | 'example';
+  kind: 'listening' | 'reading' | 'example' | 'kanji';
   id: number;
   sub: number | null;
   typeLabel: string;
@@ -26,6 +26,7 @@ const KIND_LABEL: Record<ReviewRow['kind'], string> = {
   listening: '听解',
   reading: '读解',
   example: '例文',
+  kanji: '汉字',
 };
 
 function saveNote(e: Event): void {

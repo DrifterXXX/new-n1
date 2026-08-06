@@ -27,6 +27,12 @@ const routes: RouteRecordRaw[] = [
     meta: { title: '题型训练', subtitle: '键盘 1–4 选项，Enter 下一题' },
   },
   {
+    path: '/kanji',
+    name: ROUTE_NAMES.kanji,
+    component: () => import('@/views/KanjiView.vue'),
+    meta: { title: '汉字学习', subtitle: '520 个 N1 汉字，搜索/卡片/选择题' },
+  },
+  {
     path: '/examples',
     name: ROUTE_NAMES.examples,
     component: () => import('@/views/ExamplesView.vue'),

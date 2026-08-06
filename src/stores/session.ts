@@ -8,8 +8,10 @@ import type { ContentKind } from '@/types/domain';
 import { useContentStore } from './content';
 import { useProgressStore } from './progress';
 import { useSettingsStore } from './settings';
+import { useKanjiStore } from './kanji';
+import { generateQuizForEntry, findEntryById } from '@/services/kanji-service';
 
-export type SessionMode = 'mixed' | 'weak' | 'wrong' | 'listening' | 'reading';
+export type SessionMode = 'mixed' | 'weak' | 'wrong' | 'listening' | 'reading' | 'kanji';
 
 export interface SessionItem {
   kind: Exclude<ContentKind, 'example'>;
@@ -94,6 +96,16 @@ export const useSessionStore = defineStore('session', () => {
     const list: SessionItem[] = [];
     for (const { record } of progress.wrongEntries) {
       if (record.kind === 'example') continue;
+      if (record.kind === 'kanji') {
+        list.push({
+          kind: 'kanji',
+          id: record.id,
+          sub: null,
+          type: '汉字',
+          title: record.meta.title,
+        });
+        continue;
+      }
       if (record.kind === 'listening') {
         const q = content.listeningById(record.id);
         if (q) list.push({ kind: 'listening', id: q.id, sub: null, type: q.type });
@@ -129,6 +141,21 @@ export const useSessionStore = defineStore('session', () => {
   }
 
   function questionOf(item: SessionItem): SessionQuestion | null {
+    if (item.kind === 'kanji') {
+      // 使用 kanji store 数据, 按 numeric id 精确查找对应条目, 生成针对性选择题
+      const kanji = useKanjiStore();
+      if (!kanji.ready) return null;
+      const entry = findEntryById(kanji.entries, item.id);
+      if (!entry) return null;
+      const quiz = generateQuizForEntry(kanji.entries, entry, 'term→reading');
+      if (!quiz) return null;
+      return {
+        item,
+        prompt: quiz.question,
+        options: quiz.options,
+        answer: quiz.correctIndex,
+      };
+    }
     if (item.kind === 'listening') {
       const q = content.listeningById(item.id);
       if (!q) return null;
@@ -210,6 +237,6 @@ export const useSessionStore = defineStore('session', () => {
   return {
     mode, items, index, chosen, finished, emptyReason,
     active, size, currentItem, currentChoice, currentQuestion, answeredCount, summary,
-    start, answer, next, prev, quit,
+    start, questionOf, answer, next, prev, quit,
   };
 });

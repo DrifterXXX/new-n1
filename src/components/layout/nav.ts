@@ -25,7 +25,8 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     caption: '题库',
     items: [
-      { name: ROUTE_NAMES.examples, label: '文法词汇', icon: 'book-open' },
+      { name: ROUTE_NAMES.kanji, label: '汉字学习', icon: 'book-open' },
+      { name: ROUTE_NAMES.examples, label: '文法词汇', icon: 'layers' },
       { name: ROUTE_NAMES.listening, label: '听解题库', icon: 'headphones' },
       { name: ROUTE_NAMES.reading, label: '读解题库', icon: 'file-text' },
     ],
