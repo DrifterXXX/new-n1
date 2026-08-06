@@ -67,6 +67,10 @@ const rate = computed(() =>
     ? 0
     : Math.round((correctCount.value / answers.value.length) * 100),
 );
+// Guard against division by zero (should never happen, but defensive)
+const safeRate = computed(() =>
+  Number.isFinite(rate.value) ? rate.value : 0,
+);
 </script>
 
 <template>
@@ -114,7 +118,7 @@ const rate = computed(() =>
           <span class="meta">答错</span>
         </p>
         <p>
-          <span class="mono summary__num">{{ rate }}%</span>
+          <span class="mono summary__num">{{ safeRate }}%</span>
           <span class="meta">正确率</span>
         </p>
       </div>

@@ -130,8 +130,14 @@ onMounted(() => {
       </div>
     </template>
 
-    <KanjiCard v-else-if="mode === 'card'" @back="mode = 'browse'" />
-    <KanjiQuiz v-else-if="mode === 'quiz'" @back="mode = 'browse'" />
+    <!-- 全局错误: 在任何模式下数据加载失败时显示 -->
+    <p v-if="kanji.error && mode !== 'browse'" class="error-line view-error" role="alert">
+      {{ kanji.error }}
+      <AppButton icon="search" @click="mode = 'browse'">返回浏览</AppButton>
+    </p>
+
+    <KanjiCard v-else-if="mode === 'card' && !kanji.error" @back="mode = 'browse'" />
+    <KanjiQuiz v-else-if="mode === 'quiz' && !kanji.error" @back="mode = 'browse'" />
   </div>
 </template>
 
@@ -226,5 +232,15 @@ onMounted(() => {
   border-radius: var(--radius-sm);
   color: var(--color-danger-strong);
   font-size: var(--text-sm);
+}
+
+.view-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+  margin: var(--space-8) auto;
+  max-width: 360px;
 }
 </style>
