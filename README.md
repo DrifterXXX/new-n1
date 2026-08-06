@@ -14,10 +14,11 @@
 
 ```bash
 cd /Users/ayong/services/new-N1
-python3 -m http.server 8080
+npm install
+npm run dev
 ```
 
-然后打开 `http://localhost:8080/`。
+然后打开终端输出的开发 URL（默认 `http://localhost:5173/`）。
 
 ## 设计原则
 
@@ -28,8 +29,27 @@ python3 -m http.server 8080
 
 ## 技术栈
 
-- HTML5 + CSS3 + JavaScript
-- 数据源：`data.js`
+- Vue 3 + TypeScript + Vite
+- Pinia 状态管理
+- Vue Router 路由
+- 数据源：`src/data/` 下 JSON 文件
 - 音频：`audio/*.mp3`
 - TTS 生成脚本：`generate_tts.py`
 
+## 汉字数据
+
+`src/data/kanji-v1.json` 和 `src/data/kanji-audit-v1.json` 由生成器脚本产生，已提交到仓库（版本化）。
+
+### 重新生成
+
+```bash
+# 设置源文件路径（第三方整理的 N1 真题汉字列表）
+export KANJI_SOURCE_PATH=/path/to/N1_真题汉字_1200_提取.txt
+
+# 执行生成
+npm run generate:kanji
+```
+
+**注意**：源文件 `N1_真题汉字_1200_提取.txt` 是第三方（纳豆日语）整理的编译资料，**不随仓库分发**。首次克隆后如需重新生成，请自行从原始出处获取该文件，并通过 `KANJI_SOURCE_PATH` 环境变量指定路径。
+
+生成的 JSON 是确定性的（不含 `generatedAt` 等时钟派生字段），相同源文件每次生成结果一致。`kanji-audit-v1.json` 中的 `sourceSha256` 字段用于校验源文件完整性。

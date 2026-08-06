@@ -1,0 +1,987 @@
+{
+  "sourceSha256": "661e1a0e38aeecdb7370721c65ad23ed62c4df89be9d14bc11cdf5a200441106",
+  "version": "v1",
+  "source": "N1_真题汉字_1200_提取.txt (纳豆日语整理)",
+  "accepted": 520,
+  "rejected": 113,
+  "rejectionCategories": {
+    "page-header": 17,
+    "watermark": 96
+  },
+  "rejectedRows": [
+    {
+      "line": 1,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 2,
+      "text": "第1 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 3,
+      "text": "快收藏！1200 个N1 真题汉字汇总",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 73,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 74,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 75,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 76,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 77,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 78,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 79,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 80,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 81,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 82,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 83,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 84,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 86,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 87,
+      "text": "第2 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 169,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 170,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 171,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 172,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 173,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 174,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 175,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 176,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 177,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 178,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 179,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 180,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 182,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 183,
+      "text": "第3 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 265,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 266,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 267,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 268,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 269,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 270,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 271,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 272,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 273,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 274,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 275,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 276,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 278,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 279,
+      "text": "第4 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 361,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 362,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 363,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 364,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 365,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 366,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 367,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 368,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 369,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 370,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 371,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 372,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 374,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 375,
+      "text": "第5 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 457,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 458,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 459,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 460,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 461,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 462,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 463,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 464,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 465,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 466,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 467,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 468,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 470,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 471,
+      "text": "第6 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 553,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 554,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 555,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 556,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 557,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 558,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 559,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 560,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 561,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 562,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 563,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 564,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 566,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 567,
+      "text": "第7 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 649,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 650,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 651,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 652,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 653,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 654,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 655,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 656,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 657,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 658,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 659,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 660,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 662,
+      "text": "本内容由@纳豆日语整理发布",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 663,
+      "text": "第8 页共8 页",
+      "reason": "page header / page number / title",
+      "category": "page-header"
+    },
+    {
+      "line": 700,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 701,
+      "text": "日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 702,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 703,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 704,
+      "text": "豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 705,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 706,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 707,
+      "text": "纳豆日",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 708,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 709,
+      "text": "纳豆日语",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 710,
+      "text": "纳豆",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    },
+    {
+      "line": 711,
+      "text": "纳",
+      "reason": "watermark fragment",
+      "category": "watermark"
+    }
+  ],
+  "duplicates": [
+    {
+      "term": "必要",
+      "reading": "ひつよう",
+      "count": 4
+    },
+    {
+      "term": "災害",
+      "reading": "さいがい",
+      "count": 4
+    },
+    {
+      "term": "被害",
+      "reading": "ひがい",
+      "count": 2
+    },
+    {
+      "term": "有効",
+      "reading": "ゆうこう",
+      "count": 2
+    },
+    {
+      "term": "選挙",
+      "reading": "せんきょ",
+      "count": 4
+    },
+    {
+      "term": "開発",
+      "reading": "かいはつ",
+      "count": 2
+    },
+    {
+      "term": "良好",
+      "reading": "りょうこう",
+      "count": 2
+    },
+    {
+      "term": "製品",
+      "reading": "せいひん",
+      "count": 4
+    },
+    {
+      "term": "規制",
+      "reading": "きせい",
+      "count": 5
+    },
+    {
+      "term": "経済的",
+      "reading": "けいざいてき",
+      "count": 2
+    },
+    {
+      "term": "期限",
+      "reading": "きげん",
+      "count": 2
+    },
+    {
+      "term": "複雑",
+      "reading": "ふくざつ",
+      "count": 2
+    },
+    {
+      "term": "頼む",
+      "reading": "たのむ",
+      "count": 2
+    },
+    {
+      "term": "水素",
+      "reading": "すいそ",
+      "count": 2
+    },
+    {
+      "term": "酸素",
+      "reading": "さんそ",
+      "count": 2
+    },
+    {
+      "term": "数学",
+      "reading": "すうがく",
+      "count": 2
+    },
+    {
+      "term": "顕微鏡",
+      "reading": "けんびきょう",
+      "count": 2
+    },
+    {
+      "term": "地震",
+      "reading": "じしん",
+      "count": 2
+    },
+    {
+      "term": "活動",
+      "reading": "かつどう",
+      "count": 2
+    },
+    {
+      "term": "予算",
+      "reading": "よさん",
+      "count": 2
+    },
+    {
+      "term": "責任",
+      "reading": "せきにん",
+      "count": 2
+    },
+    {
+      "term": "会議",
+      "reading": "かいぎ",
+      "count": 2
+    },
+    {
+      "term": "借金",
+      "reading": "しゃっきん",
+      "count": 2
+    },
+    {
+      "term": "大臣",
+      "reading": "だいじん",
+      "count": 2
+    },
+    {
+      "term": "お年寄り",
+      "reading": "おとしより",
+      "count": 2
+    },
+    {
+      "term": "事件",
+      "reading": "じけん",
+      "count": 3
+    },
+    {
+      "term": "背景",
+      "reading": "はいけい",
+      "count": 2
+    },
+    {
+      "term": "警察",
+      "reading": "けいさつ",
+      "count": 2
+    },
+    {
+      "term": "突然",
+      "reading": "とつぜん",
+      "count": 2
+    },
+    {
+      "term": "自然",
+      "reading": "しぜん",
+      "count": 2
+    },
+    {
+      "term": "状態",
+      "reading": "じょうたい",
+      "count": 2
+    },
+    {
+      "term": "悪化",
+      "reading": "あっか",
+      "count": 2
+    },
+    {
+      "term": "組織",
+      "reading": "そしき",
+      "count": 2
+    },
+    {
+      "term": "小説家",
+      "reading": "しょうせつか",
+      "count": 2
+    },
+    {
+      "term": "長年",
+      "reading": "ながねん",
+      "count": 2
+    },
+    {
+      "term": "機械",
+      "reading": "きかい",
+      "count": 2
+    },
+    {
+      "term": "雑誌",
+      "reading": "ざっし",
+      "count": 2
+    },
+    {
+      "term": "状況",
+      "reading": "じょうきょう",
+      "count": 2
+    },
+    {
+      "term": "犯人",
+      "reading": "はんにん",
+      "count": 3
+    },
+    {
+      "term": "非常",
+      "reading": "ひじょう",
+      "count": 3
+    },
+    {
+      "term": "不況",
+      "reading": "ふきょう",
+      "count": 2
+    },
+    {
+      "term": "経営",
+      "reading": "けいえい",
+      "count": 2
+    },
+    {
+      "term": "条件",
+      "reading": "じょうけん",
+      "count": 2
+    },
+    {
+      "term": "輸出",
+      "reading": "ゆしゅつ",
+      "count": 2
+    },
+    {
+      "term": "援助",
+      "reading": "えんじょ",
+      "count": 2
+    },
+    {
+      "term": "洪水",
+      "reading": "こうずい",
+      "count": 2
+    },
+    {
+      "term": "選ぶ",
+      "reading": "えらぶ",
+      "count": 2
+    },
+    {
+      "term": "夫婦",
+      "reading": "ふうふ",
+      "count": 2
+    },
+    {
+      "term": "記録",
+      "reading": "きろく",
+      "count": 2
+    },
+    {
+      "term": "祖父",
+      "reading": "そふ",
+      "count": 2
+    },
+    {
+      "term": "優勝",
+      "reading": "ゆうしょう",
+      "count": 2
+    },
+    {
+      "term": "生活",
+      "reading": "せいかつ",
+      "count": 2
+    },
+    {
+      "term": "趣味",
+      "reading": "しゅみ",
+      "count": 2
+    },
+    {
+      "term": "賛成",
+      "reading": "さんせい",
+      "count": 2
+    },
+    {
+      "term": "困る",
+      "reading": "こまる",
+      "count": 2
+    },
+    {
+      "term": "細胞",
+      "reading": "さいぼう",
+      "count": 2
+    },
+    {
+      "term": "交通事故",
+      "reading": "こうつうじこ",
+      "count": 2
+    }
+  ],
+  "sameTermDifferentReadings": [
+    {
+      "term": "重大",
+      "readings": [
+        "じゅうだい",
+        "じゅだい"
+      ]
+    }
+  ]
+}

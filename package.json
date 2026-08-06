@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "sync:audio": "node scripts/sync-audio.mjs",
+    "generate:kanji": "node scripts/generate-kanji.mjs",
     "build": "npm run sync:audio && vue-tsc --noEmit && vite build && node scripts/prune-woff.mjs",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",

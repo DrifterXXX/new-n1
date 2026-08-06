@@ -82,4 +82,12 @@ export default tseslint.config(
     files: ['*.config.ts', '*.config.js', 'src/**/*.spec.ts'],
     languageOptions: { globals: { ...globals.node } },
   },
+  {
+    /** scripts/ 下的 Node ESM 工具脚本 (CLI 入口, 非 Vue/TS 源码)。 */
+    files: ['scripts/**/*.mjs'],
+    languageOptions: { globals: { ...globals.node } },
+    rules: {
+      'no-console': 'off',
+    },
+  },
 );
